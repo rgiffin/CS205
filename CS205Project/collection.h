@@ -11,7 +11,11 @@ using namespace std;
 class Collection
 {
 public:
+
     Collection();
+    QSqlDatabase db;
+    void createTable();
+    bool addItem(string, string, string);
 };
 
 #endif // COLLECTION_H
