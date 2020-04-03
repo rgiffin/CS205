@@ -2,8 +2,8 @@
 #define COLLECTION_H
 #include <iostream>
 #include <string>
-#include <QSqlDatabase>
 #include <QtSql>
+#include<QSqlQuery>
 
 
 using namespace std;
