@@ -13,6 +13,7 @@ class Collection
 public:
 
     Collection();
+    string name;
     QSqlDatabase db;
     void createTable();
     bool addItem(string, string, string);

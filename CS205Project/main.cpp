@@ -1,15 +1,11 @@
 #include <iostream>
 #include "collection.h"
+#include "museum.h"
 
 using namespace std;
 
 int main()
 {
-    Collection c;
-    c.createTable();
-    c.addItem("Mona Lisa", "A Painting", "da Vinci");
+   Museum m;
 
-    cout << "Hello World!" << endl;
-    cout << "Hello Ryan" << endl;
-    return 0;
 }
