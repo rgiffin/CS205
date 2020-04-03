@@ -8,7 +8,11 @@ Collection::Collection()
 void Collection::createTable()
 {
     db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("TestBase");
+    db.setDatabaseName("db.sqlite");
+    if(!db.open())
+    {
+        cout << "DATABASE COULD NOT BE OPENED" << endl;
+    }
     QSqlQuery query;
     query.exec("create table cTable (id string name, description varchar(200), artist varchar(30))");
 }
