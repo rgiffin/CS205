@@ -5,10 +5,12 @@ CONFIG -= qtl
 
 SOURCES += \
         collection.cpp \
-        main.cpp
+        main.cpp \
+        museum.cpp
 
 HEADERS += \
-    collection.h
+    collection.h \
+    museum.h
 
 QT += sql
 
