@@ -2,11 +2,6 @@
 using namespace std;
 Collection::Collection()
 {
-
-}
-
-void Collection::createTable()
-{
     db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("db.sqlite");
     if(!db.open())
@@ -17,9 +12,23 @@ void Collection::createTable()
     query.exec("create table cTable (id string name, description varchar(200), artist varchar(30))");
 }
 
-bool Collection::addItem(string x, string y, string z)
+bool Collection::addItem(string name, string desc, string artist)
 {
+    //Creating query from input
+    string s1 = "insert into cTable values('";
+    s1.append(name);
+    s1.append("', '");
+    s1.append(desc);
+    s1.append("', '");
+    s1.append(artist);
+    s1.append("')");
+    char s2[s1.size()+1];
+    strcpy(s2,s1.c_str());
+
+    //Adds the item created to the table
     QSqlQuery query;
-     query.exec("insert into cTable values('Mona Lisa', 'A Painting', 'da Vinci')");
+     query.exec(s2);
      return true;
 }
+
+
