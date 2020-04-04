@@ -31,4 +31,21 @@ bool Collection::addItem(string name, string desc, string artist)
      return true;
 }
 
+bool Collection::getItemArtist(string s)
+{
+    string s1 = "SELECT artist FROM cTable WHERE id = ";
+    s1.append("'");
+    s1.append(s);
+    s1.append("'");
+    char s2[s1.size()+1];
+    strcpy(s2,s1.c_str());
+    QSqlQuery query;
+    query.exec(s2);
+    while (query.next()) {
+            QString name = query.value(0).toString();
+            qDebug() << name;
+    }
+    return true;
+}
+
 

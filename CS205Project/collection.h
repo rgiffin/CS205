@@ -16,6 +16,7 @@ public:
     string name;
     QSqlDatabase db;
     bool addItem(string, string, string);
+    bool getItemArtist(string);
 };
 
 #endif // COLLECTION_H
