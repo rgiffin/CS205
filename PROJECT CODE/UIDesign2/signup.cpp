@@ -51,6 +51,7 @@ void SignUp::on_pushButton_clicked()
     }
 }
 
+//Puts user info into the SQL Database
 void SignUp::logInfo(string user, string pass, string name, string email)
 {
     QSqlDatabase db;
