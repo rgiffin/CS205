@@ -2,14 +2,6 @@
 using namespace std;
 Collection::Collection()
 {
-    db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("db.sqlite");
-    if(!db.open())
-    {
-        cout << "DATABASE COULD NOT BE OPENED" << endl;
-    }
-    QSqlQuery query;
-    query.exec("create table cTable (id string name, description varchar(200), artist varchar(30))");
 }
 
 bool Collection::addItem(string name, string desc, string artist)
