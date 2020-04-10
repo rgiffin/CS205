@@ -7,7 +7,8 @@ using namespace std;
 
 QSqlDatabase db;
 
-void createDatabases() //Used only once to setup the user and item databases
+//Used only once to setup the user and item databases
+void openDatabases()
 {
     db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("dbv2.sqlite");
@@ -20,23 +21,9 @@ void createDatabases() //Used only once to setup the user and item databases
     query.exec("create table userTable(user varchar(50), pass varchar(50), name varchar(50), email varchar(75))");
 }
 
-void openDatabases()
-{
-    //Connects to database
-    db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("dbv2.sqlite");
-
-    //Opens database
-    if(!db.open())
-    {
-        cout << "DATABASE COULD NOT BE OPENED" << endl;
-    }
-}
-
 int main(int argc, char *argv[])
 {
-    createDatabases();
-    //openDatabases();
+    openDatabases();
     QApplication a(argc, argv);
     Login w;
     w.show();

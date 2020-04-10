@@ -1,7 +1,11 @@
 #ifndef SIGNUP_H
 #define SIGNUP_H
-
 #include <QDialog>
+#include<iostream>
+#include <string>
+#include<QtSql>
+
+using namespace std;
 
 namespace Ui {
 class SignUp;
@@ -14,6 +18,7 @@ class SignUp : public QDialog
 public:
     explicit SignUp(QWidget *parent = nullptr);
     ~SignUp();
+    void logInfo(string, string, string, string);
 
 private slots:
     void on_pushButton_clicked();
