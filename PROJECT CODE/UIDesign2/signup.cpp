@@ -40,10 +40,18 @@ void SignUp::on_pushButton_clicked()
     {
         //save data here
 
+        std::string u = username.toStdString();
+        std::string p = password.toStdString();
+        std::string n = name.toStdString();
+        std::string e = email.toStdString();
 
-
+        logInfo(u, p, n, e);
 
         close();
+
+
+
+
     }
     else
     {
