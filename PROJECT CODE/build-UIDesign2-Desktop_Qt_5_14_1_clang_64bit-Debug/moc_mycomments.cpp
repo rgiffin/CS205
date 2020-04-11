@@ -1,5 +1,5 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'accountcurator.h'
+** Meta object code from reading C++ file 'mycomments.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.14.1)
 **
@@ -7,11 +7,11 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../UIDesign2/accountcurator.h"
+#include "../UIDesign2/mycomments.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'accountcurator.h' doesn't include <QObject>."
+#error "The header file 'mycomments.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.14.1. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -21,41 +21,38 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_accountCurator_t {
-    QByteArrayData data[7];
-    char stringdata0[140];
+struct qt_meta_stringdata_MyComments_t {
+    QByteArrayData data[6];
+    char stringdata0[111];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_accountCurator_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_MyComments_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_accountCurator_t qt_meta_stringdata_accountCurator = {
+static const qt_meta_stringdata_MyComments_t qt_meta_stringdata_MyComments = {
     {
-QT_MOC_LITERAL(0, 0, 14), // "accountCurator"
-QT_MOC_LITERAL(1, 15, 21), // "on_pushButton_clicked"
-QT_MOC_LITERAL(2, 37, 0), // ""
-QT_MOC_LITERAL(3, 38, 21), // "on_homeButton_clicked"
-QT_MOC_LITERAL(4, 60, 28), // "on_itemsViewedButton_clicked"
-QT_MOC_LITERAL(5, 89, 27), // "on_myCommentsButton_clicked"
-QT_MOC_LITERAL(6, 117, 22) // "on_mListButton_clicked"
+QT_MOC_LITERAL(0, 0, 10), // "MyComments"
+QT_MOC_LITERAL(1, 11, 28), // "on_itemsViewedButton_clicked"
+QT_MOC_LITERAL(2, 40, 0), // ""
+QT_MOC_LITERAL(3, 41, 21), // "on_homeButton_clicked"
+QT_MOC_LITERAL(4, 63, 22), // "on_mListButton_clicked"
+QT_MOC_LITERAL(5, 86, 24) // "on_accountButton_clicked"
 
     },
-    "accountCurator\0on_pushButton_clicked\0"
-    "\0on_homeButton_clicked\0"
-    "on_itemsViewedButton_clicked\0"
-    "on_myCommentsButton_clicked\0"
-    "on_mListButton_clicked"
+    "MyComments\0on_itemsViewedButton_clicked\0"
+    "\0on_homeButton_clicked\0on_mListButton_clicked\0"
+    "on_accountButton_clicked"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_accountCurator[] = {
+static const uint qt_meta_data_MyComments[] = {
 
  // content:
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       5,   14, // methods
+       4,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -63,14 +60,12 @@ static const uint qt_meta_data_accountCurator[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   39,    2, 0x08 /* Private */,
-       3,    0,   40,    2, 0x08 /* Private */,
-       4,    0,   41,    2, 0x08 /* Private */,
-       5,    0,   42,    2, 0x08 /* Private */,
-       6,    0,   43,    2, 0x08 /* Private */,
+       1,    0,   34,    2, 0x08 /* Private */,
+       3,    0,   35,    2, 0x08 /* Private */,
+       4,    0,   36,    2, 0x08 /* Private */,
+       5,    0,   37,    2, 0x08 /* Private */,
 
  // slots: parameters
-    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -79,59 +74,58 @@ static const uint qt_meta_data_accountCurator[] = {
        0        // eod
 };
 
-void accountCurator::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void MyComments::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<accountCurator *>(_o);
+        auto *_t = static_cast<MyComments *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->on_pushButton_clicked(); break;
+        case 0: _t->on_itemsViewedButton_clicked(); break;
         case 1: _t->on_homeButton_clicked(); break;
-        case 2: _t->on_itemsViewedButton_clicked(); break;
-        case 3: _t->on_myCommentsButton_clicked(); break;
-        case 4: _t->on_mListButton_clicked(); break;
+        case 2: _t->on_mListButton_clicked(); break;
+        case 3: _t->on_accountButton_clicked(); break;
         default: ;
         }
     }
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject accountCurator::staticMetaObject = { {
+QT_INIT_METAOBJECT const QMetaObject MyComments::staticMetaObject = { {
     QMetaObject::SuperData::link<QDialog::staticMetaObject>(),
-    qt_meta_stringdata_accountCurator.data,
-    qt_meta_data_accountCurator,
+    qt_meta_stringdata_MyComments.data,
+    qt_meta_data_MyComments,
     qt_static_metacall,
     nullptr,
     nullptr
 } };
 
 
-const QMetaObject *accountCurator::metaObject() const
+const QMetaObject *MyComments::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *accountCurator::qt_metacast(const char *_clname)
+void *MyComments::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_accountCurator.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_MyComments.stringdata0))
         return static_cast<void*>(this);
     return QDialog::qt_metacast(_clname);
 }
 
-int accountCurator::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int MyComments::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QDialog::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 5)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 5;
+        _id -= 4;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 5)
+        if (_id < 4)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 5;
+        _id -= 4;
     }
     return _id;
 }

@@ -210,6 +210,32 @@
     </property>
    </widget>
   </widget>
+  <widget class="QLabel" name="logoMM">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>0</y>
+     <width>111</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="logoMM_2">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>0</y>
+     <width>111</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

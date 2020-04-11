@@ -1,9 +1,9 @@
-#include "museummain.h"
-#include "ui_museummain.h"
+#include "museumlist.h"
+#include "ui_museumlist.h"
 
-MuseumMain::MuseumMain(QWidget *parent) :
+MuseumList::MuseumList(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::MuseumMain)
+    ui(new Ui::MuseumList)
 {
     ui->setupUi(this);
     QPixmap pix(":/resources/images/logo.png");
@@ -12,20 +12,13 @@ MuseumMain::MuseumMain(QWidget *parent) :
     ui->logoMM->setPixmap(pix.scaled(width,height,Qt::KeepAspectRatio));
 }
 
-MuseumMain::~MuseumMain()
+MuseumList::~MuseumList()
 {
     delete ui;
 }
 
-void MuseumMain::on_mListButton_clicked()
-{
-    //go to museum list page
-    ml = new MuseumList();
-    ml->show();
-    hide();
-}
 
-void MuseumMain::on_itemsViewedButton_clicked()
+void MuseumList::on_itemsViewedButton_clicked()
 {
     //go to items viewed list
     iv = new ItemsViewed();
@@ -33,7 +26,7 @@ void MuseumMain::on_itemsViewedButton_clicked()
     hide();
 }
 
-void MuseumMain::on_myCommentsButton_clicked()
+void MuseumList::on_myCommentsButton_clicked()
 {
     //go to my comments
     mc = new MyComments();
@@ -41,7 +34,7 @@ void MuseumMain::on_myCommentsButton_clicked()
     hide();
 }
 
-void MuseumMain::on_accountButton_clicked()
+void MuseumList::on_accountButton_clicked()
 {
     //go to account
 
@@ -57,3 +50,10 @@ void MuseumMain::on_accountButton_clicked()
 
     }
 }
+void MuseumList::on_homeButton_clicked()
+{
+    mm = new MuseumMain();
+    mm->show();
+    hide();
+}
+

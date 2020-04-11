@@ -6,6 +6,10 @@ AccountEdit::AccountEdit(QWidget *parent) :
     ui(new Ui::AccountEdit)
 {
     ui->setupUi(this);
+    QPixmap pix(":/resources/images/logo.png");
+    int width = ui->logoMM->width();
+    int height = ui->logoMM->height();
+    ui->logoMM->setPixmap(pix.scaled(width,height,Qt::KeepAspectRatio));
 }
 
 AccountEdit::~AccountEdit()
