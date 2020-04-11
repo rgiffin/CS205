@@ -50,10 +50,12 @@ public:
         SignUp->resize(640, 486);
         label = new QLabel(SignUp);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(10, 10, 131, 51));
+        label->setGeometry(QRect(10, 10, 161, 71));
         QFont font;
-        font.setFamily(QString::fromUtf8("DIN Condensed"));
+        font.setFamily(QString::fromUtf8("Avenir Next Condensed"));
         font.setPointSize(25);
+        font.setBold(true);
+        font.setWeight(75);
         label->setFont(font);
         groupBox = new QGroupBox(SignUp);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
