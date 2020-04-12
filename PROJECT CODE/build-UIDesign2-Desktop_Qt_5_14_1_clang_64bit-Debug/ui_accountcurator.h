@@ -47,6 +47,8 @@ public:
     QPushButton *pushButton;
     QGroupBox *groupBox_2;
     QLabel *label_12;
+    QLabel *logoMM;
+    QLabel *logoMM_2;
 
     void setupUi(QDialog *accountCurator)
     {
@@ -163,6 +165,12 @@ public:
         label_12 = new QLabel(groupBox_2);
         label_12->setObjectName(QString::fromUtf8("label_12"));
         label_12->setGeometry(QRect(10, 50, 161, 16));
+        logoMM = new QLabel(accountCurator);
+        logoMM->setObjectName(QString::fromUtf8("logoMM"));
+        logoMM->setGeometry(QRect(700, 0, 111, 71));
+        logoMM_2 = new QLabel(accountCurator);
+        logoMM_2->setObjectName(QString::fromUtf8("logoMM_2"));
+        logoMM_2->setGeometry(QRect(700, 0, 111, 71));
 
         retranslateUi(accountCurator);
 
@@ -192,6 +200,8 @@ public:
         pushButton->setText(QCoreApplication::translate("accountCurator", "Edit", nullptr));
         groupBox_2->setTitle(QCoreApplication::translate("accountCurator", "My Museums", nullptr));
         label_12->setText(QCoreApplication::translate("accountCurator", "List Museums here", nullptr));
+        logoMM->setText(QString());
+        logoMM_2->setText(QString());
     } // retranslateUi
 
 };
