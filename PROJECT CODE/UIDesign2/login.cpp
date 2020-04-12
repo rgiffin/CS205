@@ -46,7 +46,7 @@ void Login::on_pushButton_clicked()
     bool check = checkUser(use, pas);
 
 
-    if(username == "test" && password == "test")
+    if(check)
     {
         //QMessageBox::information(this,"Message", "Login is correct", QMessageBox::Ok);
         ui->statusbar->showMessage("Username and Password are correct", 5000);
