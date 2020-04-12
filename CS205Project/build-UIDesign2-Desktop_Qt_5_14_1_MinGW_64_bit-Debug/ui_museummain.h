@@ -13,117 +13,176 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QGridLayout>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_MuseumMain
 {
 public:
-    QGridLayout *gridLayout;
-    QLabel *label_6;
-    QLabel *label_15;
-    QLabel *label_2;
-    QLabel *label_10;
-    QLabel *label_9;
-    QLabel *label_12;
-    QLabel *label_13;
-    QLabel *label_5;
-    QLabel *label_11;
-    QLabel *label_7;
-    QLabel *label_16;
     QLabel *label;
-    QLabel *label_4;
-    QLabel *label_3;
-    QLabel *label_14;
-    QLabel *label_8;
+    QLabel *logoMM;
+    QWidget *widget;
+    QGridLayout *gridLayout;
+    QLabel *mName1;
+    QLabel *description1;
+    QLabel *image1_1;
+    QLabel *image2_1;
+    QLabel *image3_1;
+    QLabel *mName2;
+    QLabel *description2;
+    QLabel *image1_2;
+    QLabel *image2_2;
+    QLabel *image3_2;
+    QLabel *mName3;
+    QLabel *description3;
+    QLabel *image1_3;
+    QLabel *image2_3;
+    QLabel *image3_3;
+    QWidget *widget1;
+    QHBoxLayout *horizontalLayout;
+    QPushButton *homeButton;
+    QPushButton *mListButton;
+    QPushButton *itemsViewedButton;
+    QPushButton *myCommentsButton;
+    QPushButton *accountButton;
 
     void setupUi(QDialog *MuseumMain)
     {
         if (MuseumMain->objectName().isEmpty())
             MuseumMain->setObjectName(QString::fromUtf8("MuseumMain"));
-        MuseumMain->resize(823, 600);
-        gridLayout = new QGridLayout(MuseumMain);
-        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        label_6 = new QLabel(MuseumMain);
-        label_6->setObjectName(QString::fromUtf8("label_6"));
-
-        gridLayout->addWidget(label_6, 2, 2, 1, 1);
-
-        label_15 = new QLabel(MuseumMain);
-        label_15->setObjectName(QString::fromUtf8("label_15"));
-
-        gridLayout->addWidget(label_15, 6, 2, 1, 1);
-
-        label_2 = new QLabel(MuseumMain);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-
-        gridLayout->addWidget(label_2, 5, 0, 1, 1);
-
-        label_10 = new QLabel(MuseumMain);
-        label_10->setObjectName(QString::fromUtf8("label_10"));
-
-        gridLayout->addWidget(label_10, 4, 2, 1, 1);
-
-        label_9 = new QLabel(MuseumMain);
-        label_9->setObjectName(QString::fromUtf8("label_9"));
-
-        gridLayout->addWidget(label_9, 4, 1, 1, 1);
-
-        label_12 = new QLabel(MuseumMain);
-        label_12->setObjectName(QString::fromUtf8("label_12"));
-
-        gridLayout->addWidget(label_12, 4, 4, 1, 1);
-
-        label_13 = new QLabel(MuseumMain);
-        label_13->setObjectName(QString::fromUtf8("label_13"));
-
-        gridLayout->addWidget(label_13, 6, 0, 1, 1);
-
-        label_5 = new QLabel(MuseumMain);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
-
-        gridLayout->addWidget(label_5, 2, 1, 1, 1);
-
-        label_11 = new QLabel(MuseumMain);
-        label_11->setObjectName(QString::fromUtf8("label_11"));
-
-        gridLayout->addWidget(label_11, 3, 0, 1, 1);
-
-        label_7 = new QLabel(MuseumMain);
-        label_7->setObjectName(QString::fromUtf8("label_7"));
-
-        gridLayout->addWidget(label_7, 2, 4, 1, 1);
-
-        label_16 = new QLabel(MuseumMain);
-        label_16->setObjectName(QString::fromUtf8("label_16"));
-
-        gridLayout->addWidget(label_16, 6, 4, 1, 1);
-
+        MuseumMain->resize(820, 600);
         label = new QLabel(MuseumMain);
         label->setObjectName(QString::fromUtf8("label"));
+        label->setGeometry(QRect(10, 10, 291, 61));
+        QFont font;
+        font.setFamily(QString::fromUtf8("Avenir Next Condensed"));
+        font.setPointSize(25);
+        font.setItalic(false);
+        label->setFont(font);
+        logoMM = new QLabel(MuseumMain);
+        logoMM->setObjectName(QString::fromUtf8("logoMM"));
+        logoMM->setGeometry(QRect(700, 0, 111, 71));
+        widget = new QWidget(MuseumMain);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(10, 110, 791, 481));
+        gridLayout = new QGridLayout(widget);
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        gridLayout->setContentsMargins(0, 0, 0, 0);
+        mName1 = new QLabel(widget);
+        mName1->setObjectName(QString::fromUtf8("mName1"));
+        QFont font1;
+        font1.setFamily(QString::fromUtf8("Skia"));
+        font1.setPointSize(20);
+        mName1->setFont(font1);
 
-        gridLayout->addWidget(label, 0, 0, 1, 1);
+        gridLayout->addWidget(mName1, 0, 0, 1, 1);
 
-        label_4 = new QLabel(MuseumMain);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
+        description1 = new QLabel(widget);
+        description1->setObjectName(QString::fromUtf8("description1"));
 
-        gridLayout->addWidget(label_4, 4, 0, 1, 1);
+        gridLayout->addWidget(description1, 1, 0, 1, 1);
 
-        label_3 = new QLabel(MuseumMain);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
+        image1_1 = new QLabel(widget);
+        image1_1->setObjectName(QString::fromUtf8("image1_1"));
 
-        gridLayout->addWidget(label_3, 1, 0, 1, 1);
+        gridLayout->addWidget(image1_1, 1, 1, 1, 1);
 
-        label_14 = new QLabel(MuseumMain);
-        label_14->setObjectName(QString::fromUtf8("label_14"));
+        image2_1 = new QLabel(widget);
+        image2_1->setObjectName(QString::fromUtf8("image2_1"));
 
-        gridLayout->addWidget(label_14, 6, 1, 1, 1);
+        gridLayout->addWidget(image2_1, 1, 2, 1, 1);
 
-        label_8 = new QLabel(MuseumMain);
-        label_8->setObjectName(QString::fromUtf8("label_8"));
+        image3_1 = new QLabel(widget);
+        image3_1->setObjectName(QString::fromUtf8("image3_1"));
 
-        gridLayout->addWidget(label_8, 2, 0, 1, 1);
+        gridLayout->addWidget(image3_1, 1, 3, 1, 1);
+
+        mName2 = new QLabel(widget);
+        mName2->setObjectName(QString::fromUtf8("mName2"));
+        mName2->setFont(font1);
+
+        gridLayout->addWidget(mName2, 2, 0, 1, 1);
+
+        description2 = new QLabel(widget);
+        description2->setObjectName(QString::fromUtf8("description2"));
+
+        gridLayout->addWidget(description2, 3, 0, 1, 1);
+
+        image1_2 = new QLabel(widget);
+        image1_2->setObjectName(QString::fromUtf8("image1_2"));
+
+        gridLayout->addWidget(image1_2, 3, 1, 1, 1);
+
+        image2_2 = new QLabel(widget);
+        image2_2->setObjectName(QString::fromUtf8("image2_2"));
+
+        gridLayout->addWidget(image2_2, 3, 2, 1, 1);
+
+        image3_2 = new QLabel(widget);
+        image3_2->setObjectName(QString::fromUtf8("image3_2"));
+
+        gridLayout->addWidget(image3_2, 3, 3, 1, 1);
+
+        mName3 = new QLabel(widget);
+        mName3->setObjectName(QString::fromUtf8("mName3"));
+        mName3->setFont(font1);
+
+        gridLayout->addWidget(mName3, 4, 0, 1, 1);
+
+        description3 = new QLabel(widget);
+        description3->setObjectName(QString::fromUtf8("description3"));
+
+        gridLayout->addWidget(description3, 5, 0, 1, 1);
+
+        image1_3 = new QLabel(widget);
+        image1_3->setObjectName(QString::fromUtf8("image1_3"));
+
+        gridLayout->addWidget(image1_3, 5, 1, 1, 1);
+
+        image2_3 = new QLabel(widget);
+        image2_3->setObjectName(QString::fromUtf8("image2_3"));
+
+        gridLayout->addWidget(image2_3, 5, 2, 1, 1);
+
+        image3_3 = new QLabel(widget);
+        image3_3->setObjectName(QString::fromUtf8("image3_3"));
+
+        gridLayout->addWidget(image3_3, 5, 3, 1, 1);
+
+        widget1 = new QWidget(MuseumMain);
+        widget1->setObjectName(QString::fromUtf8("widget1"));
+        widget1->setGeometry(QRect(10, 70, 791, 32));
+        horizontalLayout = new QHBoxLayout(widget1);
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        homeButton = new QPushButton(widget1);
+        homeButton->setObjectName(QString::fromUtf8("homeButton"));
+
+        horizontalLayout->addWidget(homeButton);
+
+        mListButton = new QPushButton(widget1);
+        mListButton->setObjectName(QString::fromUtf8("mListButton"));
+
+        horizontalLayout->addWidget(mListButton);
+
+        itemsViewedButton = new QPushButton(widget1);
+        itemsViewedButton->setObjectName(QString::fromUtf8("itemsViewedButton"));
+
+        horizontalLayout->addWidget(itemsViewedButton);
+
+        myCommentsButton = new QPushButton(widget1);
+        myCommentsButton->setObjectName(QString::fromUtf8("myCommentsButton"));
+
+        horizontalLayout->addWidget(myCommentsButton);
+
+        accountButton = new QPushButton(widget1);
+        accountButton->setObjectName(QString::fromUtf8("accountButton"));
+
+        horizontalLayout->addWidget(accountButton);
 
 
         retranslateUi(MuseumMain);
@@ -134,22 +193,28 @@ public:
     void retranslateUi(QDialog *MuseumMain)
     {
         MuseumMain->setWindowTitle(QCoreApplication::translate("MuseumMain", "Dialog", nullptr));
-        label_6->setText(QCoreApplication::translate("MuseumMain", "image 2", nullptr));
-        label_15->setText(QCoreApplication::translate("MuseumMain", "Image 2", nullptr));
-        label_2->setText(QCoreApplication::translate("MuseumMain", "Museum 3", nullptr));
-        label_10->setText(QCoreApplication::translate("MuseumMain", "Image 2", nullptr));
-        label_9->setText(QCoreApplication::translate("MuseumMain", "Image 1", nullptr));
-        label_12->setText(QCoreApplication::translate("MuseumMain", "Image 3", nullptr));
-        label_13->setText(QCoreApplication::translate("MuseumMain", "Description", nullptr));
-        label_5->setText(QCoreApplication::translate("MuseumMain", "image 1", nullptr));
-        label_11->setText(QCoreApplication::translate("MuseumMain", "Museum 2", nullptr));
-        label_7->setText(QCoreApplication::translate("MuseumMain", "image 3", nullptr));
-        label_16->setText(QCoreApplication::translate("MuseumMain", "Image 3", nullptr));
         label->setText(QCoreApplication::translate("MuseumMain", "<h1>Museum Main</h1>", nullptr));
-        label_4->setText(QCoreApplication::translate("MuseumMain", "Description", nullptr));
-        label_3->setText(QCoreApplication::translate("MuseumMain", "Museum1", nullptr));
-        label_14->setText(QCoreApplication::translate("MuseumMain", "Image 1", nullptr));
-        label_8->setText(QCoreApplication::translate("MuseumMain", "Description", nullptr));
+        logoMM->setText(QString());
+        mName1->setText(QCoreApplication::translate("MuseumMain", "Museum 1", nullptr));
+        description1->setText(QCoreApplication::translate("MuseumMain", "Description", nullptr));
+        image1_1->setText(QCoreApplication::translate("MuseumMain", "image 1", nullptr));
+        image2_1->setText(QCoreApplication::translate("MuseumMain", "image 2", nullptr));
+        image3_1->setText(QCoreApplication::translate("MuseumMain", "image 3", nullptr));
+        mName2->setText(QCoreApplication::translate("MuseumMain", "Museum 2", nullptr));
+        description2->setText(QCoreApplication::translate("MuseumMain", "Description", nullptr));
+        image1_2->setText(QCoreApplication::translate("MuseumMain", "Image 1", nullptr));
+        image2_2->setText(QCoreApplication::translate("MuseumMain", "Image 2", nullptr));
+        image3_2->setText(QCoreApplication::translate("MuseumMain", "Image 3", nullptr));
+        mName3->setText(QCoreApplication::translate("MuseumMain", "Museum 3", nullptr));
+        description3->setText(QCoreApplication::translate("MuseumMain", "Description", nullptr));
+        image1_3->setText(QCoreApplication::translate("MuseumMain", "Image 1", nullptr));
+        image2_3->setText(QCoreApplication::translate("MuseumMain", "Image 2", nullptr));
+        image3_3->setText(QCoreApplication::translate("MuseumMain", "Image 3", nullptr));
+        homeButton->setText(QCoreApplication::translate("MuseumMain", "Home", nullptr));
+        mListButton->setText(QCoreApplication::translate("MuseumMain", "Museum list", nullptr));
+        itemsViewedButton->setText(QCoreApplication::translate("MuseumMain", "Items Viewed", nullptr));
+        myCommentsButton->setText(QCoreApplication::translate("MuseumMain", "My Comments", nullptr));
+        accountButton->setText(QCoreApplication::translate("MuseumMain", "Account", nullptr));
     } // retranslateUi
 
 };

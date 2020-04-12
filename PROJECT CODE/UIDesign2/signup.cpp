@@ -74,11 +74,11 @@ void SignUp::logInfo(string user, string pass, string name, string email)
     }
     //Creating query from input
     string s1 = "insert into userTable values('";
-    s1.append(name);
-    s1.append("', '");
     s1.append(user);
     s1.append("', '");
     s1.append(pass);
+    s1.append("', '");
+    s1.append(name);
     s1.append("', '");
     s1.append(email);
     s1.append("')");
