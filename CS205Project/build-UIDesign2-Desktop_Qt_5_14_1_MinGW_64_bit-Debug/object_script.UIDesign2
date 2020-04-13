@@ -1,0 +1,12 @@
+accountcurator.o
+accountedit.o
+main.o
+login.o
+museummain.o
+signup.o
+qrc_MoM_Logo.o
+moc_accountcurator.o
+moc_accountedit.o
+moc_login.o
+moc_museummain.o
+moc_signup.o
