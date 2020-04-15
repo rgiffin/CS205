@@ -3,6 +3,7 @@
 
 #include "accountedit.h"
 #include "museummain.h"
+#include "user.h"
 
 #include <QDialog>
 
@@ -17,6 +18,11 @@ class MuseumList;
 class MyComments;
 class ItemsViewed;
 
+using namespace std;
+
+class User;
+
+
 namespace Ui {
 class accountCurator;
 }
@@ -28,6 +34,8 @@ class accountCurator : public QDialog
 public:
     explicit accountCurator(QWidget *parent = nullptr);
     ~accountCurator();
+
+    void setUser(User u);
 
 private slots:
     void on_pushButton_clicked();
@@ -48,6 +56,8 @@ private:
     MuseumList *ml;
     MyComments *mc;
     ItemsViewed *iv;
+
+    static User* curUser;
 };
 
 #endif // ACCOUNTCURATOR_H

@@ -24,7 +24,8 @@ SOURCES += \
     museumlist.cpp \
     museummain.cpp \
     mycomments.cpp \
-    signup.cpp
+    signup.cpp \
+    user.cpp
 
 HEADERS += \
     accountcurator.h \
@@ -34,7 +35,8 @@ HEADERS += \
     museumlist.h \
     museummain.h \
     mycomments.h \
-    signup.h
+    signup.h \
+    user.h
 
 FORMS += \
     accountcurator.ui \

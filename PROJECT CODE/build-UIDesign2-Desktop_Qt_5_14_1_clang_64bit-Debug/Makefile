@@ -60,7 +60,8 @@ SOURCES       = ../UIDesign2/accountcurator.cpp \
 		../UIDesign2/museumlist.cpp \
 		../UIDesign2/museummain.cpp \
 		../UIDesign2/mycomments.cpp \
-		../UIDesign2/signup.cpp qrc_MoM_Logo.cpp \
+		../UIDesign2/signup.cpp \
+		../UIDesign2/user.cpp qrc_MoM_Logo.cpp \
 		moc_accountcurator.cpp \
 		moc_accountedit.cpp \
 		moc_itemsviewed.cpp \
@@ -78,6 +79,7 @@ OBJECTS       = accountcurator.o \
 		museummain.o \
 		mycomments.o \
 		signup.o \
+		user.o \
 		qrc_MoM_Logo.o \
 		moc_accountcurator.o \
 		moc_accountedit.o \
@@ -293,7 +295,8 @@ DIST          = ../../../../Qt/5.14.1/clang_64/mkspecs/features/spec_pre.prf \
 		../UIDesign2/museumlist.h \
 		../UIDesign2/museummain.h \
 		../UIDesign2/mycomments.h \
-		../UIDesign2/signup.h ../UIDesign2/accountcurator.cpp \
+		../UIDesign2/signup.h \
+		../UIDesign2/user.h ../UIDesign2/accountcurator.cpp \
 		../UIDesign2/accountedit.cpp \
 		../UIDesign2/itemsviewed.cpp \
 		../UIDesign2/main.cpp \
@@ -301,7 +304,8 @@ DIST          = ../../../../Qt/5.14.1/clang_64/mkspecs/features/spec_pre.prf \
 		../UIDesign2/museumlist.cpp \
 		../UIDesign2/museummain.cpp \
 		../UIDesign2/mycomments.cpp \
-		../UIDesign2/signup.cpp
+		../UIDesign2/signup.cpp \
+		../UIDesign2/user.cpp
 QMAKE_TARGET  = UIDesign2
 DESTDIR       = 
 TARGET        = UIDesign2.app/Contents/MacOS/UIDesign2
@@ -766,8 +770,8 @@ distdir: FORCE
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../UIDesign2/MoM_Logo.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents ../../../../Qt/5.14.1/clang_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../UIDesign2/accountcurator.h ../UIDesign2/accountedit.h ../UIDesign2/itemsviewed.h ../UIDesign2/login.h ../UIDesign2/museumlist.h ../UIDesign2/museummain.h ../UIDesign2/mycomments.h ../UIDesign2/signup.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../UIDesign2/accountcurator.cpp ../UIDesign2/accountedit.cpp ../UIDesign2/itemsviewed.cpp ../UIDesign2/main.cpp ../UIDesign2/login.cpp ../UIDesign2/museumlist.cpp ../UIDesign2/museummain.cpp ../UIDesign2/mycomments.cpp ../UIDesign2/signup.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../UIDesign2/accountcurator.h ../UIDesign2/accountedit.h ../UIDesign2/itemsviewed.h ../UIDesign2/login.h ../UIDesign2/museumlist.h ../UIDesign2/museummain.h ../UIDesign2/mycomments.h ../UIDesign2/signup.h ../UIDesign2/user.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../UIDesign2/accountcurator.cpp ../UIDesign2/accountedit.cpp ../UIDesign2/itemsviewed.cpp ../UIDesign2/main.cpp ../UIDesign2/login.cpp ../UIDesign2/museumlist.cpp ../UIDesign2/museummain.cpp ../UIDesign2/mycomments.cpp ../UIDesign2/signup.cpp ../UIDesign2/user.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../UIDesign2/accountcurator.ui ../UIDesign2/accountedit.ui ../UIDesign2/itemsviewed.ui ../UIDesign2/login.ui ../UIDesign2/museumlist.ui ../UIDesign2/museummain.ui ../UIDesign2/mycomments.ui ../UIDesign2/signup.ui $(DISTDIR)/
 	$(COPY_FILE) --parents UIDesign2_en_US.ts $(DISTDIR)/
 
@@ -822,6 +826,7 @@ moc_accountcurator.cpp: ../UIDesign2/accountcurator.h \
 		../UIDesign2/museumlist.h \
 		../UIDesign2/itemsviewed.h \
 		../UIDesign2/mycomments.h \
+		../UIDesign2/user.h \
 		moc_predefs.h \
 		../../../../Qt/5.14.1/clang_64/bin/moc
 	/Users/jordanyoder/Qt/5.14.1/clang_64/bin/moc $(DEFINES) --include '/Users/jordanyoder/Desktop/cs205/PROJECT CODE/build-UIDesign2-Desktop_Qt_5_14_1_clang_64bit-Debug/moc_predefs.h' -I/Users/jordanyoder/Qt/5.14.1/clang_64/mkspecs/macx-clang -I'/Users/jordanyoder/Desktop/cs205/PROJECT CODE/UIDesign2' -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtGui.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtSql.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/Users/jordanyoder/Qt/5.14.1/clang_64/lib ../UIDesign2/accountcurator.h -o moc_accountcurator.cpp
@@ -835,6 +840,7 @@ moc_accountedit.cpp: ../UIDesign2/accountedit.h \
 		../UIDesign2/museumlist.h \
 		../UIDesign2/itemsviewed.h \
 		../UIDesign2/mycomments.h \
+		../UIDesign2/user.h \
 		moc_predefs.h \
 		../../../../Qt/5.14.1/clang_64/bin/moc
 	/Users/jordanyoder/Qt/5.14.1/clang_64/bin/moc $(DEFINES) --include '/Users/jordanyoder/Desktop/cs205/PROJECT CODE/build-UIDesign2-Desktop_Qt_5_14_1_clang_64bit-Debug/moc_predefs.h' -I/Users/jordanyoder/Qt/5.14.1/clang_64/mkspecs/macx-clang -I'/Users/jordanyoder/Desktop/cs205/PROJECT CODE/UIDesign2' -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtGui.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtSql.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/Users/jordanyoder/Qt/5.14.1/clang_64/lib ../UIDesign2/accountedit.h -o moc_accountedit.cpp
@@ -848,6 +854,7 @@ moc_itemsviewed.cpp: ../UIDesign2/itemsviewed.h \
 		../UIDesign2/museumlist.h \
 		../UIDesign2/itemsviewed.h \
 		../UIDesign2/mycomments.h \
+		../UIDesign2/user.h \
 		moc_predefs.h \
 		../../../../Qt/5.14.1/clang_64/bin/moc
 	/Users/jordanyoder/Qt/5.14.1/clang_64/bin/moc $(DEFINES) --include '/Users/jordanyoder/Desktop/cs205/PROJECT CODE/build-UIDesign2-Desktop_Qt_5_14_1_clang_64bit-Debug/moc_predefs.h' -I/Users/jordanyoder/Qt/5.14.1/clang_64/mkspecs/macx-clang -I'/Users/jordanyoder/Desktop/cs205/PROJECT CODE/UIDesign2' -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtGui.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtSql.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/Users/jordanyoder/Qt/5.14.1/clang_64/lib ../UIDesign2/itemsviewed.h -o moc_itemsviewed.cpp
@@ -860,6 +867,7 @@ moc_login.cpp: ../UIDesign2/login.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qdialog.h \
 		../UIDesign2/accountcurator.h \
 		../UIDesign2/accountedit.h \
+		../UIDesign2/user.h \
 		../UIDesign2/museumlist.h \
 		../UIDesign2/itemsviewed.h \
 		../UIDesign2/mycomments.h \
@@ -893,6 +901,7 @@ moc_museumlist.cpp: ../UIDesign2/museumlist.h \
 		../UIDesign2/museumlist.h \
 		../UIDesign2/itemsviewed.h \
 		../UIDesign2/mycomments.h \
+		../UIDesign2/user.h \
 		moc_predefs.h \
 		../../../../Qt/5.14.1/clang_64/bin/moc
 	/Users/jordanyoder/Qt/5.14.1/clang_64/bin/moc $(DEFINES) --include '/Users/jordanyoder/Desktop/cs205/PROJECT CODE/build-UIDesign2-Desktop_Qt_5_14_1_clang_64bit-Debug/moc_predefs.h' -I/Users/jordanyoder/Qt/5.14.1/clang_64/mkspecs/macx-clang -I'/Users/jordanyoder/Desktop/cs205/PROJECT CODE/UIDesign2' -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtGui.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtSql.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/Users/jordanyoder/Qt/5.14.1/clang_64/lib ../UIDesign2/museumlist.h -o moc_museumlist.cpp
@@ -906,6 +915,7 @@ moc_museummain.cpp: ../UIDesign2/museummain.h \
 		../UIDesign2/museumlist.h \
 		../UIDesign2/itemsviewed.h \
 		../UIDesign2/mycomments.h \
+		../UIDesign2/user.h \
 		moc_predefs.h \
 		../../../../Qt/5.14.1/clang_64/bin/moc
 	/Users/jordanyoder/Qt/5.14.1/clang_64/bin/moc $(DEFINES) --include '/Users/jordanyoder/Desktop/cs205/PROJECT CODE/build-UIDesign2-Desktop_Qt_5_14_1_clang_64bit-Debug/moc_predefs.h' -I/Users/jordanyoder/Qt/5.14.1/clang_64/mkspecs/macx-clang -I'/Users/jordanyoder/Desktop/cs205/PROJECT CODE/UIDesign2' -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtGui.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtSql.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/Users/jordanyoder/Qt/5.14.1/clang_64/lib ../UIDesign2/museummain.h -o moc_museummain.cpp
@@ -919,6 +929,7 @@ moc_mycomments.cpp: ../UIDesign2/mycomments.h \
 		../UIDesign2/museumlist.h \
 		../UIDesign2/itemsviewed.h \
 		../UIDesign2/mycomments.h \
+		../UIDesign2/user.h \
 		moc_predefs.h \
 		../../../../Qt/5.14.1/clang_64/bin/moc
 	/Users/jordanyoder/Qt/5.14.1/clang_64/bin/moc $(DEFINES) --include '/Users/jordanyoder/Desktop/cs205/PROJECT CODE/build-UIDesign2-Desktop_Qt_5_14_1_clang_64bit-Debug/moc_predefs.h' -I/Users/jordanyoder/Qt/5.14.1/clang_64/mkspecs/macx-clang -I'/Users/jordanyoder/Desktop/cs205/PROJECT CODE/UIDesign2' -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtGui.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtSql.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/Users/jordanyoder/Qt/5.14.1/clang_64/lib ../UIDesign2/mycomments.h -o moc_mycomments.cpp
@@ -1005,6 +1016,7 @@ accountcurator.o: ../UIDesign2/accountcurator.cpp ../UIDesign2/accountcurator.h 
 		../UIDesign2/museumlist.h \
 		../UIDesign2/itemsviewed.h \
 		../UIDesign2/mycomments.h \
+		../UIDesign2/user.h \
 		ui_accountcurator.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o accountcurator.o ../UIDesign2/accountcurator.cpp
 
@@ -1016,6 +1028,7 @@ accountedit.o: ../UIDesign2/accountedit.cpp ../UIDesign2/accountedit.h \
 		../UIDesign2/museumlist.h \
 		../UIDesign2/itemsviewed.h \
 		../UIDesign2/mycomments.h \
+		../UIDesign2/user.h \
 		ui_accountedit.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o accountedit.o ../UIDesign2/accountedit.cpp
 
@@ -1027,6 +1040,7 @@ itemsviewed.o: ../UIDesign2/itemsviewed.cpp ../UIDesign2/itemsviewed.h \
 		../UIDesign2/museummain.h \
 		../UIDesign2/museumlist.h \
 		../UIDesign2/mycomments.h \
+		../UIDesign2/user.h \
 		ui_itemsviewed.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o itemsviewed.o ../UIDesign2/itemsviewed.cpp
 
@@ -1038,6 +1052,7 @@ main.o: ../UIDesign2/main.cpp ../UIDesign2/login.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qdialog.h \
 		../UIDesign2/accountcurator.h \
 		../UIDesign2/accountedit.h \
+		../UIDesign2/user.h \
 		../UIDesign2/museumlist.h \
 		../UIDesign2/itemsviewed.h \
 		../UIDesign2/mycomments.h \
@@ -1070,6 +1085,7 @@ login.o: ../UIDesign2/login.cpp ../UIDesign2/login.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qdialog.h \
 		../UIDesign2/accountcurator.h \
 		../UIDesign2/accountedit.h \
+		../UIDesign2/user.h \
 		../UIDesign2/museumlist.h \
 		../UIDesign2/itemsviewed.h \
 		../UIDesign2/mycomments.h \
@@ -1105,6 +1121,7 @@ museumlist.o: ../UIDesign2/museumlist.cpp ../UIDesign2/museumlist.h \
 		../UIDesign2/museummain.h \
 		../UIDesign2/itemsviewed.h \
 		../UIDesign2/mycomments.h \
+		../UIDesign2/user.h \
 		ui_museumlist.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o museumlist.o ../UIDesign2/museumlist.cpp
 
@@ -1113,6 +1130,7 @@ museummain.o: ../UIDesign2/museummain.cpp ../UIDesign2/museummain.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qdialog.h \
 		../UIDesign2/accountcurator.h \
 		../UIDesign2/accountedit.h \
+		../UIDesign2/user.h \
 		../UIDesign2/museumlist.h \
 		../UIDesign2/itemsviewed.h \
 		../UIDesign2/mycomments.h \
@@ -1127,6 +1145,7 @@ mycomments.o: ../UIDesign2/mycomments.cpp ../UIDesign2/mycomments.h \
 		../UIDesign2/museummain.h \
 		../UIDesign2/museumlist.h \
 		../UIDesign2/itemsviewed.h \
+		../UIDesign2/user.h \
 		ui_mycomments.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mycomments.o ../UIDesign2/mycomments.cpp
 
@@ -1153,8 +1172,18 @@ signup.o: ../UIDesign2/signup.cpp ../UIDesign2/signup.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QMessageBox \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qmessagebox.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtGui.framework/Headers/QPixmap \
-		../../../../Qt/5.14.1/clang_64/lib/QtGui.framework/Headers/qpixmap.h
+		../../../../Qt/5.14.1/clang_64/lib/QtGui.framework/Headers/qpixmap.h \
+		../UIDesign2/user.h \
+		../UIDesign2/accountcurator.h \
+		../UIDesign2/accountedit.h \
+		../UIDesign2/museummain.h \
+		../UIDesign2/museumlist.h \
+		../UIDesign2/itemsviewed.h \
+		../UIDesign2/mycomments.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o signup.o ../UIDesign2/signup.cpp
+
+user.o: ../UIDesign2/user.cpp ../UIDesign2/user.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o user.o ../UIDesign2/user.cpp
 
 qrc_MoM_Logo.o: qrc_MoM_Logo.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_MoM_Logo.o qrc_MoM_Logo.cpp
