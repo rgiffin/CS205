@@ -107,7 +107,7 @@
      </widget>
     </item>
     <item row="0" column="1">
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="getName">
       <property name="text">
        <string>getName</string>
       </property>
@@ -121,7 +121,7 @@
      </widget>
     </item>
     <item row="1" column="1">
-     <widget class="QLabel" name="label_5">
+     <widget class="QLabel" name="getEmail">
       <property name="text">
        <string>getEmail</string>
       </property>
@@ -135,7 +135,7 @@
      </widget>
     </item>
     <item row="2" column="1">
-     <widget class="QLabel" name="label_7">
+     <widget class="QLabel" name="getUsername">
       <property name="text">
        <string>getUsername</string>
       </property>
@@ -149,7 +149,7 @@
      </widget>
     </item>
     <item row="3" column="1">
-     <widget class="QLabel" name="label_9">
+     <widget class="QLabel" name="getPassword">
       <property name="text">
        <string>getPassword</string>
       </property>
@@ -163,7 +163,7 @@
      </widget>
     </item>
     <item row="4" column="1">
-     <widget class="QLabel" name="label_11">
+     <widget class="QLabel" name="getAccountType">
       <property name="text">
        <string>getAccountType</string>
       </property>
@@ -207,6 +207,19 @@
     </property>
     <property name="text">
      <string>List Museums here</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addMusButton">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>380</y>
+      <width>281</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add Museum</string>
     </property>
    </widget>
   </widget>

@@ -66,7 +66,7 @@ void Login::on_pushButton_clicked()
 //Returns True or False whether or not account is found
 bool Login::checkUser(string user, string pass)
 {
-    int b;
+
     QSqlDatabase db;
     //connect to database
     db = QSqlDatabase::addDatabase("QSQLITE");
@@ -107,4 +107,5 @@ bool Login::checkUser(string user, string pass)
             return false;
         }
     }
+    return false;
 }

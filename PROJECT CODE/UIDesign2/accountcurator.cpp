@@ -1,6 +1,9 @@
 #include "accountcurator.h"
 #include "ui_accountcurator.h"
 
+
+User* accountCurator::curUser;
+
 accountCurator::accountCurator(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::accountCurator)
@@ -57,3 +60,20 @@ void accountCurator::on_itemsViewedButton_clicked()
     hide();
 }
 
+void accountCurator::setUser(User u)
+{
+    curUser = &u;
+    QString name = QString::fromStdString((curUser->getName()));
+    QString username = QString::fromStdString((curUser->getUsername()));
+    QString password = QString::fromStdString((curUser->getPassword()));
+    QString type = QString::fromStdString((curUser->getType()));
+    QString email = QString::fromStdString((curUser->getEmail()));
+
+
+    ui->getName->setText(name);
+    ui->getUsername->setText(username);
+    ui->getPassword->setText(password);
+    ui->getAccountType->setText(type);
+    ui->getEmail->setText(email);
+
+}
