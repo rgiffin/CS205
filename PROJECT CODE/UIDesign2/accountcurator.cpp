@@ -10,9 +10,9 @@ accountCurator::accountCurator(QWidget *parent) :
 {
     ui->setupUi(this);
     QPixmap pix(":/resources/images/logo.png");
-    int width = ui->logoMM->width();
-    int height = ui->logoMM->height();
-    ui->logoMM->setPixmap(pix.scaled(width,height,Qt::KeepAspectRatio));
+    int width = ui->logoMM_2->width();
+    int height = ui->logoMM_2->height();
+    ui->logoMM_2->setPixmap(pix.scaled(width,height,Qt::KeepAspectRatio));
 }
 
 accountCurator::~accountCurator()
@@ -76,4 +76,11 @@ void accountCurator::setUser(User u)
     ui->getAccountType->setText(type);
     ui->getEmail->setText(email);
 
+}
+
+void accountCurator::on_addMusButton_clicked()
+{
+    am = new AddMuseum();
+    am->show();
+    hide();
 }
