@@ -38,11 +38,11 @@ public:
     QGroupBox *groupBox;
     QFormLayout *formLayout;
     QLabel *label_2;
-    QLineEdit *lineEdit;
+    QLineEdit *museumName;
     QLabel *label_3;
-    QPlainTextEdit *plainTextEdit;
+    QPlainTextEdit *museumDescription;
     QLabel *label_4;
-    QLineEdit *lineEdit_2;
+    QLineEdit *museumType;
     QPushButton *pushButton_2;
     QPushButton *pushButton;
 
@@ -103,30 +103,30 @@ public:
 
         formLayout->setWidget(0, QFormLayout::LabelRole, label_2);
 
-        lineEdit = new QLineEdit(groupBox);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+        museumName = new QLineEdit(groupBox);
+        museumName->setObjectName(QString::fromUtf8("museumName"));
 
-        formLayout->setWidget(0, QFormLayout::FieldRole, lineEdit);
+        formLayout->setWidget(0, QFormLayout::FieldRole, museumName);
 
         label_3 = new QLabel(groupBox);
         label_3->setObjectName(QString::fromUtf8("label_3"));
 
         formLayout->setWidget(1, QFormLayout::LabelRole, label_3);
 
-        plainTextEdit = new QPlainTextEdit(groupBox);
-        plainTextEdit->setObjectName(QString::fromUtf8("plainTextEdit"));
+        museumDescription = new QPlainTextEdit(groupBox);
+        museumDescription->setObjectName(QString::fromUtf8("museumDescription"));
 
-        formLayout->setWidget(1, QFormLayout::FieldRole, plainTextEdit);
+        formLayout->setWidget(1, QFormLayout::FieldRole, museumDescription);
 
         label_4 = new QLabel(groupBox);
         label_4->setObjectName(QString::fromUtf8("label_4"));
 
         formLayout->setWidget(2, QFormLayout::LabelRole, label_4);
 
-        lineEdit_2 = new QLineEdit(groupBox);
-        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
+        museumType = new QLineEdit(groupBox);
+        museumType->setObjectName(QString::fromUtf8("museumType"));
 
-        formLayout->setWidget(2, QFormLayout::FieldRole, lineEdit_2);
+        formLayout->setWidget(2, QFormLayout::FieldRole, museumType);
 
         pushButton_2 = new QPushButton(AddMuseum);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));

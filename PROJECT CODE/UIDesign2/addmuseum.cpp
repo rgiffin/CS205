@@ -28,6 +28,11 @@ void AddMuseum::on_pushButton_2_clicked()
 void AddMuseum::on_pushButton_clicked()
 {
     //save museum data
+    QString mName = ui->museumName->text();
+    QString mDescription = ui->museumDescription->toPlainText();
+    QString mType = ui->museumType->text();
+
+
 
     //go back
     ac = new accountCurator();

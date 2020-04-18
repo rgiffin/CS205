@@ -84,3 +84,10 @@ void accountCurator::on_addMusButton_clicked()
     am->show();
     hide();
 }
+
+void accountCurator::on_pushButton_2_clicked()
+{
+    ai = new AddItem();
+    ai->show();
+    hide();
+}
