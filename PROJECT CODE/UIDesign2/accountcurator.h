@@ -6,6 +6,8 @@
 #include "user.h"
 #include "addmuseum.h"
 
+#include "additem.h"
+
 #include <QDialog>
 
 class MuseumMain;
@@ -18,7 +20,7 @@ class AccountEdit;
 class MuseumList;
 class MyComments;
 class ItemsViewed;
-
+class AddItem;
 class AddMuseum;
 
 using namespace std;
@@ -53,6 +55,8 @@ private slots:
 
     void on_addMusButton_clicked();
 
+    void on_pushButton_2_clicked();
+
 private:
     Ui::accountCurator *ui;
 
@@ -62,6 +66,9 @@ private:
     MyComments *mc;
     ItemsViewed *iv;
     AddMuseum *am;
+
+    AddItem *ai;
+
 
     static User* curUser;
 };
