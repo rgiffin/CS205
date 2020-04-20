@@ -29,6 +29,7 @@ AddItem::~AddItem()
 void AddItem::on_pushButton_2_clicked()
 {
     ac = new accountCurator();
+    ac->setUName(username);
     ac->show();
     hide();
 }
@@ -50,6 +51,7 @@ void AddItem::on_pushButton_clicked()
 
 
     ac = new accountCurator();
+    ac->setUName(username);
     ac->show();
     hide();
 }
@@ -68,9 +70,15 @@ void AddItem::on_addImage_clicked()
     }
 
 
+}
 
 
+void AddItem::setUName(std::string u)
+{
+    username = u;
+}
 
-
-
+std::string AddItem::getUName()
+{
+    return username;
 }

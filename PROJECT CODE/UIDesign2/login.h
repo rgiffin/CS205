@@ -22,6 +22,9 @@ public:
     ~Login();
     bool checkUser(string, string);
 
+    void setUName(std::string u);
+    std::string getUName();
+
 private slots:
     void on_pushButton_2_clicked();
 
@@ -32,5 +35,7 @@ private:
     Ui::Login *ui;
     MuseumMain *mu;
     SignUp *su;
+
+    std::string username;
 };
 #endif // LOGIN_H

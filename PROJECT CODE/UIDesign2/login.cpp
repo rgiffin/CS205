@@ -52,6 +52,7 @@ void Login::on_pushButton_clicked()
         ui->statusbar->showMessage("Username and Password are correct", 5000);
         hide();
         mu = new MuseumMain(this);
+        mu->setUName(username.toStdString());
         mu->show();
     }
     else
@@ -108,4 +109,15 @@ bool Login::checkUser(string user, string pass)
         }
     }
     return false;
+}
+
+
+void Login::setUName(std::string u)
+{
+    username = u;
+}
+
+std::string Login::getUName()
+{
+    return username;
 }

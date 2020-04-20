@@ -31,6 +31,9 @@ public:
     explicit MuseumMain(QWidget *parent = nullptr);
     ~MuseumMain();
 
+    void setUName(std::string u);
+    std::string getUName();
+
 private slots:
     void on_mListButton_clicked();
 
@@ -49,6 +52,7 @@ private:
     MyComments *mc;
 
 
+    std::string username;
 
 };
 

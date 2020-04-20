@@ -21,6 +21,7 @@ void MuseumMain::on_mListButton_clicked()
 {
     //go to museum list page
     ml = new MuseumList();
+    ml->setUName(username);
     ml->show();
     hide();
 }
@@ -29,6 +30,7 @@ void MuseumMain::on_itemsViewedButton_clicked()
 {
     //go to items viewed list
     iv = new ItemsViewed();
+    iv->setUName(username);
     iv->show();
     hide();
 }
@@ -37,6 +39,7 @@ void MuseumMain::on_myCommentsButton_clicked()
 {
     //go to my comments
     mc = new MyComments();
+    mc->setUName(username);
     mc->show();
     hide();
 }
@@ -49,6 +52,7 @@ void MuseumMain::on_accountButton_clicked()
     if(1>0)
     {
         ac = new accountCurator();
+        ac->setUName(username);
         ac->show();
         hide();
     }
@@ -56,4 +60,15 @@ void MuseumMain::on_accountButton_clicked()
     {
 
     }
+}
+
+
+void MuseumMain::setUName(std::string u)
+{
+    username = u;
+}
+
+std::string MuseumMain::getUName()
+{
+    return username;
 }

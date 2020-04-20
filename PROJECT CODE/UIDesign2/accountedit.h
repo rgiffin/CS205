@@ -21,6 +21,9 @@ public:
     explicit AccountEdit(QWidget *parent = nullptr);
     ~AccountEdit();
 
+    void setUName(std::string u);
+    std::string getUName();
+
 private slots:
     void on_pushButton_clicked();
 
@@ -35,6 +38,7 @@ private:
 
     MuseumMain *mu;
 
+    std::string username;
 };
 
 #endif // ACCOUNTEDIT_H

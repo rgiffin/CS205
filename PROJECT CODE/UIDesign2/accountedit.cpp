@@ -35,6 +35,7 @@ void AccountEdit::on_pushButton_clicked()
 
 
     ac = new accountCurator();
+    ac->setUName(username.toStdString());
     ac->show();
     hide();
 }
@@ -43,6 +44,7 @@ void AccountEdit::on_pushButton_clicked()
 void AccountEdit::on_pushButton_2_clicked()
 {
     ac = new accountCurator();
+    ac->setUName(username);
     ac->show();
     hide();
 }
@@ -52,6 +54,17 @@ void AccountEdit::on_pushButton_2_clicked()
 void AccountEdit::on_homeButton_clicked()
 {
     mu = new MuseumMain();
+    mu->setUName(username);
     mu->show();
     hide();
+}
+
+void AccountEdit::setUName(std::string u)
+{
+    username = u;
+}
+
+std::string AccountEdit::getUName()
+{
+    return username;
 }
