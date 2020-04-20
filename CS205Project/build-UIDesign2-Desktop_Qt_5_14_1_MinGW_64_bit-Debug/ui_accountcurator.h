@@ -35,18 +35,22 @@ public:
     QGroupBox *groupBox;
     QFormLayout *formLayout;
     QLabel *label_2;
-    QLabel *label_3;
+    QLabel *getName;
     QLabel *label_4;
-    QLabel *label_5;
+    QLabel *getEmail;
     QLabel *label_6;
-    QLabel *label_7;
+    QLabel *getUsername;
     QLabel *label_8;
-    QLabel *label_9;
+    QLabel *getPassword;
     QLabel *label_10;
-    QLabel *label_11;
+    QLabel *getAccountType;
     QPushButton *pushButton;
     QGroupBox *groupBox_2;
     QLabel *label_12;
+    QPushButton *addMusButton;
+    QPushButton *pushButton_2;
+    QLabel *logoMM;
+    QLabel *logoMM_2;
 
     void setupUi(QDialog *accountCurator)
     {
@@ -106,50 +110,50 @@ public:
 
         formLayout->setWidget(0, QFormLayout::LabelRole, label_2);
 
-        label_3 = new QLabel(groupBox);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
+        getName = new QLabel(groupBox);
+        getName->setObjectName(QString::fromUtf8("getName"));
 
-        formLayout->setWidget(0, QFormLayout::FieldRole, label_3);
+        formLayout->setWidget(0, QFormLayout::FieldRole, getName);
 
         label_4 = new QLabel(groupBox);
         label_4->setObjectName(QString::fromUtf8("label_4"));
 
         formLayout->setWidget(1, QFormLayout::LabelRole, label_4);
 
-        label_5 = new QLabel(groupBox);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
+        getEmail = new QLabel(groupBox);
+        getEmail->setObjectName(QString::fromUtf8("getEmail"));
 
-        formLayout->setWidget(1, QFormLayout::FieldRole, label_5);
+        formLayout->setWidget(1, QFormLayout::FieldRole, getEmail);
 
         label_6 = new QLabel(groupBox);
         label_6->setObjectName(QString::fromUtf8("label_6"));
 
         formLayout->setWidget(2, QFormLayout::LabelRole, label_6);
 
-        label_7 = new QLabel(groupBox);
-        label_7->setObjectName(QString::fromUtf8("label_7"));
+        getUsername = new QLabel(groupBox);
+        getUsername->setObjectName(QString::fromUtf8("getUsername"));
 
-        formLayout->setWidget(2, QFormLayout::FieldRole, label_7);
+        formLayout->setWidget(2, QFormLayout::FieldRole, getUsername);
 
         label_8 = new QLabel(groupBox);
         label_8->setObjectName(QString::fromUtf8("label_8"));
 
         formLayout->setWidget(3, QFormLayout::LabelRole, label_8);
 
-        label_9 = new QLabel(groupBox);
-        label_9->setObjectName(QString::fromUtf8("label_9"));
+        getPassword = new QLabel(groupBox);
+        getPassword->setObjectName(QString::fromUtf8("getPassword"));
 
-        formLayout->setWidget(3, QFormLayout::FieldRole, label_9);
+        formLayout->setWidget(3, QFormLayout::FieldRole, getPassword);
 
         label_10 = new QLabel(groupBox);
         label_10->setObjectName(QString::fromUtf8("label_10"));
 
         formLayout->setWidget(4, QFormLayout::LabelRole, label_10);
 
-        label_11 = new QLabel(groupBox);
-        label_11->setObjectName(QString::fromUtf8("label_11"));
+        getAccountType = new QLabel(groupBox);
+        getAccountType->setObjectName(QString::fromUtf8("getAccountType"));
 
-        formLayout->setWidget(4, QFormLayout::FieldRole, label_11);
+        formLayout->setWidget(4, QFormLayout::FieldRole, getAccountType);
 
         pushButton = new QPushButton(groupBox);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
@@ -162,7 +166,19 @@ public:
         groupBox_2->setFont(font1);
         label_12 = new QLabel(groupBox_2);
         label_12->setObjectName(QString::fromUtf8("label_12"));
-        label_12->setGeometry(QRect(10, 50, 161, 16));
+        label_12->setGeometry(QRect(10, 60, 161, 21));
+        addMusButton = new QPushButton(groupBox_2);
+        addMusButton->setObjectName(QString::fromUtf8("addMusButton"));
+        addMusButton->setGeometry(QRect(110, 380, 281, 32));
+        pushButton_2 = new QPushButton(groupBox_2);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setGeometry(QRect(280, 60, 113, 32));
+        logoMM = new QLabel(accountCurator);
+        logoMM->setObjectName(QString::fromUtf8("logoMM"));
+        logoMM->setGeometry(QRect(700, 0, 111, 71));
+        logoMM_2 = new QLabel(accountCurator);
+        logoMM_2->setObjectName(QString::fromUtf8("logoMM_2"));
+        logoMM_2->setGeometry(QRect(700, 0, 111, 71));
 
         retranslateUi(accountCurator);
 
@@ -180,18 +196,22 @@ public:
         accountButton->setText(QCoreApplication::translate("accountCurator", "Account", nullptr));
         groupBox->setTitle(QCoreApplication::translate("accountCurator", "Account Info", nullptr));
         label_2->setText(QCoreApplication::translate("accountCurator", "<b>Name:</b>", nullptr));
-        label_3->setText(QCoreApplication::translate("accountCurator", "getName", nullptr));
+        getName->setText(QCoreApplication::translate("accountCurator", "getName", nullptr));
         label_4->setText(QCoreApplication::translate("accountCurator", "<b>Email:</b>", nullptr));
-        label_5->setText(QCoreApplication::translate("accountCurator", "getEmail", nullptr));
+        getEmail->setText(QCoreApplication::translate("accountCurator", "getEmail", nullptr));
         label_6->setText(QCoreApplication::translate("accountCurator", "<b>Username:</b>", nullptr));
-        label_7->setText(QCoreApplication::translate("accountCurator", "getUsername", nullptr));
+        getUsername->setText(QCoreApplication::translate("accountCurator", "getUsername", nullptr));
         label_8->setText(QCoreApplication::translate("accountCurator", "<b>Password:</b>", nullptr));
-        label_9->setText(QCoreApplication::translate("accountCurator", "getPassword", nullptr));
+        getPassword->setText(QCoreApplication::translate("accountCurator", "getPassword", nullptr));
         label_10->setText(QCoreApplication::translate("accountCurator", "<b>Account Type:</b>", nullptr));
-        label_11->setText(QCoreApplication::translate("accountCurator", "getAccountType", nullptr));
+        getAccountType->setText(QCoreApplication::translate("accountCurator", "getAccountType", nullptr));
         pushButton->setText(QCoreApplication::translate("accountCurator", "Edit", nullptr));
         groupBox_2->setTitle(QCoreApplication::translate("accountCurator", "My Museums", nullptr));
         label_12->setText(QCoreApplication::translate("accountCurator", "List Museums here", nullptr));
+        addMusButton->setText(QCoreApplication::translate("accountCurator", "Add Museum", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("accountCurator", "Add Item", nullptr));
+        logoMM->setText(QString());
+        logoMM_2->setText(QString());
     } // retranslateUi
 
 };

@@ -35,9 +35,9 @@ void SignUp::on_pushButton_clicked()
     QString type = "";
 
     if(ui->Viewer->isChecked())
-        type = "Viewer";
+        type = "viewer";
     if(ui->Curator->isChecked())
-        type = "Curator";
+        type = "curator";
 
     if(password == confP)
     {
@@ -49,7 +49,7 @@ void SignUp::on_pushButton_clicked()
         std::string e = email.toStdString();
         std::string t = type.toStdString();
 
-        logInfo(u, p, n, e);
+        logInfo(u, p, n, e, t);
         User user(u,p,e,n,t);
 
         accountCurator x;
@@ -69,7 +69,7 @@ void SignUp::on_pushButton_clicked()
 }
 
 //Puts user info into the SQL Database
-void SignUp::logInfo(string user, string pass, string name, string email)
+void SignUp::logInfo(string user, string pass, string name, string email, string type)
 {
     QSqlDatabase db;
     //connect to database
@@ -90,6 +90,8 @@ void SignUp::logInfo(string user, string pass, string name, string email)
     s1.append(name);
     s1.append("', '");
     s1.append(email);
+    s1.append("', '");
+    s1.append(type);
     s1.append("')");
     char s2[s1.size()+1];
     strcpy(s2,s1.c_str());
