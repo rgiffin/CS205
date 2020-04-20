@@ -55,13 +55,32 @@ void AccountEdit::on_homeButton_clicked()
     hide();
 }
 
-void AccountEdit::getAccInfo(string user)
-{
-
-
-}
 
 void AccountEdit::editAccount(string user, string password, string email, string name, string type)
 {
+    QSqlDatabase db;
+    //connect to database
+    db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("dbv2.sqlite");
 
+    //Opens database
+    if(!db.open())
+    {
+        cout << "DATABASE COULD NOT BE OPENED" << endl;
+    }
+
+    //Creates SQL Query
+    string s1 = "SELECT * FROM userTable WHERE user = ";
+    s1.append("'");
+    s1.append(user);
+    s1.append("'");
+    char s2[s1.size()+1];
+    strcpy(s2,s1.c_str());
+    QSqlQuery query;
+    //Checks if code can be run, then checks if it comes up with a match
+    if(!query.exec(s2))
+    {
+        cout << "DATABASE MALFUNCTION";
+    }
+    query.next();
 }

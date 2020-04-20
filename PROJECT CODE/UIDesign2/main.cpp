@@ -18,7 +18,7 @@ void openDatabases()
     }
     QSqlQuery query;
     query.exec("create table itemTable (name varchar(100), description varchar(200), artist varchar(30))");
-    query.exec("create table userTable(user varchar(50), pass varchar(50), name varchar(50), email varchar(75))");
+    query.exec("create table userTable(user varchar(50), pass varchar(50), name varchar(50), email varchar(75), type varchar(10))");
 }
 
 int main(int argc, char *argv[])
