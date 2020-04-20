@@ -21,6 +21,7 @@ void AddMuseum::on_pushButton_2_clicked()
 {
     //canceled
     ac = new accountCurator();
+    ac->setUName(username);
     ac->show();
     hide();
 }
@@ -36,6 +37,18 @@ void AddMuseum::on_pushButton_clicked()
 
     //go back
     ac = new accountCurator();
+    ac->setUName(username);
     ac->show();
     hide();
+}
+
+
+void AddMuseum::setUName(std::string u)
+{
+    username = u;
+}
+
+std::string AddMuseum::getUName()
+{
+    return username;
 }

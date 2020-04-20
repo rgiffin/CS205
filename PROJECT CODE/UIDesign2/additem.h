@@ -19,6 +19,9 @@ public:
     explicit AddItem(QWidget *parent = nullptr);
     ~AddItem();
 
+    void setUName(std::string u);
+    std::string getUName();
+
 private slots:
     void on_pushButton_2_clicked();
 
@@ -32,6 +35,8 @@ private:
     accountCurator *ac;
 
     QString filename;
+
+    std::string username;
 };
 
 #endif // ADDITEM_H

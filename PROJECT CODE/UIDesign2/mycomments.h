@@ -27,6 +27,9 @@ public:
     explicit MyComments(QWidget *parent = nullptr);
     ~MyComments();
 
+    void setUName(std::string u);
+    std::string getUName();
+
 private slots:
     void on_itemsViewedButton_clicked();
 
@@ -44,6 +47,7 @@ private:
     MuseumList *ml;
     ItemsViewed *iv;
 
+    std::string username;
 };
 
 #endif // MYCOMMENTS_H

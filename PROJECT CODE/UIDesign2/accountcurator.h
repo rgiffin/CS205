@@ -48,6 +48,12 @@ public:
 
     void setUser(User u);
 
+    void setUName(std::string u);
+    std::string getUName();
+
+
+
+
 private slots:
     void on_pushButton_clicked();
 
@@ -75,6 +81,7 @@ private:
 
     AddItem *ai;
 
+    std::string username;
 
     static User* curUser;
 };

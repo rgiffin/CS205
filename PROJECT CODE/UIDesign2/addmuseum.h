@@ -18,6 +18,9 @@ public:
     explicit AddMuseum(QWidget *parent = nullptr);
     ~AddMuseum();
 
+    void setUName(std::string u);
+    std::string getUName();
+
 private slots:
     void on_pushButton_2_clicked();
 
@@ -27,6 +30,8 @@ private:
     Ui::AddMuseum *ui;
 
     accountCurator *ac;
+
+    std::string username;
 };
 
 #endif // ADDMUSEUM_H

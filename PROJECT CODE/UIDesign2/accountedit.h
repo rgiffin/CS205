@@ -26,6 +26,9 @@ public:
     void editAccount(string, string, string, string, string);
     string currUser;
 
+    void setUName(std::string u);
+    std::string getUName();
+
 private slots:
     void on_pushButton_clicked();
 
@@ -40,6 +43,7 @@ private:
 
     MuseumMain *mu;
 
+    std::string username;
 };
 
 #endif // ACCOUNTEDIT_H

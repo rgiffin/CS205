@@ -20,6 +20,8 @@ public:
     ~SignUp();
     void logInfo(string, string, string, string, string);
 
+
+
 private slots:
     void on_pushButton_clicked();
 
