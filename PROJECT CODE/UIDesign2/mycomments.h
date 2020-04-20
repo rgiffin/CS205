@@ -1,55 +1,49 @@
-#ifndef MUSEUMMAIN_H
-#define MUSEUMMAIN_H
+#ifndef MYCOMMENTS_H
+#define MYCOMMENTS_H
 
 #include <QDialog>
 
 #include <accountcurator.h>
+#include <museummain.h>
 #include <museumlist.h>
 #include <itemsviewed.h>
-#include <mycomments.h>
-
-
 
 
 class accountCurator;
+class MuseumMain;
 class MuseumList;
 class ItemsViewed;
-class MyComments;
-
-
 
 
 namespace Ui {
-class MuseumMain;
+class MyComments;
 }
 
-class MuseumMain : public QDialog
+class MyComments : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit MuseumMain(QWidget *parent = nullptr);
-    ~MuseumMain();
+    explicit MyComments(QWidget *parent = nullptr);
+    ~MyComments();
 
 private slots:
-    void on_mListButton_clicked();
-
     void on_itemsViewedButton_clicked();
 
-    void on_myCommentsButton_clicked();
+    void on_homeButton_clicked();
+
+    void on_mListButton_clicked();
 
     void on_accountButton_clicked();
 
 private:
-    Ui::MuseumMain *ui;
+    Ui::MyComments *ui;
 
     accountCurator *ac;
+    MuseumMain *mm;
     MuseumList *ml;
     ItemsViewed *iv;
-    MyComments *mc;
-
-
 
 };
 
-#endif // MUSEUMMAIN_H
+#endif // MYCOMMENTS_H

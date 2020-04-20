@@ -1,10 +1,10 @@
-#ifndef MUSEUMMAIN_H
-#define MUSEUMMAIN_H
+#ifndef MUSEUMLIST_H
+#define MUSEUMLIST_H
 
 #include <QDialog>
 
 #include <accountcurator.h>
-#include <museumlist.h>
+#include <museummain.h>
 #include <itemsviewed.h>
 #include <mycomments.h>
 
@@ -12,27 +12,28 @@
 
 
 class accountCurator;
-class MuseumList;
+class MuseumMain;
 class ItemsViewed;
 class MyComments;
 
 
 
 
+
 namespace Ui {
-class MuseumMain;
+class MuseumList;
 }
 
-class MuseumMain : public QDialog
+class MuseumList : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit MuseumMain(QWidget *parent = nullptr);
-    ~MuseumMain();
+    explicit MuseumList(QWidget *parent = nullptr);
+    ~MuseumList();
 
 private slots:
-    void on_mListButton_clicked();
+    void on_homeButton_clicked();
 
     void on_itemsViewedButton_clicked();
 
@@ -41,15 +42,12 @@ private slots:
     void on_accountButton_clicked();
 
 private:
-    Ui::MuseumMain *ui;
+    Ui::MuseumList *ui;
 
     accountCurator *ac;
-    MuseumList *ml;
+    MuseumMain *mm;
     ItemsViewed *iv;
     MyComments *mc;
-
-
-
 };
 
-#endif // MUSEUMMAIN_H
+#endif // MUSEUMLIST_H

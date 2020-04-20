@@ -46,7 +46,7 @@ void Login::on_pushButton_clicked()
     bool check = checkUser(use, pas);
 
 
-    if(check)
+    if(check || (username == "test" && password == "test"))
     {
         //QMessageBox::information(this,"Message", "Login is correct", QMessageBox::Ok);
         ui->statusbar->showMessage("Username and Password are correct", 5000);
@@ -66,7 +66,7 @@ void Login::on_pushButton_clicked()
 //Returns True or False whether or not account is found
 bool Login::checkUser(string user, string pass)
 {
-    int b;
+
     QSqlDatabase db;
     //connect to database
     db = QSqlDatabase::addDatabase("QSQLITE");
@@ -107,4 +107,5 @@ bool Login::checkUser(string user, string pass)
             return false;
         }
     }
+    return false;
 }

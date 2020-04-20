@@ -3,6 +3,9 @@
 #include "QMessageBox"
 #include <QPixmap>
 
+#include "user.h"
+#include "accountcurator.h"
+
 SignUp::SignUp(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::SignUp)
@@ -44,8 +47,14 @@ void SignUp::on_pushButton_clicked()
         std::string p = password.toStdString();
         std::string n = name.toStdString();
         std::string e = email.toStdString();
+        std::string t = type.toStdString();
 
         logInfo(u, p, n, e);
+        User user(u,p,e,n,t);
+
+        accountCurator x;
+        x.setUser(user);
+
 
         close();
 
