@@ -5,6 +5,9 @@
 #include "museummain.h"
 
 #include <QDialog>
+#include<string>
+#include<QtSql>
+#include<QSqlQuery>
 
 class accountCurator;
 class MuseumMain;
@@ -20,6 +23,8 @@ class AccountEdit : public QDialog
 public:
     explicit AccountEdit(QWidget *parent = nullptr);
     ~AccountEdit();
+    void getAccInfo(string);
+    void editAccount(string, string, string, string, string);
 
 private slots:
     void on_pushButton_clicked();

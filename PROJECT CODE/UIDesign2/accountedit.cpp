@@ -1,6 +1,5 @@
 #include "accountedit.h"
 #include "ui_accountedit.h"
-
 AccountEdit::AccountEdit(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::AccountEdit)
@@ -54,4 +53,15 @@ void AccountEdit::on_homeButton_clicked()
     mu = new MuseumMain();
     mu->show();
     hide();
+}
+
+void AccountEdit::getAccInfo(string user)
+{
+
+
+}
+
+void AccountEdit::editAccount(string user, string password, string email, string name, string type)
+{
+
 }
