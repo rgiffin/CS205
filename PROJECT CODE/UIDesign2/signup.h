@@ -18,7 +18,7 @@ class SignUp : public QDialog
 public:
     explicit SignUp(QWidget *parent = nullptr);
     ~SignUp();
-    void logInfo(string, string, string, string);
+    void logInfo(string, string, string, string, string);
 
 
 

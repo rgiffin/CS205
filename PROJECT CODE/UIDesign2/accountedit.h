@@ -3,9 +3,12 @@
 
 #include "accountcurator.h"
 #include "museummain.h"
-
+#include<iostream>
 #include <QDialog>
-
+#include<string.h>
+#include<QtSql>
+#include<QSqlQuery>
+using namespace std;
 class accountCurator;
 class MuseumMain;
 
@@ -20,6 +23,8 @@ class AccountEdit : public QDialog
 public:
     explicit AccountEdit(QWidget *parent = nullptr);
     ~AccountEdit();
+    void editAccount(string, string, string, string, string);
+    string currUser;
 
     void setUName(std::string u);
     std::string getUName();

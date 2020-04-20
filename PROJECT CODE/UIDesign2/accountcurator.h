@@ -39,6 +39,12 @@ class accountCurator : public QDialog
 public:
     explicit accountCurator(QWidget *parent = nullptr);
     ~accountCurator();
+    void getAccInfo(string);
+    string currUser;
+    string currPass;
+    string currEmail;
+    string currName;
+    string currType;
 
     void setUser(User u);
 

@@ -100,10 +100,12 @@ void accountCurator::on_pushButton_2_clicked()
     hide();
 }
 
+
 void accountCurator::setUName(std::string u)
 {
     username = u;
     ui->getUsername->setText(QString::fromStdString(username));
+    getAccInfo(username);
 }
 
 std::string accountCurator::getUName()
@@ -111,3 +113,57 @@ std::string accountCurator::getUName()
     return username;
 }
 
+//Opens the database and sets some global variables equal to their corresponding results
+void accountCurator::getAccInfo(string user)
+{
+    QSqlDatabase db;
+    //connect to database
+    db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("dbv2.sqlite");
+
+    //Opens database
+    if(!db.open())
+    {
+        cout << "DATABASE COULD NOT BE OPENED" << endl;
+    }
+
+    //Creates SQL Query
+    string s1 = "SELECT * FROM userTable WHERE user = ";
+    s1.append("'");
+    s1.append(user);
+    s1.append("'");
+    char s2[s1.size()+1];
+    strcpy(s2,s1.c_str());
+    QSqlQuery query;
+    //Checks if code can be run, then checks if it comes up with a match
+    if(!query.exec(s2))
+    {
+        cout << "DATABASE MALFUNCTION";
+    }
+    query.next();
+    QString q1 = query.value(1).toString();
+    currPass =  q1.toStdString();
+    cout<< "CurrPass = " << currPass << endl;
+
+    QString q2 = query.value(2).toString();
+    currName = q2.toStdString();
+    cout<< "CurrName = " << currName << endl;
+
+    QString q3 = query.value(3).toString();
+    currEmail = q3.toStdString();
+    cout<< "CurrEmail = " << currEmail << endl;
+
+    QString q4 = query.value(4).toString();
+    currType = q4.toStdString();
+    cout<< "CurrType = " << currType << endl;
+
+
+    ui->getName->setText(QString::fromStdString(currName));
+    ui->getUsername->setText(QString::fromStdString(username));
+    ui->getPassword->setText(QString::fromStdString(currPass));
+    ui->getAccountType->setText(QString::fromStdString(currType));
+    ui->getEmail->setText(QString::fromStdString(currEmail));
+
+
+
+}
