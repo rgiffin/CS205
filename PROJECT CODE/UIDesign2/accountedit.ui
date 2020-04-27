@@ -249,7 +249,7 @@
      </widget>
     </item>
     <item row="5" column="1">
-     <widget class="QCheckBox" name="Viewer">
+     <widget class="QRadioButton" name="Viewer">
       <property name="font">
        <font>
         <family>Yuanti TC</family>
@@ -262,7 +262,7 @@
      </widget>
     </item>
     <item row="6" column="1">
-     <widget class="QCheckBox" name="Curator">
+     <widget class="QRadioButton" name="Curator">
       <property name="font">
        <font>
         <family>Yuanti TC</family>

@@ -2,6 +2,8 @@
 #include "ui_additem.h"
 #include "QFileDialog"
 #include "QDir"
+#include "iostream"
+#include "ostream"
 
 AddItem::AddItem(QWidget *parent) :
     QDialog(parent),
@@ -43,10 +45,14 @@ void AddItem::on_pushButton_clicked()
     QString iDescription = ui->itemDescription->toPlainText();
     QString iType = ui->itemType->text();
 
+    std::size_t found = filename.toStdString().find_last_of("/\\");
+    std::string file = filename.toStdString().substr(found+1);
+
+    cout << file << endl;
     if(!filename.isEmpty())
     {
         QImage pic;
-        pic.save(":/resources/images/"+filename);
+        pic.save(":/resources/images/"+QString::fromStdString(file));
     }
 
 

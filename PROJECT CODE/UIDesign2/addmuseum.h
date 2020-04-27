@@ -4,6 +4,7 @@
 #include <QDialog>
 #include <accountcurator.h>
 
+
 class accountCurator;
 
 namespace Ui {

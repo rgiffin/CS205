@@ -7,10 +7,11 @@
 #include <museummain.h>
 #include <museumlist.h>
 #include <mycomments.h>
+#include "accountviewer.h"
 
 
 
-
+class accountViewer;
 class accountCurator;
 class MuseumMain;
 class MuseumList;
@@ -44,7 +45,7 @@ private slots:
 
 private:
     Ui::ItemsViewed *ui;
-
+    accountViewer *av;
     accountCurator *ac;
     MuseumMain *mm;
     MuseumList *ml;
