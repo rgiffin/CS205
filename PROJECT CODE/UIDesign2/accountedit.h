@@ -29,7 +29,7 @@ class AccountEdit : public QDialog
 public:
     explicit AccountEdit(QWidget *parent = nullptr);
     ~AccountEdit();
-    void editAccount(string, string, string, string, string);
+    void editAccount(string, string, string, string, string, string);
     string currUser;
 
     void setUName(std::string u);

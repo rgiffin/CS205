@@ -80,7 +80,8 @@ std::string AccountEdit::getUName()
     return username;
 }
 
-void AccountEdit::editAccount(string user, string password, string email, string name, string type)
+//Deletes currentUser and creates new account with edited credentials (also changes current user)
+void AccountEdit::editAccount(string currentUser, string newUser, string newPassword, string newEmail, string newName, string newType)
 {
     QSqlDatabase db;
     //connect to database
@@ -94,9 +95,9 @@ void AccountEdit::editAccount(string user, string password, string email, string
     }
 
     //Creates SQL Query
-    string s1 = "SELECT * FROM userTable WHERE user = ";
+    string s1 = "DELETE * FROM userTable WHERE user = ";
     s1.append("'");
-    s1.append(user);
+    s1.append(currentUser);
     s1.append("'");
     char s2[s1.size()+1];
     strcpy(s2,s1.c_str());
@@ -106,5 +107,21 @@ void AccountEdit::editAccount(string user, string password, string email, string
     {
         cout << "DATABASE MALFUNCTION";
     }
-    query.next();
+
+    //Creating query from input
+    s1 = "insert into userTable values('";
+    s1.append(newUser);
+    s1.append("', '");
+    s1.append(newPassword);
+    s1.append("', '");
+    s1.append(newName);
+    s1.append("', '");
+    s1.append(newEmail);
+    s1.append("', '");
+    s1.append(newType);
+    s1.append("')");
+    char s3[s1.size()+1];
+    strcpy(s3,s1.c_str());
+    query.exec(s3);
+    currentUser = newUser;
 }
