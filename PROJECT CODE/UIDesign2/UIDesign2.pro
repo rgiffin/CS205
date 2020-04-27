@@ -18,6 +18,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     accountcurator.cpp \
     accountedit.cpp \
+    accountviewer.cpp \
     additem.cpp \
     addmuseum.cpp \
     itemsviewed.cpp \
@@ -32,6 +33,7 @@ SOURCES += \
 HEADERS += \
     accountcurator.h \
     accountedit.h \
+    accountviewer.h \
     additem.h \
     addmuseum.h \
     itemsviewed.h \
@@ -45,6 +47,7 @@ HEADERS += \
 FORMS += \
     accountcurator.ui \
     accountedit.ui \
+    accountviewer.ui \
     additem.ui \
     addmuseum.ui \
     itemsviewed.ui \

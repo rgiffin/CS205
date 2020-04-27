@@ -32,7 +32,10 @@ void MyComments::on_accountButton_clicked()
     }
     else
     {
-
+        av = new accountViewer();
+        av->setUName(username);
+        av->show();
+        hide();
     }
 }
 void MyComments::on_homeButton_clicked()

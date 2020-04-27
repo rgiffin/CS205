@@ -11,13 +11,13 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QFormLayout>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QRadioButton>
 
 QT_BEGIN_NAMESPACE
 
@@ -38,8 +38,8 @@ public:
     QLabel *label_6;
     QLineEdit *PasswordConf;
     QLabel *label_7;
-    QCheckBox *Viewer;
-    QCheckBox *Curator;
+    QRadioButton *Viewer;
+    QRadioButton *Curator;
     QPushButton *pushButton;
     QLabel *RLogo;
 
@@ -134,13 +134,13 @@ public:
 
         formLayout->setWidget(5, QFormLayout::LabelRole, label_7);
 
-        Viewer = new QCheckBox(groupBox);
+        Viewer = new QRadioButton(groupBox);
         Viewer->setObjectName(QString::fromUtf8("Viewer"));
         Viewer->setFont(font1);
 
         formLayout->setWidget(5, QFormLayout::FieldRole, Viewer);
 
-        Curator = new QCheckBox(groupBox);
+        Curator = new QRadioButton(groupBox);
         Curator->setObjectName(QString::fromUtf8("Curator"));
         Curator->setFont(font1);
 

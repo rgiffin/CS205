@@ -3,14 +3,20 @@
 
 #include "accountcurator.h"
 #include "museummain.h"
+#include "accountviewer.h"
 #include<iostream>
 #include <QDialog>
 #include<string.h>
 #include<QtSql>
 #include<QSqlQuery>
+
+
+
+
 using namespace std;
 class accountCurator;
 class MuseumMain;
+class accountViewer;
 
 namespace Ui {
 class AccountEdit;
@@ -40,7 +46,7 @@ private:
     Ui::AccountEdit *ui;
 
     accountCurator *ac;
-
+    accountViewer *av;
     MuseumMain *mu;
 
     std::string username;

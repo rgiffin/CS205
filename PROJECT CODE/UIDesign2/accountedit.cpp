@@ -33,10 +33,21 @@ void AccountEdit::on_pushButton_clicked()
         type = "Curator";
 
 
-    ac = new accountCurator();
-    ac->setUName(username.toStdString());
-    ac->show();
-    hide();
+    if(type == "Curator")
+    {
+        ac = new accountCurator();
+        ac->setUName(username.toStdString());
+        ac->show();
+        hide();
+    }
+    else
+    {
+        av = new accountViewer();
+        av->setUName(username.toStdString());
+        av->show();
+        hide();
+    }
+
 }
 
 //cancel button pressed

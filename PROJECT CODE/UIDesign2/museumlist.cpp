@@ -50,7 +50,10 @@ void MuseumList::on_accountButton_clicked()
     }
     else
     {
-
+        av = new accountViewer();
+        av->setUName(username);
+        av->show();
+        hide();
     }
 }
 void MuseumList::on_homeButton_clicked()

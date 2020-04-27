@@ -58,7 +58,10 @@ void MuseumMain::on_accountButton_clicked()
     }
     else
     {
-
+        av = new accountViewer();
+        av->setUName(username);
+        av->show();
+        hide();
     }
 }
 
