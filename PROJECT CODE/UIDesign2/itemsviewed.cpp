@@ -41,7 +41,10 @@ void ItemsViewed::on_accountButton_clicked()
     }
     else
     {
-
+        av = new accountViewer();
+        av->setUName(username);
+        av->show();
+        hide();
     }
 }
 void ItemsViewed::on_homeButton_clicked()
