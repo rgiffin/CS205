@@ -52,3 +52,33 @@ std::string AddMuseum::getUName()
 {
     return username;
 }
+
+//logs museum info into the sql table
+void AddMuseum::logInfo(string name, string description, string owner)
+{
+    QSqlDatabase db;
+    //connect to database
+    db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("dbv2.sqlite");
+
+    //Opens database
+    if(!db.open())
+    {
+        cout << "DATABASE COULD NOT BE OPENED" << endl;
+    }
+    //Creating query from input
+    string s1 = "insert into museumTable values('";
+    s1.append(name);
+    s1.append("', '");
+    s1.append(description);
+    s1.append("', '");
+    s1.append(owner);
+    s1.append("')");
+    char s2[s1.size()+1];
+    strcpy(s2,s1.c_str());
+
+    //Adds the item created to the table
+    QSqlQuery query;
+    query.exec(s2);
+
+}

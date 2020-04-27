@@ -18,7 +18,7 @@ class AddMuseum : public QDialog
 public:
     explicit AddMuseum(QWidget *parent = nullptr);
     ~AddMuseum();
-
+    void logInfo(string, string, string);
     void setUName(std::string u);
     std::string getUName();
 
