@@ -33,7 +33,11 @@ void AddMuseum::on_pushButton_clicked()
     QString mDescription = ui->museumDescription->toPlainText();
     QString mType = ui->museumType->text();
 
+    std::string musName = mName.toStdString();
+    std::string musDescription = mDescription.toStdString();
+    std::string musType = mType.toStdString();
 
+    logInfo(musName,musDescription,musType);
 
     //go back
     ac = new accountCurator();
