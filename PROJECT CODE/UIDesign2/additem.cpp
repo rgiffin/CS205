@@ -9,6 +9,7 @@ AddItem::AddItem(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::AddItem)
 {
+    logInfo("paint", "p", "Person", "ryanmurf9", "M1", "C1");
     ui->setupUi(this);
     QPixmap pix(":/resources/images/logo.png");
     int width = ui->logoMM_2->width();
@@ -88,3 +89,39 @@ std::string AddItem::getUName()
 {
     return username;
 }
+
+//Puts item info into the SQL Database
+void AddItem::logInfo(string name, string description, string artist, string owner, string museum, string collection)
+{
+    QSqlDatabase db;
+    //connect to database
+    db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("dbv2.sqlite");
+
+    //Opens database
+    if(!db.open())
+    {
+        cout << "DATABASE COULD NOT BE OPENED" << endl;
+    }
+    //Creating query from input
+    string s1 = "insert into itemTable values('";
+    s1.append(name);
+    s1.append("', '");
+    s1.append(description);
+    s1.append("', '");
+    s1.append(artist);
+    s1.append("', '");
+    s1.append(owner);
+    s1.append("', '");
+    s1.append(museum);
+    s1.append("', '");
+    s1.append(collection);
+    s1.append("')");
+    char s2[s1.size()+1];
+    strcpy(s2,s1.c_str());
+
+    //Adds the item created to the table
+    QSqlQuery query;
+    query.exec(s2);
+}
+

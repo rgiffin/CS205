@@ -1,5 +1,6 @@
 accountcurator.o
 accountedit.o
+accountviewer.o
 additem.o
 addmuseum.o
 itemsviewed.o
@@ -13,6 +14,7 @@ user.o
 qrc_MoM_Logo.o
 moc_accountcurator.o
 moc_accountedit.o
+moc_accountviewer.o
 moc_additem.o
 moc_addmuseum.o
 moc_itemsviewed.o
