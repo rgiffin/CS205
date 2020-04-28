@@ -43,7 +43,20 @@ void AddItem::on_pushButton_clicked()
 
     QString iName = ui->itemName->text();
     QString iDescription = ui->itemDescription->toPlainText();
-    QString iType = ui->itemType->text();
+    QString iMuseum = ui->museum->text();
+    QString iCollection = ui->collection->text();
+    QString iArtist = ui->artist->text();
+
+
+    std::string name = iName.toStdString();
+    std::string description = iDescription.toStdString();
+    std::string artist = iArtist.toStdString();
+    std::string museum = iMuseum.toStdString();
+    std::string collection = iCollection.toStdString();
+
+    logInfo(name, description, artist, username, museum, collection);
+
+
 
     std::size_t found = filename.toStdString().find_last_of("/\\");
     std::string file = filename.toStdString().substr(found+1);

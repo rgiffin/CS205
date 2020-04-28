@@ -33,8 +33,12 @@ public:
     QLabel *label_3;
     QPlainTextEdit *itemDescription;
     QLabel *label_4;
-    QLineEdit *itemType;
+    QLineEdit *collection;
     QPushButton *addImage;
+    QLabel *label_6;
+    QLineEdit *artist;
+    QLabel *label_7;
+    QLineEdit *museum;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
     QWidget *layoutWidget;
@@ -82,17 +86,37 @@ public:
         label_4 = new QLabel(groupBox);
         label_4->setObjectName(QString::fromUtf8("label_4"));
 
-        formLayout->setWidget(2, QFormLayout::LabelRole, label_4);
+        formLayout->setWidget(4, QFormLayout::LabelRole, label_4);
 
-        itemType = new QLineEdit(groupBox);
-        itemType->setObjectName(QString::fromUtf8("itemType"));
+        collection = new QLineEdit(groupBox);
+        collection->setObjectName(QString::fromUtf8("collection"));
 
-        formLayout->setWidget(2, QFormLayout::FieldRole, itemType);
+        formLayout->setWidget(4, QFormLayout::FieldRole, collection);
 
         addImage = new QPushButton(groupBox);
         addImage->setObjectName(QString::fromUtf8("addImage"));
 
-        formLayout->setWidget(3, QFormLayout::FieldRole, addImage);
+        formLayout->setWidget(5, QFormLayout::FieldRole, addImage);
+
+        label_6 = new QLabel(groupBox);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+
+        formLayout->setWidget(2, QFormLayout::LabelRole, label_6);
+
+        artist = new QLineEdit(groupBox);
+        artist->setObjectName(QString::fromUtf8("artist"));
+
+        formLayout->setWidget(2, QFormLayout::FieldRole, artist);
+
+        label_7 = new QLabel(groupBox);
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+
+        formLayout->setWidget(3, QFormLayout::LabelRole, label_7);
+
+        museum = new QLineEdit(groupBox);
+        museum->setObjectName(QString::fromUtf8("museum"));
+
+        formLayout->setWidget(3, QFormLayout::FieldRole, museum);
 
         pushButton = new QPushButton(AddItem);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
@@ -163,8 +187,10 @@ public:
         groupBox->setTitle(QCoreApplication::translate("AddItem", "New Item", nullptr));
         label_2->setText(QCoreApplication::translate("AddItem", "Item Name", nullptr));
         label_3->setText(QCoreApplication::translate("AddItem", "Item Description", nullptr));
-        label_4->setText(QCoreApplication::translate("AddItem", "Item Type", nullptr));
+        label_4->setText(QCoreApplication::translate("AddItem", "Item Collection", nullptr));
         addImage->setText(QCoreApplication::translate("AddItem", "Add Image", nullptr));
+        label_6->setText(QCoreApplication::translate("AddItem", "Artist/Creator", nullptr));
+        label_7->setText(QCoreApplication::translate("AddItem", "Museum to add Item", nullptr));
         pushButton->setText(QCoreApplication::translate("AddItem", "Add Item", nullptr));
         pushButton_2->setText(QCoreApplication::translate("AddItem", "Cancel", nullptr));
         homeButton->setText(QCoreApplication::translate("AddItem", "Home", nullptr));
