@@ -844,10 +844,10 @@ moc_accountcurator.cpp: ../UIDesign2/accountcurator.h \
 		../UIDesign2/museumlist.h \
 		../UIDesign2/itemsviewed.h \
 		../UIDesign2/mycomments.h \
+		../UIDesign2/accountviewer.h \
 		../UIDesign2/user.h \
 		../UIDesign2/addmuseum.h \
 		../UIDesign2/additem.h \
-		../UIDesign2/accountviewer.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QtSql \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlglobal.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qsqldatabase.h \
@@ -912,10 +912,10 @@ moc_accountviewer.cpp: ../UIDesign2/accountviewer.h \
 		../UIDesign2/museumlist.h \
 		../UIDesign2/itemsviewed.h \
 		../UIDesign2/mycomments.h \
+		../UIDesign2/accountviewer.h \
 		../UIDesign2/user.h \
 		../UIDesign2/addmuseum.h \
 		../UIDesign2/additem.h \
-		../UIDesign2/accountviewer.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QtSql \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlglobal.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qsqldatabase.h \
@@ -1304,10 +1304,10 @@ accountedit.o: ../UIDesign2/accountedit.cpp ../UIDesign2/accountedit.h \
 		../UIDesign2/museumlist.h \
 		../UIDesign2/itemsviewed.h \
 		../UIDesign2/mycomments.h \
+		../UIDesign2/accountviewer.h \
 		../UIDesign2/user.h \
 		../UIDesign2/addmuseum.h \
 		../UIDesign2/additem.h \
-		../UIDesign2/accountviewer.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QtSql \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlglobal.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qsqldatabase.h \
