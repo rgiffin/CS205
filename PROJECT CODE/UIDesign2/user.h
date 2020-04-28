@@ -1,6 +1,7 @@
 #ifndef USER_H
 #define USER_H
-
+#include<QtSql>
+#include<QSqlQuery>
 #include "iostream"
 
 using namespace std;
@@ -20,6 +21,7 @@ public:
     std::string getPassword();
     std::string getEmail();
     std::string getType();
+    void getAccInfo(string);
 
     void setUsername(std::string uname);
     void setPassword(std::string pass);

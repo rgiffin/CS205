@@ -17,11 +17,12 @@ void openDatabases()
         cout << "DATABASE COULD NOT BE OPENED" << endl;
     }
     QSqlQuery query;
-    query.exec("create table itemTable (name varchar(100), description varchar(500), artist varchar(100), owner varchar(100), museum varchar(100), collection varchar(100))");
+    query.exec("create table itemTable (name varchar(100), description varchar(500), artist varchar(100), owner varchar(100), museum varchar(100), collection varchar(100), filename TEXT, imagedata BLOB)");
     query.exec("create table userTable (user varchar(50), pass varchar(50), name varchar(50), email varchar(75), type varchar(10))");
-    query.exec("create table commentTable (comment varchar(300), user varchar(200), item varchar(100))");
+    query.exec("create table commentTable (comment varchar(300), user varchar(200), item varchar(100), approved varchar(10))");
     query.exec("create table museumTable (name varchar(300), description varchar(500), owner varchar(200))");
 }
+
 
 int main(int argc, char *argv[])
 {
@@ -30,4 +31,43 @@ int main(int argc, char *argv[])
     Login w;
     w.show();
     return a.exec();
+}
+
+
+
+//takes the approval, comment, and commenter's username and sets it to either true or false
+void approveComment(string approve, string comment, string user)
+{
+
+}
+
+//Creates new comment in SQl Database
+void addComment(string comment, string user, string item, string approval)
+{
+    QSqlDatabase db;
+    //connect to database
+    db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("dbv2.sqlite");
+
+    //Opens database
+    if(!db.open())
+    {
+        cout << "DATABASE COULD NOT BE OPENED" << endl;
+    }
+    //Creating query from input
+    string s1 = "insert into commentTable values('";
+    s1.append(comment);
+    s1.append("', '");
+    s1.append(user);
+    s1.append("', '");
+    s1.append(item);
+    s1.append("', '");
+    s1.append(approval);
+    s1.append("')");
+    char s2[s1.size()+1];
+    strcpy(s2,s1.c_str());
+
+    //Adds the item created to the table
+    QSqlQuery query;
+    query.exec(s2);
 }
