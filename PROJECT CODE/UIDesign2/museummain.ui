@@ -46,7 +46,7 @@
     <string/>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -179,9 +179,30 @@
       </property>
      </widget>
     </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="visit1">
+      <property name="text">
+       <string>Visit Museum1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="visit2">
+      <property name="text">
+       <string>Visit Museum 2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="visit3">
+      <property name="text">
+       <string>Visit Museum 3</string>
+      </property>
+     </widget>
+    </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -228,7 +249,176 @@
     </item>
    </layout>
   </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>540</y>
+     <width>791</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QLabel" name="mName1_2">
+      <property name="font">
+       <font>
+        <family>Skia</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Museum 1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="description1_2">
+      <property name="text">
+       <string>Description</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="image1_4">
+      <property name="text">
+       <string>image 1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLabel" name="image2_4">
+      <property name="text">
+       <string>image 2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLabel" name="image3_4">
+      <property name="text">
+       <string>image 3</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="mName2_2">
+      <property name="font">
+       <font>
+        <family>Skia</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Museum 2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="description2_2">
+      <property name="text">
+       <string>Description</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLabel" name="image1_5">
+      <property name="text">
+       <string>Image 1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QLabel" name="image2_5">
+      <property name="text">
+       <string>Image 2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QLabel" name="image3_5">
+      <property name="text">
+       <string>Image 3</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="mName3_2">
+      <property name="font">
+       <font>
+        <family>Skia</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Museum 3</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="description3_2">
+      <property name="text">
+       <string>Description</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLabel" name="image1_6">
+      <property name="text">
+       <string>Image 1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2">
+     <widget class="QLabel" name="image2_6">
+      <property name="text">
+       <string>Image 2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="3">
+     <widget class="QLabel" name="image3_6">
+      <property name="text">
+       <string>Image 3</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="visit1_2">
+      <property name="text">
+       <string>Visit Museum1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="visit2_2">
+      <property name="text">
+       <string>Visit Museum 2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="visit3_2">
+      <property name="text">
+       <string>Visit Museum 3</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
  </widget>
+ <tabstops>
+  <tabstop>homeButton</tabstop>
+  <tabstop>mListButton</tabstop>
+  <tabstop>itemsViewedButton</tabstop>
+  <tabstop>myCommentsButton</tabstop>
+  <tabstop>accountButton</tabstop>
+  <tabstop>visit1</tabstop>
+  <tabstop>visit2</tabstop>
+  <tabstop>visit3</tabstop>
+  <tabstop>visit3_2</tabstop>
+  <tabstop>visit1_2</tabstop>
+  <tabstop>visit2_2</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

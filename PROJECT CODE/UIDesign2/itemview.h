@@ -1,5 +1,5 @@
-#ifndef MUSEUMMAIN_H
-#define MUSEUMMAIN_H
+#ifndef ITEMVIEW_H
+#define ITEMVIEW_H
 
 #include <QDialog>
 
@@ -8,36 +8,41 @@
 #include <itemsviewed.h>
 #include <mycomments.h>
 #include "accountviewer.h"
+#include "museummain.h"
 #include "museumpage.h"
 
 
-
+class MuseumMain;
 class accountViewer;
 class accountCurator;
 class MuseumList;
 class ItemsViewed;
 class MyComments;
-class MuseumPage;
-
-
-
+class ItemPage;
 
 namespace Ui {
-class MuseumMain;
+class ItemView;
 }
 
-class MuseumMain : public QDialog
+class ItemView : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit MuseumMain(QWidget *parent = nullptr);
-    ~MuseumMain();
+    explicit ItemView(QWidget *parent = nullptr);
+    ~ItemView();
 
     void setUName(std::string u);
     std::string getUName();
 
+    void setMName(std::string m);
+    std::string getMName();
+
+    void setIName(std::string i);
+    std::string getIName();
+
 private slots:
+
     void on_mListButton_clicked();
 
     void on_itemsViewedButton_clicked();
@@ -46,34 +51,33 @@ private slots:
 
     void on_accountButton_clicked();
 
-    void on_visit1_clicked();
+    void on_homeButton_clicked();
 
-    void on_visit2_clicked();
-
-    void on_visit3_clicked();
+    void on_pushButton_4_clicked();
 
 private:
-    Ui::MuseumMain *ui;
+    Ui::ItemView *ui;
+
+    std::string itName;
+    std::string iDesc;
+    std::string userC;
+    std::string userComment;
+    std::string iCreator;
+
     accountViewer *av;
     accountCurator *ac;
     MuseumList *ml;
     ItemsViewed *iv;
     MyComments *mc;
-    MuseumPage *mp;
+    MuseumMain *mm;
+    ItemPage *ip;
 
 
     std::string username;
-    std::string name1;
-    std::string name2;
-    std::string name3;
-
-
-    std::string desc1;
-    std::string desc2;
-    std::string desc3;
+    std::string museumName;
 
 
 
 };
 
-#endif // MUSEUMMAIN_H
+#endif // ITEMVIEW_H

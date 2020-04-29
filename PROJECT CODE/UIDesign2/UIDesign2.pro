@@ -22,10 +22,12 @@ SOURCES += \
     additem.cpp \
     addmuseum.cpp \
     itemsviewed.cpp \
+    itemview.cpp \
     main.cpp \
     login.cpp \
     museumlist.cpp \
     museummain.cpp \
+    museumpage.cpp \
     mycomments.cpp \
     signup.cpp \
     user.cpp
@@ -37,9 +39,11 @@ HEADERS += \
     additem.h \
     addmuseum.h \
     itemsviewed.h \
+    itemview.h \
     login.h \
     museumlist.h \
     museummain.h \
+    museumpage.h \
     mycomments.h \
     signup.h \
     user.h
@@ -51,9 +55,11 @@ FORMS += \
     additem.ui \
     addmuseum.ui \
     itemsviewed.ui \
+    itemview.ui \
     login.ui \
     museumlist.ui \
     museummain.ui \
+    museumpage.ui \
     mycomments.ui \
     signup.ui
 
