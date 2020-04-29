@@ -2,6 +2,7 @@
 #include "ui_signup.h"
 #include "QMessageBox"
 #include <QPixmap>
+#include "iostream"
 
 #include "user.h"
 #include "accountcurator.h"
@@ -38,6 +39,8 @@ void SignUp::on_pushButton_clicked()
         type = "viewer";
     if(ui->Curator->isChecked())
         type = "curator";
+
+    cout << type.toStdString() << endl;
 
     if(password == confP)
     {

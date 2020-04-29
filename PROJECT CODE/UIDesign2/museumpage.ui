@@ -434,6 +434,19 @@
     <string>Previous</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>560</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back to List</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

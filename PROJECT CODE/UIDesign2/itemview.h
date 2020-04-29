@@ -11,14 +11,13 @@
 #include "museummain.h"
 #include "museumpage.h"
 
-
+class MuseumPage;
 class MuseumMain;
 class accountViewer;
 class accountCurator;
 class MuseumList;
 class ItemsViewed;
 class MyComments;
-class ItemPage;
 
 namespace Ui {
 class ItemView;
@@ -55,6 +54,10 @@ private slots:
 
     void on_pushButton_4_clicked();
 
+    void on_pushButton_2_clicked();
+
+    void on_pushButton_3_clicked();
+
 private:
     Ui::ItemView *ui;
 
@@ -70,7 +73,7 @@ private:
     ItemsViewed *iv;
     MyComments *mc;
     MuseumMain *mm;
-    ItemPage *ip;
+    MuseumPage *mp;
 
 
     std::string username;

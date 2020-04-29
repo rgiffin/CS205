@@ -9,8 +9,10 @@
 #include <mycomments.h>
 #include "accountviewer.h"
 #include "museummain.h"
+#include "itemview.h"
 
 
+class ItemView;
 class MuseumMain;
 class accountViewer;
 class accountCurator;
@@ -57,6 +59,26 @@ private slots:
 
     void on_previous_clicked();
 
+    void on_name_1_clicked();
+
+    void on_name_2_clicked();
+
+    void on_name_3_clicked();
+
+    void on_name_4_clicked();
+
+    void on_name_5_clicked();
+
+    void on_name_6_clicked();
+
+    void on_name_7_clicked();
+
+    void on_name_8_clicked();
+
+    void on_name_9_clicked();
+
+    void on_pushButton_clicked();
+
 private:
     Ui::MuseumPage*ui;
     accountViewer *av;
@@ -65,6 +87,25 @@ private:
     ItemsViewed *iv;
     MyComments *mc;
     MuseumMain *mm;
+    ItemView *ip;
+
+
+    //items
+    std::string iName1;
+    std::string iName2;
+    std::string iName3;
+    std::string iName4;
+    std::string iName5;
+    std::string iName6;
+    std::string iName7;
+    std::string iName8;
+    std::string iName9;
+
+
+
+
+
+
 
 
     std::string username;
