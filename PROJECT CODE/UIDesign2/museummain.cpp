@@ -10,6 +10,20 @@ MuseumMain::MuseumMain(QWidget *parent) :
     int width = ui->logoMM->width();
     int height = ui->logoMM->height();
     ui->logoMM->setPixmap(pix.scaled(width,height,Qt::KeepAspectRatio));
+
+    name1 = "Museum 1";
+    name2 = "";
+    name3 = "";
+
+    ui->mName1->setText(QString::fromStdString(name1));
+    ui->mName2->setText(QString::fromStdString(name2));
+    ui->mName3->setText(QString::fromStdString(name3));
+
+    ui->visit1->setText("Visit "+QString::fromStdString(name1));
+    ui->visit2->setText("Visit "+QString::fromStdString(name2));
+    ui->visit3->setText("Visit "+QString::fromStdString(name3));
+
+
 }
 
 MuseumMain::~MuseumMain()
@@ -66,6 +80,10 @@ void MuseumMain::on_accountButton_clicked()
 }
 
 
+
+
+
+
 void MuseumMain::setUName(std::string u)
 {
     username = u;
@@ -74,4 +92,31 @@ void MuseumMain::setUName(std::string u)
 std::string MuseumMain::getUName()
 {
     return username;
+}
+
+void MuseumMain::on_visit1_clicked()
+{
+    mp = new MuseumPage();
+    mp->setUName(username);
+    mp->setMName(name1);
+    mp->show();
+    hide();
+}
+
+void MuseumMain::on_visit2_clicked()
+{
+    mp = new MuseumPage();
+    mp->setUName(username);
+    mp->setMName(name2);
+    mp->show();
+    hide();
+}
+
+void MuseumMain::on_visit3_clicked()
+{
+    mp = new MuseumPage();
+    mp->setUName(username);
+    mp->setMName(name3);
+    mp->show();
+    hide();
 }
