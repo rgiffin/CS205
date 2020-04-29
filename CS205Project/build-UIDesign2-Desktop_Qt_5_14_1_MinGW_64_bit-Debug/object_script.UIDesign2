@@ -4,10 +4,12 @@ accountviewer.o
 additem.o
 addmuseum.o
 itemsviewed.o
+itemview.o
 main.o
 login.o
 museumlist.o
 museummain.o
+museumpage.o
 mycomments.o
 signup.o
 user.o
@@ -18,8 +20,10 @@ moc_accountviewer.o
 moc_additem.o
 moc_addmuseum.o
 moc_itemsviewed.o
+moc_itemview.o
 moc_login.o
 moc_museumlist.o
 moc_museummain.o
+moc_museumpage.o
 moc_mycomments.o
 moc_signup.o

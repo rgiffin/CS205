@@ -23,7 +23,6 @@ void openDatabases()
     query.exec("create table museumTable (name varchar(300), description varchar(500), owner varchar(200))");
 }
 
-
 int main(int argc, char *argv[])
 {
     openDatabases();
@@ -31,14 +30,6 @@ int main(int argc, char *argv[])
     Login w;
     w.show();
     return a.exec();
-}
-
-
-
-//takes the approval, comment, and commenter's username and sets it to either true or false
-void approveComment(string approve, string comment, string user)
-{
-
 }
 
 //Creates new comment in SQl Database
@@ -71,3 +62,35 @@ void addComment(string comment, string user, string item, string approval)
     QSqlQuery query;
     query.exec(s2);
 }
+//takes the item, comment, and commenter's username and sets the approval to true
+void approveComment(string item, string comment, string user)
+{
+    QSqlDatabase db;
+    //connect to database
+    db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("dbv2.sqlite");
+
+    //Opens database
+    if(!db.open())
+    {
+        cout << "DATABASE COULD NOT BE OPENED" << endl;
+    }
+    //Creating query from input
+
+    string s1 = "UPDATE commentTable SET approved = 'true' WHERE comment = '";
+    s1.append(comment);
+    s1.append("' AND item = '");
+    s1.append(item);
+    s1.append("' AND user = '");
+    s1.append(user);
+    s1.append("'");
+    cout << s1 << endl;
+    char s2[s1.size()+1];
+    strcpy(s2,s1.c_str());
+
+    //Adds the item created to the table
+    QSqlQuery query;
+    query.exec(s2);
+}
+
+
