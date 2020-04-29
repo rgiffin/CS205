@@ -6,6 +6,10 @@ ItemView::ItemView(QWidget *parent) :
     ui(new Ui::ItemView)
 {
     ui->setupUi(this);
+    QPixmap pix(":/resources/images/logo.png");
+    int width = ui->logoMM->width();
+    int height = ui->logoMM->height();
+    ui->logoMM->setPixmap(pix.scaled(width,height,Qt::KeepAspectRatio));
 }
 
 ItemView::~ItemView()
@@ -106,5 +110,23 @@ std::string ItemView::getIName()
 void ItemView::on_pushButton_4_clicked()
 {
     //back to museum
+    mp = new MuseumPage();
+    mp->setMName(museumName);
+    mp->setUName(username);
+    mp->show();
+    hide();
+
+}
+
+void ItemView::on_pushButton_2_clicked()
+{
+    //go to next item
+
+}
+
+
+void ItemView::on_pushButton_3_clicked()
+{
+    //go to previous item
 
 }

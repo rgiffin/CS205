@@ -10,6 +10,18 @@ MuseumList::MuseumList(QWidget *parent) :
     int width = ui->logoMM->width();
     int height = ui->logoMM->height();
     ui->logoMM->setPixmap(pix.scaled(width,height,Qt::KeepAspectRatio));
+
+    name1 = "Museum 1";
+    name2 = "";
+    name3 = "";
+
+    ui->mName1_4->setText(QString::fromStdString(name1));
+    ui->mName2_4->setText(QString::fromStdString(name2));
+    ui->mName3_4->setText(QString::fromStdString(name3));
+
+    ui->visit1_4->setText("Visit "+QString::fromStdString(name1));
+    ui->visit2_4->setText("Visit "+QString::fromStdString(name2));
+    ui->visit3_4->setText("Visit "+QString::fromStdString(name3));
 }
 
 MuseumList::~MuseumList()
@@ -74,3 +86,45 @@ std::string MuseumList::getUName()
     return username;
 }
 
+
+void MuseumList::on_visit1_4_clicked()
+{
+    //go to museum 1
+    mp = new MuseumPage();
+    mp->setUName(username);
+    mp->setMName(name1);
+    mp->show();
+    hide();
+}
+
+void MuseumList::on_visit2_4_clicked()
+{
+    //go to museum 2
+    mp = new MuseumPage();
+    mp->setUName(username);
+    mp->setMName(name2);
+    mp->show();
+    hide();
+}
+
+void MuseumList::on_visit3_4_clicked()
+{
+    //go to museum 3
+    mp = new MuseumPage();
+    mp->setUName(username);
+    mp->setMName(name3);
+    mp->show();
+    hide();
+}
+
+void MuseumList::on_pushButton_clicked()
+{
+    //go to next page
+
+}
+
+void MuseumList::on_pushButton_2_clicked()
+{
+    //go to previous page
+
+}

@@ -1,5 +1,9 @@
 #include "accountedit.h"
 #include "ui_accountedit.h"
+#include "QMessageBox"
+#include "iostream"
+
+
 AccountEdit::AccountEdit(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::AccountEdit)
@@ -20,30 +24,59 @@ AccountEdit::~AccountEdit()
 //save button pressed
 void AccountEdit::on_pushButton_clicked()
 {
-    QString username = ui->Username->text();
+    QString username2 = ui->Username->text();
     QString password = ui->Password->text();
     QString email = ui->Email->text();
     QString name = ui->Name->text();
     QString confP = ui->PasswordConf->text();
     QString type = "";
 
-    if(ui->Viewer->isChecked())
-        type = "Viewer";
-    if(ui->Curator->isChecked())
-        type = "Curator";
+
+    if(password == confP)
+    {
+        //save data here
+
+        std::string u = username2.toStdString();
+        std::string p = password.toStdString();
+        std::string n = name.toStdString();
+        std::string e = email.toStdString();
+        std::string t = type.toStdString();
+        if(ui->Viewer->isChecked())
+            type = "Viewer";
+        if(ui->Curator->isChecked())
+            type = "Curator";
+
+        cout << type.toStdString() << endl;
+
+        editAccount(username, u,p,e,n,type.toStdString());
+
+        close();
+
+
+
+
+    }
+    else
+    {
+        QMessageBox::warning(this,"Message", "Passwords do not match", QMessageBox::Ok);
+    }
+
+
+
+
 
 
     if(type == "Curator")
     {
         ac = new accountCurator();
-        ac->setUName(username.toStdString());
+        ac->setUName(username2.toStdString());
         ac->show();
         hide();
     }
-    else
+    else if(type == "Viewer")
     {
         av = new accountViewer();
-        av->setUName(username.toStdString());
+        av->setUName(username2.toStdString());
         av->show();
         hide();
     }
