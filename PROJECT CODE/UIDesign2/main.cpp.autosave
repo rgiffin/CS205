@@ -31,7 +31,6 @@ int main(int argc, char *argv[])
     w.show();
     return a.exec();
 }
-
 //Creates new comment in SQL Database
 void addComment(string comment, string user, string item, string approval)
 {

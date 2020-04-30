@@ -235,3 +235,37 @@ void MuseumPage::on_pushButton_clicked()
     ml->show();
     hide();
 }
+
+//Fills Museum with info to display
+Museum MuseumPage::setMuseum(string museumName, string owner)
+{
+//Museum to fill
+Museum m;
+
+QSqlDatabase db;
+//connect to database
+db = QSqlDatabase::addDatabase("QSQLITE");
+db.setDatabaseName("dbv2.sqlite");
+//Opens database
+if(!db.open())
+{
+    cout << "DATABASE COULD NOT BE OPENED" << endl;
+}
+string s1 = "SELECT * FROM itemTable WHERE museum = ";
+s1.append("'");
+s1.append(museumName);
+s1.append("'");
+s1.append(" AND owner = '");
+s1.append(owner);
+s1.append("'");
+char s2[s1.size()+1];
+strcpy(s2,s1.c_str());
+QSqlQuery query;
+query.exec(s2);
+
+while(query.next())
+{
+    cout << query.at();
+}
+
+}

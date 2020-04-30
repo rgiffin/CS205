@@ -9,7 +9,6 @@ AddItem::AddItem(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::AddItem)
 {
-    logInfo("paint", "p", "Person", "ryanmurf9", "M1", "C1");
     ui->setupUi(this);
     QPixmap pix(":/resources/images/logo.png");
     int width = ui->logoMM_2->width();
@@ -104,7 +103,7 @@ std::string AddItem::getUName()
 }
 
 //Puts item info into the SQL Database
-void AddItem::logInfo(string name, string description, string artist, string owner, string museum, string collection)
+void AddItem::logInfo(string name, string description, string artist, string owner, string museum, string collection, string filename, QFile image)
 {
     QSqlDatabase db;
     //connect to database
@@ -129,12 +128,29 @@ void AddItem::logInfo(string name, string description, string artist, string own
     s1.append(museum);
     s1.append("', '");
     s1.append(collection);
-    s1.append("')");
+    s1.append("', '");
+    s1.append(filename);
+    s1.append("', :imagedata");
+    s1.append(")");
+
+    char filen[filename.size()+1];
+    strcpy(filen, filename.c_str());
+
+
+   QFile file(filen);
+   QByteArray inByteArray = file.readAll();
+
+
+    cout << s1 << endl;
     char s2[s1.size()+1];
     strcpy(s2,s1.c_str());
 
     //Adds the item created to the table
     QSqlQuery query;
-    query.exec(s2);
+    query.prepare(s2);
+    query.bindValue( ":imageData", inByteArray );
+    cout << s2 << endl;
+    if( !query.exec() )
+    qDebug() << "Error inserting image into table:\n" << query.lastError();
 }
 
