@@ -21,10 +21,13 @@ SOURCES += \
     accountviewer.cpp \
     additem.cpp \
     addmuseum.cpp \
+    comment.cpp \
+    item.cpp \
     itemsviewed.cpp \
     itemview.cpp \
     main.cpp \
     login.cpp \
+    museum.cpp \
     museumlist.cpp \
     museummain.cpp \
     museumpage.cpp \
@@ -38,9 +41,12 @@ HEADERS += \
     accountviewer.h \
     additem.h \
     addmuseum.h \
+    comment.h \
+    item.h \
     itemsviewed.h \
     itemview.h \
     login.h \
+    museum.h \
     museumlist.h \
     museummain.h \
     museumpage.h \

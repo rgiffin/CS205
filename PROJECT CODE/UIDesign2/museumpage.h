@@ -2,7 +2,8 @@
 #define MUSEUMPAGE_H
 
 #include <QDialog>
-
+#include<string>
+#include<vector>
 #include <accountcurator.h>
 #include <museumlist.h>
 #include <itemsviewed.h>
@@ -10,7 +11,10 @@
 #include "accountviewer.h"
 #include "museummain.h"
 #include "itemview.h"
+#include "museum.h"
+#include "item.h"
 
+using namespace std;
 
 class ItemView;
 class MuseumMain;
@@ -33,6 +37,8 @@ class MuseumPage : public QDialog
 public:
     explicit MuseumPage(QWidget *parent = nullptr);
     ~MuseumPage();
+    Museum museum;
+    Museum setMuseum(string, string);
 
 
     void setUName(std::string u);
@@ -40,6 +46,8 @@ public:
 
     void setMName(std::string m);
     std::string getMName();
+
+
 
 
 private slots:
