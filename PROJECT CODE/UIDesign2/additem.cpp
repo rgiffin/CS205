@@ -54,9 +54,9 @@ void AddItem::on_pushButton_clicked()
     std::string museum = iMuseum.toStdString();
     std::string collection = iCollection.toStdString();
 
-    QFile *f = new QFile(filename);
     std::size_t found = filename.toStdString().find_last_of("/\\");
     std::string file = filename.toStdString().substr(found+1);
+    QFile *f = new QFile(QString::fromStdString(file));
 
     logInfo(name, description, artist, username, museum, collection, file, f);
 
