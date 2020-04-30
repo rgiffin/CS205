@@ -56,9 +56,9 @@ void AddItem::on_pushButton_clicked()
 
     std::size_t found = filename.toStdString().find_last_of("/\\");
     std::string file = filename.toStdString().substr(found+1);
-    QFile *f = new QFile(QString::fromStdString(file));
+    QPixmap pic(filename);
 
-    logInfo(name, description, artist, username, museum, collection, file, f);
+    logInfo(name, description, artist, username, museum, collection, file, pic);
 
 
 
