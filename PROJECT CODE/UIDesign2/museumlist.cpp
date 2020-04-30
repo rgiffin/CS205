@@ -6,6 +6,7 @@ MuseumList::MuseumList(QWidget *parent) :
     ui(new Ui::MuseumList)
 {
     ui->setupUi(this);
+    vector<Museum> musList1 = getMuseums();
     QPixmap pix(":/resources/images/logo.png");
     int width = ui->logoMM->width();
     int height = ui->logoMM->height();
@@ -127,4 +128,40 @@ void MuseumList::on_pushButton_2_clicked()
 {
     //go to previous page
 
+}
+
+//Returns a vector of all museums in the database as a vector of museum objects
+vector<Museum> MuseumList::getMuseums()
+{
+    vector<Museum> retVector;
+    QSqlDatabase db;
+    //connect to database
+    db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("dbv2.sqlite");
+
+    //Opens database
+    if(!db.open())
+    {
+        cout << "DATABASE COULD NOT BE OPENED" << endl;
+    }
+
+    string s1 = "SELECT * FROM museumTable";
+    cout << s1 << endl;
+    char s2[s1.size()+1];
+    strcpy(s2,s1.c_str());
+
+    QSqlQuery query;
+    query.exec(s2);
+
+    //Makes museums and puts them into the vector
+    while(query.next())
+    {
+        Museum m;
+        m.name = query.value(0).toString().toStdString();
+        m.description = query.value(1).toString().toStdString();
+        m.owner = query.value(2).toString().toStdString();
+        retVector.push_back(m);
+    }
+
+    return retVector;
 }

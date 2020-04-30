@@ -13,12 +13,11 @@ public:
     Museum();
     string getName();
     string getDescription();
-    vector<Item> getItemList();
+    string getOwner();
 
     string name;
     string description;
     string owner;
-    vector<Item> itemList;
 };
 
 #endif // MUSEUM_H
