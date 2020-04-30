@@ -15,8 +15,7 @@ string Museum::getDescription()
     return description;
 }
 
-vector<Item> Museum::getItemList()
+string Museum::getOwner()
 {
-    return itemList;
+    return owner;
 }
-

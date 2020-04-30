@@ -88,6 +88,7 @@ void approveComment(string item, string comment, string user)
     query.exec(s2);
 }
 
+
 int main(int argc, char *argv[])
 {
     openDatabases();
