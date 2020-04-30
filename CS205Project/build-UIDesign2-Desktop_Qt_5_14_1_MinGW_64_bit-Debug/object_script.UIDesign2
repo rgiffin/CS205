@@ -3,10 +3,13 @@ accountedit.o
 accountviewer.o
 additem.o
 addmuseum.o
+comment.o
+item.o
 itemsviewed.o
 itemview.o
 main.o
 login.o
+museum.o
 museumlist.o
 museummain.o
 museumpage.o

@@ -8,6 +8,7 @@ AccountEdit::AccountEdit(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::AccountEdit)
 {
+    cout << username;
     ui->setupUi(this);
     QPixmap pix(":/resources/images/logo.png");
     int width = ui->logoMM->width();
@@ -42,9 +43,9 @@ void AccountEdit::on_pushButton_clicked()
         std::string e = email.toStdString();
         std::string t = type.toStdString();
         if(ui->Viewer->isChecked())
-            type = "Viewer";
+            type = "viewer";
         if(ui->Curator->isChecked())
-            type = "Curator";
+            type = "curator";
 
         cout << type.toStdString() << endl;
 
@@ -128,13 +129,14 @@ void AccountEdit::editAccount(string currentUser, string newUser, string newPass
     }
 
     //Creates SQL Query
-    string s1 = "DELETE * FROM userTable WHERE user = ";
+    string s1 = "DELETE FROM userTable WHERE user = ";
     s1.append("'");
     s1.append(currentUser);
     s1.append("'");
     char s2[s1.size()+1];
     strcpy(s2,s1.c_str());
     QSqlQuery query;
+    cout << s2 << endl;
     //Checks if code can be run, then checks if it comes up with a match
     if(!query.exec(s2))
     {
@@ -155,6 +157,7 @@ void AccountEdit::editAccount(string currentUser, string newUser, string newPass
     s1.append("')");
     char s3[s1.size()+1];
     strcpy(s3,s1.c_str());
+    cout << s3 << endl;
     query.exec(s3);
     currentUser = newUser;
 }

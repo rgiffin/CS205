@@ -2,6 +2,7 @@
 #include <QtSql>
 #include <QApplication>
 #include <iostream>
+#include "item.h"
 
 using namespace std;
 
@@ -92,6 +93,41 @@ void approveComment(string item, string comment, string user)
     //Adds the item created to the table
     QSqlQuery query;
     query.exec(s2);
+}
+
+Item getItemObject(string museum, string itemName)
+{
+    Item item1;
+    QSqlDatabase db;
+    //connect to database
+    db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("dbv2.sqlite");
+
+    //Opens database
+    if(!db.open())
+    {
+        cout << "DATABASE COULD NOT BE OPENED" << endl;
+    }
+
+    string s1 = "SELECT * FROM itemTable WHERE name = ";
+    s1.append("'");
+    s1.append(itemName);
+    s1.append("'");
+    s1.append(" AND museum = '");
+    s1.append(museum);
+    s1.append("'");
+    char s2[s1.size()+1];
+    strcpy(s2,s1.c_str());
+    cout << s2 << endl;
+    QSqlQuery query;
+
+    //Checks if code can be run, then checks if it comes up with a match
+    if(!query.exec(s2))
+    {
+        cout << "DATABASE MALFUNCTION";
+    }
+
+
 }
 
 
