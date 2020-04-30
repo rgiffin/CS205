@@ -29,7 +29,9 @@ class ItemView : public QDialog
 public:
     explicit ItemView(QWidget *parent = nullptr);
     ~ItemView();
+
     Item getItemObject(string museum, string itemName);
+
     void setUName(std::string u);
     std::string getUName();
 
@@ -77,6 +79,8 @@ private:
 
     std::string username;
     std::string museumName;
+
+    Item curItem;
 
 
 
