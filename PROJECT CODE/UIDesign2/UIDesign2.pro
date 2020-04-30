@@ -21,6 +21,7 @@ SOURCES += \
     accountviewer.cpp \
     additem.cpp \
     addmuseum.cpp \
+    comment.cpp \
     item.cpp \
     itemsviewed.cpp \
     itemview.cpp \
@@ -40,6 +41,7 @@ HEADERS += \
     accountviewer.h \
     additem.h \
     addmuseum.h \
+    comment.h \
     item.h \
     itemsviewed.h \
     itemview.h \
