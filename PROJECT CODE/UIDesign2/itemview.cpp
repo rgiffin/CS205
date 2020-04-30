@@ -130,3 +130,61 @@ void ItemView::on_pushButton_3_clicked()
     //go to previous item
 
 }
+
+Item ItemView::getItemObject(string museum, string itemName)
+{
+    Item item1;
+    QSqlDatabase db;
+    //connect to database
+    db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("dbv2.sqlite");
+
+    //Opens database
+    if(!db.open())
+    {
+        cout << "DATABASE COULD NOT BE OPENED" << endl;
+    }
+
+    string s1 = "SELECT * FROM itemTable WHERE name = ";
+    s1.append("'");
+    s1.append(itemName);
+    s1.append("'");
+    s1.append(" AND museum = '");
+    s1.append(museum);
+    s1.append("'");
+    char s2[s1.size()+1];
+    strcpy(s2,s1.c_str());
+    cout << s2 << endl;
+    QSqlQuery query;
+
+    //Checks if code can be run, then checks if it comes up with a match
+    if(!query.exec(s2))
+    {
+        cout << "DATABASE MALFUNCTION";
+    }
+
+    if(query.first())
+    {
+        item1.name = query.value(0).toString().toStdString();
+        item1.description = query.value(1).toString().toStdString();
+        item1.artist = query.value(2).toString().toStdString();
+        item1.owner = query.value(3).toString().toStdString();
+        item1.museum = query.value(4).toString().toStdString();
+        item1.collection = query.value(5).toString().toStdString();
+        item1.filename = query.value(6).toString().toStdString();
+
+         QByteArray outByteArray = query.value(7).toByteArray();
+         QPixmap outputpix;
+         outputpix.loadFromData(outByteArray);
+         item1.image = outputpix;
+    }
+
+    cout << item1.getName() << endl;
+    cout << item1.getDescription() << endl;
+    cout << item1.getArtist() << endl;
+    cout << item1.getOwner() << endl;
+    cout << item1.getMuseum() << endl;
+    cout << item1.getCollection();
+
+    return item1;
+}
