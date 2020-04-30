@@ -107,7 +107,7 @@ std::string AddItem::getUName()
 }
 
 //Puts item info into the SQL Database
-void AddItem::logInfo(string name, string description, string artist, string owner, string museum, string collection, string filename, QFile *image)
+void AddItem::logInfo(string name, string description, string artist, string owner, string museum, string collection, string filename, QPixmap pix1)
 {
     QSqlDatabase db;
     //connect to database
@@ -137,7 +137,10 @@ void AddItem::logInfo(string name, string description, string artist, string own
     s1.append("', :imagedata");
     s1.append(")");
 
-   QByteArray inByteArray = image->readAll();
+    QByteArray bArray;
+    QBuffer buffer(&bArray);
+    buffer.open(QIODevice::WriteOnly);
+    pix1.save(&buffer, "PNG");
 
     cout << s1 << endl;
     char s2[s1.size()+1];
@@ -146,7 +149,7 @@ void AddItem::logInfo(string name, string description, string artist, string own
     //Adds the item created to the table
     QSqlQuery query;
     query.prepare(s2);
-    query.bindValue( ":imageData", inByteArray );
+    query.bindValue( ":imageData", bArray);
     cout << s2 << endl;
     if( !query.exec() )
     qDebug() << "Error inserting image into table:\n" << query.lastError();
