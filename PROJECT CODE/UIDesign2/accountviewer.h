@@ -5,7 +5,6 @@
 #include "museummain.h"
 #include "user.h"
 #include "addmuseum.h"
-
 #include "additem.h"
 
 #include <QDialog>
@@ -78,7 +77,6 @@ private:
     MyComments *mc;
     ItemsViewed *iv;
     AddMuseum *am;
-
     AddItem *ai;
 
     std::string username;

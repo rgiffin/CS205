@@ -10,6 +10,13 @@ ItemView::ItemView(QWidget *parent) :
     int width = ui->logoMM->width();
     int height = ui->logoMM->height();
     ui->logoMM->setPixmap(pix.scaled(width,height,Qt::KeepAspectRatio));
+
+
+
+
+
+
+
 }
 
 ItemView::~ItemView()
@@ -87,6 +94,16 @@ void ItemView::setMName(std::string m)
 {
     museumName = m;
     ui->muName->setText(QString::fromStdString(museumName));
+
+    curItem = getItemObject(museumName, itName);
+
+    ui->iName->setText("Item Name: "+QString::fromStdString(curItem.getName()));
+    ui->iCreator->setText("Item Creator: "+QString::fromStdString(curItem.getArtist()));
+    ui->description->setText((QString::fromStdString(curItem.getDescription())));
+    QPixmap pix = curItem.getImage();
+    int width = ui->image->width();
+    int height = ui->image->height();
+    ui->image->setPixmap(pix.scaled(width,height,Qt::KeepAspectRatio));
 }
 
 std::string ItemView::getMName()

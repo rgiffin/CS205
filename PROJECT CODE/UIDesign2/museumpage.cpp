@@ -46,6 +46,7 @@ MuseumPage::~MuseumPage()
 
 void MuseumPage::on_image1_linkActivated(const QString &link)
 {
+    link.at(1);
     cout << "image clicked" << endl;
 }
 
@@ -139,6 +140,8 @@ void MuseumPage::on_previous_clicked()
 void MuseumPage::on_name_1_clicked()
 {
     ip = new ItemView();
+    iName1 = "newtest";
+    museumName = "dad";
     ip->setIName(iName1);
     ip->setMName(museumName);
     ip->setUName(username);
@@ -268,4 +271,6 @@ while(query.next())
     cout << query.at();
 }
 
+
+return m;
 }
