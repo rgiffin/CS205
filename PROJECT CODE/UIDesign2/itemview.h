@@ -1,8 +1,6 @@
 #ifndef ITEMVIEW_H
 #define ITEMVIEW_H
-
 #include <QDialog>
-
 #include <accountcurator.h>
 #include <museumlist.h>
 #include <itemsviewed.h>
@@ -10,6 +8,7 @@
 #include "accountviewer.h"
 #include "museummain.h"
 #include "museumpage.h"
+#include "item.h"
 
 class MuseumPage;
 class MuseumMain;
@@ -30,7 +29,7 @@ class ItemView : public QDialog
 public:
     explicit ItemView(QWidget *parent = nullptr);
     ~ItemView();
-
+    Item getItemObject(string museum, string itemName);
     void setUName(std::string u);
     std::string getUName();
 
