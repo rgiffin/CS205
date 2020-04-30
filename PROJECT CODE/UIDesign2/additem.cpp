@@ -53,7 +53,7 @@ void AddItem::on_pushButton_clicked()
     std::string museum = iMuseum.toStdString();
     std::string collection = iCollection.toStdString();
 
-    logInfo(name, description, artist, username, museum, collection);
+    //logInfo(name, description, artist, username, museum, collection);
 
 
 

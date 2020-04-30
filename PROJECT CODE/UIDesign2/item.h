@@ -12,6 +12,7 @@ class Item
 {
 public:
     Item();
+    Item(string, string, string, string, string, string, string, QPixmap);
     string getName();
     string getDescription();
     string getArtist();

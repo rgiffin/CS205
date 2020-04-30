@@ -51,6 +51,7 @@ public:
     QPushButton *name_9;
     QPushButton *next;
     QPushButton *previous;
+    QPushButton *pushButton;
 
     void setupUi(QDialog *MuseumPage)
     {
@@ -186,6 +187,9 @@ public:
         previous = new QPushButton(MuseumPage);
         previous->setObjectName(QString::fromUtf8("previous"));
         previous->setGeometry(QRect(600, 560, 113, 32));
+        pushButton = new QPushButton(MuseumPage);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(360, 560, 181, 31));
 
         retranslateUi(MuseumPage);
 
@@ -222,6 +226,7 @@ public:
         name_9->setText(QCoreApplication::translate("MuseumPage", "ItemName9", nullptr));
         next->setText(QCoreApplication::translate("MuseumPage", "Next Page", nullptr));
         previous->setText(QCoreApplication::translate("MuseumPage", "Previous", nullptr));
+        pushButton->setText(QCoreApplication::translate("MuseumPage", "Back to List", nullptr));
     } // retranslateUi
 
 };

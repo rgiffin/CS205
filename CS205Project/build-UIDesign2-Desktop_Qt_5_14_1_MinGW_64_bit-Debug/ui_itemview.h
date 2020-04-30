@@ -51,7 +51,7 @@ public:
         ItemView->resize(820, 600);
         layoutWidget = new QWidget(ItemView);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(50, 70, 791, 32));
+        layoutWidget->setGeometry(QRect(10, 70, 791, 32));
         horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
@@ -82,10 +82,10 @@ public:
 
         logoMM = new QLabel(ItemView);
         logoMM->setObjectName(QString::fromUtf8("logoMM"));
-        logoMM->setGeometry(QRect(740, 0, 111, 71));
+        logoMM->setGeometry(QRect(700, 0, 111, 71));
         muName = new QLabel(ItemView);
         muName->setObjectName(QString::fromUtf8("muName"));
-        muName->setGeometry(QRect(50, 10, 651, 61));
+        muName->setGeometry(QRect(10, 10, 651, 61));
         QFont font;
         font.setFamily(QString::fromUtf8("Avenir Next Condensed"));
         font.setPointSize(25);
