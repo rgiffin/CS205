@@ -137,13 +137,7 @@ void AddItem::logInfo(string name, string description, string artist, string own
     s1.append("', :imagedata");
     s1.append(")");
 
-    char filen[filename.size()+1];
-    strcpy(filen, filename.c_str());
-
-
-   QFile file(filen);
-   QByteArray inByteArray = file.readAll();
-
+   QByteArray inByteArray = image->readAll();
 
     cout << s1 << endl;
     char s2[s1.size()+1];
