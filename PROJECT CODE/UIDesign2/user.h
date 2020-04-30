@@ -23,6 +23,7 @@ public:
     std::string getType();
     void getAccInfo(string);
 
+    bool ifCurator();
     void setUsername(std::string uname);
     void setPassword(std::string pass);
 

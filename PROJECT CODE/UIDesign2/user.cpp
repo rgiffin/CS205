@@ -40,6 +40,13 @@ std::string User::getType()
     return type;
 }
 
+bool User::ifCurator()
+{
+    if(type == "curator" || type == "Curator")
+        return true;
+    return false;
+}
+
 void User::setUsername(std::string u)
 {
     username = u;
