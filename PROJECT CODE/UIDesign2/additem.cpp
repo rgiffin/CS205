@@ -149,7 +149,7 @@ void AddItem::logInfo(string name, string description, string artist, string own
     //Adds the item created to the table
     QSqlQuery query;
     query.prepare(s2);
-    query.bindValue( ":imageData", bArray);
+    query.bindValue( ":imagedata", bArray);
     cout << s2 << endl;
     if( !query.exec() )
     qDebug() << "Error inserting image into table:\n" << query.lastError();
