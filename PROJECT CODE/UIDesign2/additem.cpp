@@ -4,6 +4,7 @@
 #include "QDir"
 #include "iostream"
 #include "ostream"
+#include "QFile"
 
 AddItem::AddItem(QWidget *parent) :
     QDialog(parent),
@@ -53,19 +54,22 @@ void AddItem::on_pushButton_clicked()
     std::string museum = iMuseum.toStdString();
     std::string collection = iCollection.toStdString();
 
-    logInfo(name, description, artist, username, museum, collection);
-
-
-
+    QFile *f = new QFile(filename);
     std::size_t found = filename.toStdString().find_last_of("/\\");
     std::string file = filename.toStdString().substr(found+1);
 
+    logInfo(name, description, artist, username, museum, collection, file, f);
+
+
+
+
+
     cout << file << endl;
-    if(!filename.isEmpty())
-    {
-        QImage pic;
-        pic.save(":/resources/images/"+QString::fromStdString(file));
-    }
+//    if(!filename.isEmpty())
+//    {
+//        QImage pic;
+//        pic.save(":/resources/images/"+QString::fromStdString(file));
+//    }
 
 
 
@@ -103,7 +107,7 @@ std::string AddItem::getUName()
 }
 
 //Puts item info into the SQL Database
-void AddItem::logInfo(string name, string description, string artist, string owner, string museum, string collection, string filename, QFile image)
+void AddItem::logInfo(string name, string description, string artist, string owner, string museum, string collection, string filename, QFile *image)
 {
     QSqlDatabase db;
     //connect to database
