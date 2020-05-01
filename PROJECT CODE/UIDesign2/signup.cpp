@@ -42,6 +42,18 @@ void SignUp::on_pushButton_clicked()
     if(ui->Curator->isChecked())
         type = "curator";
 
+    //save data here
+
+    std::string u = username.toStdString();
+    std::string p = password.toStdString();
+    std::string n = name.toStdString();
+    std::string e = email.toStdString();
+    std::string t = type.toStdString();
+
+    User u1;
+    u1.setUsername(u);
+    u1.getAccInfo(u);
+
     cout << type.toStdString() << endl;
 
     if(password == confP)
@@ -50,15 +62,12 @@ void SignUp::on_pushButton_clicked()
         {
             QMessageBox::warning(this,"Message", "Empty Fields Exist", QMessageBox::Ok);
         }
+        else if(u1.getName() != "" || u1.getEmail() != "" || u1.getPassword() != "")
+        {
+            QMessageBox::warning(this,"Message", "Username Exists Please enter another username", QMessageBox::Ok);
+        }
         else
         {
-            //save data here
-
-            std::string u = username.toStdString();
-            std::string p = password.toStdString();
-            std::string n = name.toStdString();
-            std::string e = email.toStdString();
-            std::string t = type.toStdString();
 
             logInfo(u, p, n, e, t);
             User user(u,p,e,n,t);

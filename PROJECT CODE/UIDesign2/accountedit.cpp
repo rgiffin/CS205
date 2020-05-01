@@ -48,6 +48,21 @@ void AccountEdit::on_pushButton_clicked()
         if(ui->Curator->isChecked())
             type = "curator";
 
+        User u1;
+        u1.setUsername(u);
+        u1.getAccInfo(u);
+
+        if(u == "" || name == "" || email == "" || password == "")
+        {
+            QMessageBox::warning(this,"Message", "Empty Fields Exist", QMessageBox::Ok);
+        }
+        else if((u1.getName() != "" || u1.getEmail() != "" || u1.getPassword() != "") && (username != u))
+        {
+            QMessageBox::warning(this,"Message", "Username Exists Please enter another username", QMessageBox::Ok);
+        }
+        else
+        {
+
 
 
 
@@ -56,6 +71,7 @@ void AccountEdit::on_pushButton_clicked()
         editAccount(username, u,p,e,n,type.toStdString());
 
         close();
+        }
 
 
 
