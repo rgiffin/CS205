@@ -22,6 +22,15 @@ MuseumList::MuseumList(QWidget *parent) :
     ui->visit1_4->setText("Visit "+QString::fromStdString(name1));
     ui->visit2_4->setText("Visit "+QString::fromStdString(name2));
     ui->visit3_4->setText("Visit "+QString::fromStdString(name3));
+
+
+
+
+
+    musList = getMuseums();
+    index = 0;
+    display(index);
+
 }
 
 MuseumList::~MuseumList()
@@ -87,6 +96,7 @@ std::string MuseumList::getUName()
 }
 
 
+
 void MuseumList::on_visit1_4_clicked()
 {
     //go to museum 1
@@ -120,12 +130,25 @@ void MuseumList::on_visit3_4_clicked()
 void MuseumList::on_pushButton_clicked()
 {
     //go to next page
+    int size = musList.size();
+    index = index+3;
+    if(index>size)
+    {
+        index = index - musList.size();
+    }
 
+    display(index);
 }
 
 void MuseumList::on_pushButton_2_clicked()
 {
     //go to previous page
+    index = index - 3;
+    if(index<0)
+    {
+        index = musList.size()+index;
+    }
+    display(index);
 
 }
 
@@ -164,3 +187,60 @@ vector<Museum> MuseumList::getMuseums()
 
     return retVector;
 }
+
+
+void MuseumList::display(int i)
+{
+    int size = musList.size();
+
+    //setting museum1
+    if(i>=size)
+    {
+        i = 0;
+    }
+
+    Museum one = musList.at(i++);
+    name1 = one.getName();
+    desc1 = one.getDescription();
+    owner1 = one.getOwner();
+
+    ui->mName1_4->setText(QString::fromStdString(name1));
+    ui->visit1_4->setText("Visit "+QString::fromStdString(name1));
+    ui->description1_4->setText(QString::fromStdString(desc1));
+    ui->own1->setText("Owner: "+QString::fromStdString(owner1));
+
+    if(i>=size)
+    {
+        i = 0;
+    }
+    Museum two = musList.at(i++);
+    name2 = two.getName();
+    desc2 = two.getDescription();
+    owner2 = two.getOwner();
+
+    ui->mName2_4->setText(QString::fromStdString(name2));
+    ui->visit2_4->setText("Visit "+QString::fromStdString(name2));
+    ui->description2_4->setText(QString::fromStdString(desc2));
+    ui->own2->setText("Owner: "+QString::fromStdString(owner2));
+
+    if(i>=size)
+    {
+        i = 0;
+    }
+    Museum three = musList.at(i++);
+    name3 = three.getName();
+    desc3 = three.getDescription();
+    owner3 = three.getOwner();
+
+    ui->mName3_4->setText(QString::fromStdString(name3));
+    ui->visit3_4->setText("Visit "+QString::fromStdString(name3));
+    ui->description3_4->setText(QString::fromStdString(desc3));
+    ui->own3->setText("Owner: "+QString::fromStdString(owner3));
+
+
+
+
+
+}
+
+

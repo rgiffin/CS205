@@ -40,6 +40,9 @@ public:
     void setUName(std::string u);
     std::string getUName();
 
+    void display(int i);
+    void setIndex(int i);
+
 private slots:
     void on_homeButton_clicked();
 
@@ -78,6 +81,13 @@ private:
     std::string desc1;
     std::string desc2;
     std::string desc3;
+
+    std::string owner1;
+    std::string owner2;
+    std::string owner3;
+
+    int index;
+    vector<Museum> musList;
 };
 
 #endif // MUSEUMLIST_H
