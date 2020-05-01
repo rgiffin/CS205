@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ApproveComments</class>
+ <widget class="QDialog" name="ApproveComments">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>320</width>
+    <height>240</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>241</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Avenir Next Condensed</family>
+     <pointsize>15</pointsize>
+     <italic>false</italic>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;h1&gt;Approve Comments&lt;/h1&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="user">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>131</width>
+     <height>21</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>User:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="comment">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>291</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>291</width>
+     <height>91</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Comment</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exit">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>200</y>
+     <width>81</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="approve">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>200</y>
+     <width>113</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Approve</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deny">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>200</y>
+     <width>113</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Deny</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

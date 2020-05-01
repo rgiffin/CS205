@@ -5,6 +5,7 @@
 #include "museummain.h"
 #include "user.h"
 #include "addmuseum.h"
+#include "approvecomments.h"
 
 #include "additem.h"
 
@@ -22,6 +23,7 @@ class MyComments;
 class ItemsViewed;
 class AddItem;
 class AddMuseum;
+class ApproveComments;
 
 using namespace std;
 
@@ -69,6 +71,8 @@ private slots:
 
     void on_pushButton_2_clicked();
 
+    void on_approveComments_clicked();
+
 private:
     Ui::accountCurator *ui;
 
@@ -79,6 +83,8 @@ private:
     ItemsViewed *iv;
     AddMuseum *am;
     AddItem *ai;
+    ApproveComments *ap;
+
 
     std::string username;
 

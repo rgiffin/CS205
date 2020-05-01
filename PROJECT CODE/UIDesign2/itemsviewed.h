@@ -8,6 +8,12 @@
 #include <museumlist.h>
 #include <mycomments.h>
 #include "accountviewer.h"
+#include "item.h"
+#include "string"
+#include "museum.h"
+#include "itemview.h"
+#include "museumpage.h"
+
 
 
 
@@ -16,6 +22,8 @@ class accountCurator;
 class MuseumMain;
 class MuseumList;
 class MyComments;
+class ItemView;
+class MuseumPage;
 
 
 
@@ -34,6 +42,9 @@ public:
     void setUName(std::string u);
     std::string getUName();
 
+    Item getItemFromName(string name);
+    Museum getMuseumFromName(string name);
+
 private slots:
     void on_mListButton_clicked();
 
@@ -43,6 +54,8 @@ private slots:
 
     void on_accountButton_clicked();
 
+    void on_search_clicked();
+
 private:
     Ui::ItemsViewed *ui;
     accountViewer *av;
@@ -50,8 +63,13 @@ private:
     MuseumMain *mm;
     MuseumList *ml;
     MyComments *mc;
+    ItemView *iv;
+    MuseumPage *mp;
 
     std::string username;
+
+    Item fItem;
+    Item fMuseum;
 
 };
 

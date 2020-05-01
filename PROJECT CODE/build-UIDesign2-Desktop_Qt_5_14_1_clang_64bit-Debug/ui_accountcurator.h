@@ -46,9 +46,9 @@ public:
     QLabel *getAccountType;
     QPushButton *pushButton;
     QGroupBox *groupBox_2;
-    QLabel *label_12;
     QPushButton *addMusButton;
     QPushButton *pushButton_2;
+    QPushButton *approveComments;
     QLabel *logoMM;
     QLabel *logoMM_2;
 
@@ -164,15 +164,15 @@ public:
         groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
         groupBox_2->setGeometry(QRect(420, 140, 401, 421));
         groupBox_2->setFont(font1);
-        label_12 = new QLabel(groupBox_2);
-        label_12->setObjectName(QString::fromUtf8("label_12"));
-        label_12->setGeometry(QRect(10, 60, 161, 21));
         addMusButton = new QPushButton(groupBox_2);
         addMusButton->setObjectName(QString::fromUtf8("addMusButton"));
-        addMusButton->setGeometry(QRect(110, 380, 281, 32));
+        addMusButton->setGeometry(QRect(70, 320, 281, 32));
         pushButton_2 = new QPushButton(groupBox_2);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(280, 60, 113, 32));
+        pushButton_2->setGeometry(QRect(70, 200, 281, 32));
+        approveComments = new QPushButton(groupBox_2);
+        approveComments->setObjectName(QString::fromUtf8("approveComments"));
+        approveComments->setGeometry(QRect(70, 90, 281, 32));
         logoMM = new QLabel(accountCurator);
         logoMM->setObjectName(QString::fromUtf8("logoMM"));
         logoMM->setGeometry(QRect(700, 0, 111, 71));
@@ -191,7 +191,7 @@ public:
         label->setText(QCoreApplication::translate("accountCurator", "<h1>Account</h1>", nullptr));
         homeButton->setText(QCoreApplication::translate("accountCurator", "Home", nullptr));
         mListButton->setText(QCoreApplication::translate("accountCurator", "Museum list", nullptr));
-        itemsViewedButton->setText(QCoreApplication::translate("accountCurator", "Items Viewed", nullptr));
+        itemsViewedButton->setText(QCoreApplication::translate("accountCurator", "Search", nullptr));
         myCommentsButton->setText(QCoreApplication::translate("accountCurator", "My Comments", nullptr));
         accountButton->setText(QCoreApplication::translate("accountCurator", "Account", nullptr));
         groupBox->setTitle(QCoreApplication::translate("accountCurator", "Account Info", nullptr));
@@ -207,9 +207,9 @@ public:
         getAccountType->setText(QCoreApplication::translate("accountCurator", "getAccountType", nullptr));
         pushButton->setText(QCoreApplication::translate("accountCurator", "Edit", nullptr));
         groupBox_2->setTitle(QCoreApplication::translate("accountCurator", "My Museums", nullptr));
-        label_12->setText(QCoreApplication::translate("accountCurator", "List Museums here", nullptr));
         addMusButton->setText(QCoreApplication::translate("accountCurator", "Add Museum", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("accountCurator", "Add Item", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("accountCurator", "Add Item to Museums", nullptr));
+        approveComments->setText(QCoreApplication::translate("accountCurator", "Approve Comments", nullptr));
         logoMM->setText(QString());
         logoMM_2->setText(QString());
     } // retranslateUi

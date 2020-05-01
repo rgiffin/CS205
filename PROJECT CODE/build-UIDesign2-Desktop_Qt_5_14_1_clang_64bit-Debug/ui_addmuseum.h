@@ -146,7 +146,7 @@ public:
         label->setText(QCoreApplication::translate("AddMuseum", "<h1>Add Museum</h1>", nullptr));
         homeButton->setText(QCoreApplication::translate("AddMuseum", "Home", nullptr));
         mListButton->setText(QCoreApplication::translate("AddMuseum", "Museum list", nullptr));
-        itemsViewedButton->setText(QCoreApplication::translate("AddMuseum", "Items Viewed", nullptr));
+        itemsViewedButton->setText(QCoreApplication::translate("AddMuseum", "Search", nullptr));
         myCommentsButton->setText(QCoreApplication::translate("AddMuseum", "My Comments", nullptr));
         accountButton->setText(QCoreApplication::translate("AddMuseum", "Account", nullptr));
         logoMM_2->setText(QString());

@@ -21,6 +21,7 @@ SOURCES += \
     accountviewer.cpp \
     additem.cpp \
     addmuseum.cpp \
+    approvecomments.cpp \
     comment.cpp \
     item.cpp \
     itemsviewed.cpp \
@@ -41,6 +42,7 @@ HEADERS += \
     accountviewer.h \
     additem.h \
     addmuseum.h \
+    approvecomments.h \
     comment.h \
     item.h \
     itemsviewed.h \
@@ -60,6 +62,7 @@ FORMS += \
     accountviewer.ui \
     additem.ui \
     addmuseum.ui \
+    approvecomments.ui \
     itemsviewed.ui \
     itemview.ui \
     login.ui \

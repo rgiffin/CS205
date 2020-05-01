@@ -214,11 +214,12 @@ public:
         label->setText(QCoreApplication::translate("AccountEdit", "<h1>Account</h1>", nullptr));
         homeButton->setText(QCoreApplication::translate("AccountEdit", "Home", nullptr));
         mListButton->setText(QCoreApplication::translate("AccountEdit", "Museum list", nullptr));
-        itemsViewedButton->setText(QCoreApplication::translate("AccountEdit", "Items Viewed", nullptr));
+        itemsViewedButton->setText(QCoreApplication::translate("AccountEdit", "Search", nullptr));
         myCommentsButton->setText(QCoreApplication::translate("AccountEdit", "My Comments", nullptr));
         accountButton->setText(QCoreApplication::translate("AccountEdit", "Account", nullptr));
         groupBox->setTitle(QCoreApplication::translate("AccountEdit", "Account Edit", nullptr));
         label_2->setText(QCoreApplication::translate("AccountEdit", "Name", nullptr));
+        Name->setText(QString());
         label_4->setText(QCoreApplication::translate("AccountEdit", "Email", nullptr));
         label_3->setText(QCoreApplication::translate("AccountEdit", "Username", nullptr));
         label_5->setText(QCoreApplication::translate("AccountEdit", "Password", nullptr));

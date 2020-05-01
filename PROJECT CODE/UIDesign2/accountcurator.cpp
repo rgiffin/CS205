@@ -167,3 +167,12 @@ void accountCurator::getAccInfo(string user)
 
 
 }
+
+void accountCurator::on_approveComments_clicked()
+{
+    //open comment approved function
+    ap = new ApproveComments();
+    ap->setUName(username);
+    ap->show();
+
+}

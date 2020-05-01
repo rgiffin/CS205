@@ -188,7 +188,7 @@ public:
         logoMM->setText(QString());
         homeButton->setText(QCoreApplication::translate("accountViewer", "Home", nullptr));
         mListButton->setText(QCoreApplication::translate("accountViewer", "Museum list", nullptr));
-        itemsViewedButton->setText(QCoreApplication::translate("accountViewer", "Items Viewed", nullptr));
+        itemsViewedButton->setText(QCoreApplication::translate("accountViewer", "Search", nullptr));
         myCommentsButton->setText(QCoreApplication::translate("accountViewer", "My Comments", nullptr));
         accountButton->setText(QCoreApplication::translate("accountViewer", "Account", nullptr));
     } // retranslateUi

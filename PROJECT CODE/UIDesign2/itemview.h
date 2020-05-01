@@ -12,6 +12,7 @@
 #include "museum.h"
 
 #include "vector"
+#include "comment.h"
 
 
 class MuseumPage;
@@ -49,6 +50,10 @@ public:
 
     void setIndex(int i);
 
+    void addComment(std::string comment, std::string user, std::string item, std::string approval);
+
+    vector<Comment> getItemComments(std::string itemName);
+
 private slots:
 
     void on_mListButton_clicked();
@@ -66,6 +71,10 @@ private slots:
     void on_pushButton_2_clicked();
 
     void on_pushButton_3_clicked();
+
+    void on_addComment_clicked();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::ItemView *ui;
@@ -89,8 +98,11 @@ private:
     std::string museumName;
 
     vector<Item> items;
+    vector<Comment> comments;
 
     Item curItem;
+
+    int cIndex;
 
     int index;
 

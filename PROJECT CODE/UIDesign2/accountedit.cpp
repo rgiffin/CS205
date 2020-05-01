@@ -2,6 +2,7 @@
 #include "ui_accountedit.h"
 #include "QMessageBox"
 #include "iostream"
+#include "user.h"
 
 
 AccountEdit::AccountEdit(QWidget *parent) :
@@ -46,6 +47,9 @@ void AccountEdit::on_pushButton_clicked()
             type = "viewer";
         if(ui->Curator->isChecked())
             type = "curator";
+
+
+
 
         cout << type.toStdString() << endl;
 
@@ -107,6 +111,26 @@ void AccountEdit::on_homeButton_clicked()
 void AccountEdit::setUName(std::string u)
 {
     username = u;
+    User user1;
+    user1.setUsername(username);
+    user1.getAccInfo(username);
+    ui->Username->setText(QString::fromStdString(user1.getUsername()));
+    ui->Name->setText(QString::fromStdString(user1.getName()));
+    ui->Email->setText(QString::fromStdString(user1.getEmail()));
+    ui->Password->setText(QString::fromStdString(user1.getPassword()));
+    string type = user1.getType();
+
+    if(type == "curator")
+    {
+        ui->Curator->setChecked(true);
+    }
+    else if(type == "viewer")
+    {
+        ui->Viewer->setChecked(true);
+    }
+
+
+
 }
 
 std::string AccountEdit::getUName()

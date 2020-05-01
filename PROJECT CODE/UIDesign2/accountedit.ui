@@ -60,7 +60,7 @@
     <item>
      <widget class="QPushButton" name="itemsViewedButton">
       <property name="text">
-       <string>Items Viewed</string>
+       <string>Search</string>
       </property>
      </widget>
     </item>
@@ -122,6 +122,9 @@
         <family>Yuanti TC</family>
         <pointsize>18</pointsize>
        </font>
+      </property>
+      <property name="text">
+       <string/>
       </property>
      </widget>
     </item>

@@ -59,7 +59,7 @@
     <item row="5" column="1">
      <widget class="QPushButton" name="addImage">
       <property name="text">
-       <string>Add Image</string>
+       <string>Add Image(.png)</string>
       </property>
      </widget>
     </item>
@@ -138,7 +138,7 @@
     <item>
      <widget class="QPushButton" name="itemsViewedButton">
       <property name="text">
-       <string>Items Viewed</string>
+       <string>Search</string>
       </property>
      </widget>
     </item>

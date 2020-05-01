@@ -16,6 +16,8 @@ SignUp::SignUp(QWidget *parent) :
     int width = ui->RLogo->width();
     int height = ui->RLogo->height();
     ui->RLogo->setPixmap(pix.scaled(width,height,Qt::KeepAspectRatio));
+
+    ui->Viewer->setChecked(true);
 }
 
 SignUp::~SignUp()
@@ -44,22 +46,32 @@ void SignUp::on_pushButton_clicked()
 
     if(password == confP)
     {
-        //save data here
+        if(username == "" || name == "" || email == "" || password == "")
+        {
+            QMessageBox::warning(this,"Message", "Empty Fields Exist", QMessageBox::Ok);
+        }
+        else
+        {
+            //save data here
 
-        std::string u = username.toStdString();
-        std::string p = password.toStdString();
-        std::string n = name.toStdString();
-        std::string e = email.toStdString();
-        std::string t = type.toStdString();
+            std::string u = username.toStdString();
+            std::string p = password.toStdString();
+            std::string n = name.toStdString();
+            std::string e = email.toStdString();
+            std::string t = type.toStdString();
 
-        logInfo(u, p, n, e, t);
-        User user(u,p,e,n,t);
+            logInfo(u, p, n, e, t);
+            User user(u,p,e,n,t);
 
-        accountCurator x;
-        x.setUser(user);
+            accountCurator x;
+            x.setUser(user);
 
 
-        close();
+            close();
+        }
+
+
+
 
 
 
@@ -102,4 +114,9 @@ void SignUp::logInfo(string user, string pass, string name, string email, string
     //Adds the item created to the table
     QSqlQuery query;
     query.exec(s2);
+}
+
+void SignUp::on_cancel_clicked()
+{
+    hide();
 }

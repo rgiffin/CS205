@@ -60,7 +60,7 @@
     <item>
      <widget class="QPushButton" name="itemsViewedButton">
       <property name="text">
-       <string>Items Viewed</string>
+       <string>Search</string>
       </property>
      </widget>
     </item>
@@ -111,8 +111,16 @@
         <height>96</height>
        </size>
       </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
       <property name="text">
        <string>Description</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
       </property>
      </widget>
     </item>
@@ -124,8 +132,16 @@
         <height>96</height>
        </size>
       </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
       <property name="text">
        <string>Description</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
       </property>
      </widget>
     </item>
@@ -178,8 +194,16 @@
         <height>96</height>
        </size>
       </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
       <property name="text">
        <string>Description</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
       </property>
      </widget>
     </item>
