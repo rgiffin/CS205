@@ -2,7 +2,7 @@
 
 Museum::Museum()
 {
-getMuseumItems();
+
 }
 
 string Museum::getName()
