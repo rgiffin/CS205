@@ -45,6 +45,10 @@ public:
     void setIName(std::string i);
     std::string getIName();
 
+    void setItems(vector<Item> i);
+
+    void setIndex(int i);
+
 private slots:
 
     void on_mListButton_clicked();
@@ -84,9 +88,11 @@ private:
     std::string username;
     std::string museumName;
 
+    vector<Item> items;
+
     Item curItem;
 
-
+    int index;
 
 };
 

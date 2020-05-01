@@ -1,5 +1,6 @@
 #include "museumlist.h"
 #include "ui_museumlist.h"
+#include "user.h"
 
 MuseumList::MuseumList(QWidget *parent) :
     QDialog(parent),
@@ -60,9 +61,12 @@ void MuseumList::on_myCommentsButton_clicked()
 void MuseumList::on_accountButton_clicked()
 {
     //go to account
+    User u;
+    u.setUsername(username);
+    u.getAccInfo(username);
 
     //if curator open curator account look
-    if(1>0)
+    if(u.ifCurator())
     {
         ac = new accountCurator();
         ac->setUName(username);

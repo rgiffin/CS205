@@ -81,7 +81,7 @@ void AddItem::on_pushButton_clicked()
 
 void AddItem::on_addImage_clicked()
 {
-    QString filter = "images (*.jpg *.png *.heic)";
+    QString filter = "images (*.png)";
     filename = QFileDialog::getOpenFileName(this, "Open a file", QDir::homePath(), filter);
 
     if(!filename.isEmpty())

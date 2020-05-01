@@ -1,5 +1,6 @@
 #include "itemsviewed.h"
 #include "ui_itemsviewed.h"
+#include "user.h"
 
 ItemsViewed::ItemsViewed(QWidget *parent) :
     QDialog(parent),
@@ -30,9 +31,12 @@ void ItemsViewed::on_myCommentsButton_clicked()
 void ItemsViewed::on_accountButton_clicked()
 {
     //go to account
+    User u;
+    u.setUsername(username);
+    u.getAccInfo(username);
 
     //if curator open curator account look
-    if(1>0)
+    if(u.ifCurator())
     {
         ac = new accountCurator();
         ac->setUName(username);
