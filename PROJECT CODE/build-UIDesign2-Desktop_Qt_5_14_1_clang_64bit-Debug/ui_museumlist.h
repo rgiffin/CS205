@@ -52,6 +52,9 @@ public:
     QPushButton *visit1_4;
     QPushButton *visit2_4;
     QPushButton *visit3_4;
+    QLabel *own1;
+    QLabel *own2;
+    QLabel *own3;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
 
@@ -204,6 +207,21 @@ public:
 
         gridLayout_4->addWidget(visit3_4, 4, 1, 1, 1);
 
+        own1 = new QLabel(layoutWidget_2);
+        own1->setObjectName(QString::fromUtf8("own1"));
+
+        gridLayout_4->addWidget(own1, 0, 2, 1, 1);
+
+        own2 = new QLabel(layoutWidget_2);
+        own2->setObjectName(QString::fromUtf8("own2"));
+
+        gridLayout_4->addWidget(own2, 2, 2, 1, 1);
+
+        own3 = new QLabel(layoutWidget_2);
+        own3->setObjectName(QString::fromUtf8("own3"));
+
+        gridLayout_4->addWidget(own3, 4, 2, 1, 1);
+
         pushButton = new QPushButton(MuseumList);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         pushButton->setGeometry(QRect(690, 560, 113, 32));
@@ -244,6 +262,9 @@ public:
         visit1_4->setText(QCoreApplication::translate("MuseumList", "Visit Museum1", nullptr));
         visit2_4->setText(QCoreApplication::translate("MuseumList", "Visit Museum 2", nullptr));
         visit3_4->setText(QCoreApplication::translate("MuseumList", "Visit Museum 3", nullptr));
+        own1->setText(QCoreApplication::translate("MuseumList", "Owner: ", nullptr));
+        own2->setText(QCoreApplication::translate("MuseumList", "Owner: ", nullptr));
+        own3->setText(QCoreApplication::translate("MuseumList", "Owner: ", nullptr));
         pushButton->setText(QCoreApplication::translate("MuseumList", "Next Page", nullptr));
         pushButton_2->setText(QCoreApplication::translate("MuseumList", "Previous", nullptr));
     } // retranslateUi
