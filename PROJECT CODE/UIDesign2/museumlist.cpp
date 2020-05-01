@@ -6,7 +6,6 @@ MuseumList::MuseumList(QWidget *parent) :
     ui(new Ui::MuseumList)
 {
     ui->setupUi(this);
-    vector<Museum> musList1 = getMuseums();
     QPixmap pix(":/resources/images/logo.png");
     int width = ui->logoMM->width();
     int height = ui->logoMM->height();
