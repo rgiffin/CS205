@@ -11,6 +11,7 @@ class Museum
 {
 public:
     Museum();
+    void getMuseumItems();
     string getName();
     string getDescription();
     string getOwner();
