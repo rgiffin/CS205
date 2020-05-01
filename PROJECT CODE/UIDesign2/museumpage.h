@@ -14,6 +14,8 @@
 #include "museum.h"
 #include "item.h"
 
+#include "vector"
+
 using namespace std;
 
 class ItemView;
@@ -38,6 +40,7 @@ public:
     explicit MuseumPage(QWidget *parent = nullptr);
     ~MuseumPage();
     Museum museum;
+
     Museum setMuseum(string, string);
 
 
@@ -46,6 +49,8 @@ public:
 
     void setMName(std::string m);
     std::string getMName();
+
+    void display(int i);
 
 
 
@@ -111,9 +116,9 @@ private:
 
 
 
+    vector<Item> itemList;
 
-
-
+    int index;
 
 
     std::string username;

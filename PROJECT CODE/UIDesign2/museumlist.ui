@@ -103,6 +103,176 @@
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout_4">
+    <item row="8" column="0">
+     <widget class="QLabel" name="description3_4">
+      <property name="maximumSize">
+       <size>
+        <width>188</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Description</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="description2_4">
+      <property name="maximumSize">
+       <size>
+        <width>188</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Description</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QLabel" name="image1_12">
+      <property name="text">
+       <string>Image 1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="Line" name="line_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="3">
+     <widget class="QLabel" name="image3_12">
+      <property name="text">
+       <string>Image 3</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="mName3_4">
+      <property name="font">
+       <font>
+        <family>Skia</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Museum 3</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="description1_4">
+      <property name="maximumSize">
+       <size>
+        <width>188</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Description</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="Line" name="line_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="Line" name="line_5">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLabel" name="image1_11">
+      <property name="text">
+       <string>Image 1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="image1_10">
+      <property name="text">
+       <string>image 1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QPushButton" name="visit3_4">
+      <property name="text">
+       <string>Visit Museum 3</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QLabel" name="image2_11">
+      <property name="text">
+       <string>Image 2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="2">
+     <widget class="QLabel" name="image2_12">
+      <property name="text">
+       <string>Image 2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLabel" name="image2_10">
+      <property name="text">
+       <string>image 2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="own1">
+      <property name="text">
+       <string>Owner: </string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QLabel" name="image3_11">
+      <property name="text">
+       <string>Image 3</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLabel" name="image3_10">
+      <property name="text">
+       <string>image 3</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="mName2_4">
+      <property name="font">
+       <font>
+        <family>Skia</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Museum 2</string>
+      </property>
+     </widget>
+    </item>
     <item row="0" column="0">
      <widget class="QLabel" name="mName1_4">
       <property name="font">
@@ -116,113 +286,10 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="description1_4">
-      <property name="text">
-       <string>Description</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="QLabel" name="image1_10">
-      <property name="text">
-       <string>image 1</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="2">
-     <widget class="QLabel" name="image2_10">
-      <property name="text">
-       <string>image 2</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="3">
-     <widget class="QLabel" name="image3_10">
-      <property name="text">
-       <string>image 3</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="mName2_4">
-      <property name="font">
-       <font>
-        <family>Skia</family>
-        <pointsize>20</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Museum 2</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="description2_4">
-      <property name="text">
-       <string>Description</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="QLabel" name="image1_11">
-      <property name="text">
-       <string>Image 1</string>
-      </property>
-     </widget>
-    </item>
     <item row="3" column="2">
-     <widget class="QLabel" name="image2_11">
+     <widget class="QLabel" name="own2">
       <property name="text">
-       <string>Image 2</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="3">
-     <widget class="QLabel" name="image3_11">
-      <property name="text">
-       <string>Image 3</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="0">
-     <widget class="QLabel" name="mName3_4">
-      <property name="font">
-       <font>
-        <family>Skia</family>
-        <pointsize>20</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Museum 3</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="0">
-     <widget class="QLabel" name="description3_4">
-      <property name="text">
-       <string>Description</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="1">
-     <widget class="QLabel" name="image1_12">
-      <property name="text">
-       <string>Image 1</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="2">
-     <widget class="QLabel" name="image2_12">
-      <property name="text">
-       <string>Image 2</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="3">
-     <widget class="QLabel" name="image3_12">
-      <property name="text">
-       <string>Image 3</string>
+       <string>Owner: </string>
       </property>
      </widget>
     </item>
@@ -233,38 +300,45 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="1">
+    <item row="7" column="2">
+     <widget class="QLabel" name="own3">
+      <property name="text">
+       <string>Owner: </string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
      <widget class="QPushButton" name="visit2_4">
       <property name="text">
        <string>Visit Museum 2</string>
       </property>
      </widget>
     </item>
-    <item row="4" column="1">
-     <widget class="QPushButton" name="visit3_4">
-      <property name="text">
-       <string>Visit Museum 3</string>
+    <item row="2" column="1">
+     <widget class="Line" name="line_4">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
       </property>
      </widget>
     </item>
-    <item row="0" column="2">
-     <widget class="QLabel" name="own1">
-      <property name="text">
-       <string>Owner: </string>
+    <item row="5" column="1">
+     <widget class="Line" name="line_6">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
       </property>
      </widget>
     </item>
-    <item row="2" column="2">
-     <widget class="QLabel" name="own2">
-      <property name="text">
-       <string>Owner: </string>
+    <item row="5" column="2">
+     <widget class="Line" name="line_7">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
       </property>
      </widget>
     </item>
-    <item row="4" column="2">
-     <widget class="QLabel" name="own3">
-      <property name="text">
-       <string>Owner: </string>
+    <item row="5" column="3">
+     <widget class="Line" name="line_8">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
       </property>
      </widget>
     </item>

@@ -15,6 +15,8 @@ public:
     string getDescription();
     string getOwner();
     vector<Item> itemList;
+    void getMuseumItems();
+    vector<Item> getItemList();
 
     string name;
     string description;

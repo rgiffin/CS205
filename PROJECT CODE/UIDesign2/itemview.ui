@@ -98,7 +98,7 @@
     <rect>
      <x>80</x>
      <y>120</y>
-     <width>311</width>
+     <width>291</width>
      <height>311</height>
     </rect>
    </property>
@@ -109,11 +109,16 @@
   <widget class="QLabel" name="iName">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>440</y>
+     <x>50</x>
+     <y>450</y>
      <width>311</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>17</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Item Name:</string>
@@ -122,11 +127,16 @@
   <widget class="QLabel" name="iCreator">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>490</y>
+     <x>50</x>
+     <y>510</y>
      <width>311</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>17</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Creator:</string>
@@ -138,8 +148,14 @@
      <x>400</x>
      <y>140</y>
      <width>381</width>
-     <height>181</height>
+     <height>161</height>
     </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>381</width>
+     <height>161</height>
+    </size>
    </property>
    <property name="text">
     <string>Description</string>
@@ -148,11 +164,16 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>320</y>
-     <width>81</width>
+     <x>390</x>
+     <y>330</y>
+     <width>91</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>17</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Comments:</string>
@@ -161,11 +182,16 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>400</x>
+     <x>390</x>
      <y>120</y>
-     <width>91</width>
+     <width>111</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>17</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Description:</string>
@@ -175,7 +201,7 @@
    <property name="geometry">
     <rect>
      <x>400</x>
-     <y>350</y>
+     <y>370</y>
      <width>141</width>
      <height>16</height>
     </rect>
@@ -247,6 +273,45 @@
    </property>
    <property name="text">
     <string>Back To Museum</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>350</y>
+     <width>411</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>370</y>
+     <width>20</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_3">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>510</y>
+     <width>411</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
    </property>
   </widget>
  </widget>
