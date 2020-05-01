@@ -67,14 +67,14 @@ void AccountEdit::on_pushButton_clicked()
 
 
 
-    if(type == "Curator")
+    if(type == "curator")
     {
         ac = new accountCurator();
         ac->setUName(username2.toStdString());
         ac->show();
         hide();
     }
-    else if(type == "Viewer")
+    else if(type == "viewer")
     {
         av = new accountViewer();
         av->setUName(username2.toStdString());
