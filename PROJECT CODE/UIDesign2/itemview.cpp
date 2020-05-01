@@ -109,6 +109,14 @@ void ItemView::setMName(std::string m)
     int height = ui->image->height();
     ui->image->setPixmap(pix.scaled(width,height,Qt::KeepAspectRatio));
     ui->image->setAlignment(Qt::AlignCenter);
+
+    cIndex = 0;
+    comments = getItemComments(curItem.getName());
+    if(comments.size()>0)
+    {
+        ui->comment->setText(QString::fromStdString(comments.at(0).getComment()));
+        ui->user->setText("User: "+QString::fromStdString(comments.at(0).getUser()));
+    }
 }
 
 std::string ItemView::getMName()
@@ -239,4 +247,114 @@ void ItemView::setItems(vector<Item> i)
 void ItemView::setIndex(int i)
 {
     index = i;
+}
+
+void ItemView::on_addComment_clicked()
+{
+    QString comment = ui->comment_2->toPlainText();
+    std::string c = comment.toStdString();
+
+    addComment(c, username, curItem.getName(), "pending");
+
+}
+
+void ItemView::addComment(std::string comment, std::string user, std::string item, std::string approval)
+{
+    QSqlDatabase db;
+    //connect to database
+    db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("dbv2.sqlite");
+
+    //Opens database
+    if(!db.open())
+    {
+        cout << "DATABASE COULD NOT BE OPENED" << endl;
+    }
+
+    string s1 = "SELECT owner from itemTable WHERE name = '";
+    s1.append(item);
+    s1.append("'");
+    char s2[s1.size()+1];
+    strcpy(s2,s1.c_str());
+    QSqlQuery query;
+    query.exec(s2);
+
+    string ownerName;
+    if(query.first())
+    {
+          ownerName = query.value(0).toString().toStdString();
+    }
+
+    //Creating query from input
+    s1 = "insert into commentTable values('";
+    s1.append(comment);
+    s1.append("', '");
+    s1.append(user);
+    s1.append("', '");
+    s1.append(item);
+    s1.append("', '");
+    s1.append(approval);
+    s1.append("', '");
+    s1.append(ownerName);
+    s1.append("')");
+    char s3[s1.size()+1];
+    strcpy(s3,s1.c_str());
+
+    //Adds the item created to the table
+    query.exec(s3);
+}
+
+
+vector<Comment> ItemView::getItemComments(std::string itemName)
+{
+    QSqlDatabase db;
+    Comment c;
+    vector<Comment> retVector;
+    //connect to database
+    db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("dbv2.sqlite");
+
+    //Opens database
+    if(!db.open())
+    {
+        cout << "DATABASE COULD NOT BE OPENED" << endl;
+    }
+
+    string s1 = "SELECT * FROM commentTable WHERE approval = 'true' AND item = '";
+    s1.append(itemName);
+    s1.append("'");
+    cout << s1 << endl;
+    char s2[s1.size()+1];
+    strcpy(s2,s1.c_str());
+
+    QSqlQuery query;
+    query.exec(s2);
+
+    while(query.next())
+    {
+        c.comment = query.value(0).toString().toStdString();
+        c.user = query.value(1).toString().toStdString();
+        c.item = query.value(2).toString().toStdString();
+        c.approved = query.value(3).toString().toStdString();
+        c.itemOwner = query.value(4).toString().toStdString();
+
+        retVector.push_back(c);
+    }
+
+    return retVector;
+}
+
+void ItemView::on_pushButton_clicked()
+{
+    int s = comments.size();
+    if(comments.size()>0)
+    {
+    cIndex++;
+    if(cIndex>=s)
+    {
+        cIndex = 0;
+    }
+    ui->comment->setText(QString::fromStdString(comments.at(cIndex).getComment()));
+    ui->user->setText("User: "+QString::fromStdString(comments.at(cIndex).getUser()));
+    }
 }

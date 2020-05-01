@@ -147,43 +147,7 @@ vector<Comment> getItemComments(string itemName)
 }
 
 //Shows the comments that an owner of a user can approve, returns vector of not yet approved comments
-vector<Comment> commentsToApprove(string user)
-{
-    QSqlDatabase db;
-    Comment c;
-    vector<Comment> retVector;
-    //connect to database
-    db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("dbv2.sqlite");
 
-    //Opens database
-    if(!db.open())
-    {
-        cout << "DATABASE COULD NOT BE OPENED" << endl;
-    }
-
-    string s1 = "SELECT * FROM commentTable WHERE approved = 'false' AND itemOwner = '";
-    s1.append(user);
-    s1.append("'");
-    char s2[s1.size()+1];
-    strcpy(s2,s1.c_str());
-
-    QSqlQuery query;
-    query.exec(s2);
-
-    while(query.next())
-    {
-        c.comment = query.value(0).toString().toStdString();
-        c.user = query.value(1).toString().toStdString();
-        c.item = query.value(2).toString().toStdString();
-        c.approved = query.value(3).toString().toStdString();
-        c.itemOwner = query.value(4).toString().toStdString();
-
-        retVector.push_back(c);
-    }
-
-    return retVector;
-}
 
 //Gets Item Object from item name
 Item getItemFromName(string name)
@@ -225,6 +189,10 @@ Item getItemFromName(string name)
         outputpix.loadFromData(outByteArray);
         retItem.image = outputpix;
     }
+    else
+    {
+        retItem.name = "dne";
+    }
     return retItem;
 }
 
@@ -258,6 +226,10 @@ Museum getMuseumFromName(string name)
         retMus.name = query.value(0).toString().toStdString();
         retMus.description = query.value(1).toString().toStdString();
         retMus.owner = query.value(2).toString().toStdString();
+    }
+    else
+    {
+        retMus.name = "dne";
     }
 
     cout << retMus.name << endl;

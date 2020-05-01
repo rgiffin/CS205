@@ -46,11 +46,9 @@ private slots:
 
     void on_accountButton_clicked();
 
-    void on_visit1_clicked();
 
-    void on_visit2_clicked();
 
-    void on_visit3_clicked();
+    void on_pushButton_clicked();
 
 private:
     Ui::MuseumMain *ui;

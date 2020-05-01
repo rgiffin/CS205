@@ -123,12 +123,18 @@ public:
         description3_4 = new QLabel(layoutWidget_2);
         description3_4->setObjectName(QString::fromUtf8("description3_4"));
         description3_4->setMaximumSize(QSize(188, 96));
+        QFont font1;
+        font1.setPointSize(9);
+        description3_4->setFont(font1);
+        description3_4->setWordWrap(true);
 
         gridLayout_4->addWidget(description3_4, 8, 0, 1, 1);
 
         description2_4 = new QLabel(layoutWidget_2);
         description2_4->setObjectName(QString::fromUtf8("description2_4"));
         description2_4->setMaximumSize(QSize(188, 96));
+        description2_4->setFont(font1);
+        description2_4->setWordWrap(true);
 
         gridLayout_4->addWidget(description2_4, 4, 0, 1, 1);
 
@@ -158,16 +164,18 @@ public:
 
         mName3_4 = new QLabel(layoutWidget_2);
         mName3_4->setObjectName(QString::fromUtf8("mName3_4"));
-        QFont font1;
-        font1.setFamily(QString::fromUtf8("Skia"));
-        font1.setPointSize(20);
-        mName3_4->setFont(font1);
+        QFont font2;
+        font2.setFamily(QString::fromUtf8("Skia"));
+        font2.setPointSize(20);
+        mName3_4->setFont(font2);
 
         gridLayout_4->addWidget(mName3_4, 7, 0, 1, 1);
 
         description1_4 = new QLabel(layoutWidget_2);
         description1_4->setObjectName(QString::fromUtf8("description1_4"));
         description1_4->setMaximumSize(QSize(188, 96));
+        description1_4->setFont(font1);
+        description1_4->setWordWrap(true);
 
         gridLayout_4->addWidget(description1_4, 1, 0, 1, 1);
 
@@ -232,13 +240,13 @@ public:
 
         mName2_4 = new QLabel(layoutWidget_2);
         mName2_4->setObjectName(QString::fromUtf8("mName2_4"));
-        mName2_4->setFont(font1);
+        mName2_4->setFont(font2);
 
         gridLayout_4->addWidget(mName2_4, 3, 0, 1, 1);
 
         mName1_4 = new QLabel(layoutWidget_2);
         mName1_4->setObjectName(QString::fromUtf8("mName1_4"));
-        mName1_4->setFont(font1);
+        mName1_4->setFont(font2);
 
         gridLayout_4->addWidget(mName1_4, 0, 0, 1, 1);
 
@@ -308,7 +316,7 @@ public:
         label->setText(QCoreApplication::translate("MuseumList", "<h1>Museum List</h1>", nullptr));
         homeButton->setText(QCoreApplication::translate("MuseumList", "Home", nullptr));
         mListButton->setText(QCoreApplication::translate("MuseumList", "Museum list", nullptr));
-        itemsViewedButton->setText(QCoreApplication::translate("MuseumList", "Items Viewed", nullptr));
+        itemsViewedButton->setText(QCoreApplication::translate("MuseumList", "Search", nullptr));
         myCommentsButton->setText(QCoreApplication::translate("MuseumList", "My Comments", nullptr));
         accountButton->setText(QCoreApplication::translate("MuseumList", "Account", nullptr));
         logoMM->setText(QString());

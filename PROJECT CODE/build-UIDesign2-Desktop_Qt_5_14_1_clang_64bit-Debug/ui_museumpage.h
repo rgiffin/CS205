@@ -228,7 +228,7 @@ public:
         logoMM->setText(QString());
         homeButton->setText(QCoreApplication::translate("MuseumPage", "Home", nullptr));
         mListButton->setText(QCoreApplication::translate("MuseumPage", "Museum list", nullptr));
-        itemsViewedButton->setText(QCoreApplication::translate("MuseumPage", "Items Viewed", nullptr));
+        itemsViewedButton->setText(QCoreApplication::translate("MuseumPage", "Search", nullptr));
         myCommentsButton->setText(QCoreApplication::translate("MuseumPage", "My Comments", nullptr));
         accountButton->setText(QCoreApplication::translate("MuseumPage", "Account", nullptr));
         image1->setText(QCoreApplication::translate("MuseumPage", "Item Image 1", nullptr));

@@ -14,6 +14,7 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
@@ -31,6 +32,10 @@ public:
     QPushButton *myCommentsButton;
     QPushButton *accountButton;
     QLabel *label;
+    QLabel *label_2;
+    QLineEdit *field;
+    QPushButton *search;
+    QLabel *error;
 
     void setupUi(QDialog *ItemsViewed)
     {
@@ -79,6 +84,18 @@ public:
         font.setPointSize(25);
         font.setItalic(false);
         label->setFont(font);
+        label_2 = new QLabel(ItemsViewed);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setGeometry(QRect(330, 250, 171, 16));
+        field = new QLineEdit(ItemsViewed);
+        field->setObjectName(QString::fromUtf8("field"));
+        field->setGeometry(QRect(260, 300, 191, 31));
+        search = new QPushButton(ItemsViewed);
+        search->setObjectName(QString::fromUtf8("search"));
+        search->setGeometry(QRect(450, 300, 113, 31));
+        error = new QLabel(ItemsViewed);
+        error->setObjectName(QString::fromUtf8("error"));
+        error->setGeometry(QRect(250, 390, 331, 16));
 
         retranslateUi(ItemsViewed);
 
@@ -91,10 +108,13 @@ public:
         logoMM->setText(QString());
         homeButton->setText(QCoreApplication::translate("ItemsViewed", "Home", nullptr));
         mListButton->setText(QCoreApplication::translate("ItemsViewed", "Museum list", nullptr));
-        itemsViewedButton->setText(QCoreApplication::translate("ItemsViewed", "Items Viewed", nullptr));
+        itemsViewedButton->setText(QCoreApplication::translate("ItemsViewed", "Search", nullptr));
         myCommentsButton->setText(QCoreApplication::translate("ItemsViewed", "My Comments", nullptr));
         accountButton->setText(QCoreApplication::translate("ItemsViewed", "Account", nullptr));
-        label->setText(QCoreApplication::translate("ItemsViewed", "<h1>Items Viewed</h1>", nullptr));
+        label->setText(QCoreApplication::translate("ItemsViewed", "<h1>Search</h1>", nullptr));
+        label_2->setText(QCoreApplication::translate("ItemsViewed", "Search for Item or Museum", nullptr));
+        search->setText(QCoreApplication::translate("ItemsViewed", "Search", nullptr));
+        error->setText(QCoreApplication::translate("ItemsViewed", "Error: No item or Museum Found with matching name", nullptr));
     } // retranslateUi
 
 };
