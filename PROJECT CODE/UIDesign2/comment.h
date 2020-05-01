@@ -13,11 +13,13 @@ public:
     string getUser();
     string getItem();
     string getApproved();
+    string getItemOwner();
 
     string comment;
     string user;
     string item;
     string approved;
+    string itemOwner;
 };
 
 #endif // COMMENT_H
