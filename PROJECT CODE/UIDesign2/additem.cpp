@@ -62,6 +62,7 @@ void AddItem::on_pushButton_clicked()
     Museum m = getMuseumFromName(museum);
     Item i = getItemFromName(name);
 
+
     if(iName == "" || iMuseum == "")
     {
         QMessageBox::warning(this,"Message", "Empty Fields Exist", QMessageBox::Ok);
@@ -74,7 +75,7 @@ void AddItem::on_pushButton_clicked()
     {
         QMessageBox::warning(this,"Message", "You do not own this museum please choose a museum from your collection", QMessageBox::Ok);
     }
-    else if(i.getName() == "dne")
+    else if(i.getName() != "dne")
     {
         QMessageBox::warning(this,"Message", "Item Name already exsists please choose anohter name for your item", QMessageBox::Ok);
     }
