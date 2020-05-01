@@ -9,6 +9,10 @@
 #include "museummain.h"
 #include "museumpage.h"
 #include "item.h"
+#include "museum.h"
+
+#include "vector"
+
 
 class MuseumPage;
 class MuseumMain;

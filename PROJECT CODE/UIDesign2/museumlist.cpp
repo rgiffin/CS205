@@ -192,6 +192,16 @@ vector<Museum> MuseumList::getMuseums()
 void MuseumList::display(int i)
 {
     int size = musList.size();
+    QPixmap p;
+    ui->image1_10->setPixmap(p);
+    ui->image1_11->setPixmap(p);
+    ui->image1_12->setPixmap(p);
+    ui->image2_10->setPixmap(p);
+    ui->image2_11->setPixmap(p);
+    ui->image2_12->setPixmap(p);
+    ui->image3_10->setPixmap(p);
+    ui->image3_11->setPixmap(p);
+    ui->image3_12->setPixmap(p);
 
     //setting museum1
     if(i>=size)
@@ -209,6 +219,41 @@ void MuseumList::display(int i)
     ui->description1_4->setText(QString::fromStdString(desc1));
     ui->own1->setText("Owner: "+QString::fromStdString(owner1));
 
+    //setting images for museum 1
+    one.getMuseumItems();
+    vector<Item> items1 = one.getItemList();
+    int iSize = items1.size();
+
+    if(iSize>0)
+    {
+        Item i = items1.at(0);
+        QPixmap q = i.getImage();
+        int w = ui->image1_10->width();
+        int h = ui->image1_10->height();
+        ui->image1_10->setPixmap(q.scaled(w,h,Qt::KeepAspectRatio));
+    }
+    if(iSize>1)
+    {
+        Item i = items1.at(1);
+        QPixmap q = i.getImage();
+        int w = ui->image2_10->width();
+        int h = ui->image2_10->height();
+        ui->image2_10->setPixmap(q.scaled(w,h,Qt::KeepAspectRatio));
+    }
+    if(iSize>2)
+    {
+        Item i = items1.at(2);
+        QPixmap q = i.getImage();
+        int w = ui->image3_10->width();
+        int h = ui->image3_10->height();
+        ui->image3_10->setPixmap(q.scaled(w,h,Qt::KeepAspectRatio));
+    }
+
+
+
+
+
+    //setting museum2
     if(i>=size)
     {
         i = 0;
@@ -223,6 +268,38 @@ void MuseumList::display(int i)
     ui->description2_4->setText(QString::fromStdString(desc2));
     ui->own2->setText("Owner: "+QString::fromStdString(owner2));
 
+    //setting images for museum 2
+    two.getMuseumItems();
+    vector<Item> items2 = two.getItemList();
+    int iSize2 = items2.size();
+
+    if(iSize2>0)
+    {
+        Item i = items2.at(0);
+        QPixmap q = i.getImage();
+        int w = ui->image1_11->width();
+        int h = ui->image1_11->height();
+        ui->image1_11->setPixmap(q.scaled(w,h,Qt::KeepAspectRatio));
+    }
+    if(iSize2>1)
+    {
+        Item i = items2.at(1);
+        QPixmap q = i.getImage();
+        int w = ui->image2_11->width();
+        int h = ui->image2_11->height();
+        ui->image2_11->setPixmap(q.scaled(w,h,Qt::KeepAspectRatio));
+    }
+    if(iSize2>2)
+    {
+        Item i = items2.at(2);
+        QPixmap q = i.getImage();
+        int w = ui->image3_11->width();
+        int h = ui->image3_11->height();
+        ui->image3_11->setPixmap(q.scaled(w,h,Qt::KeepAspectRatio));
+    }
+
+
+    //setting museum3
     if(i>=size)
     {
         i = 0;
@@ -237,7 +314,35 @@ void MuseumList::display(int i)
     ui->description3_4->setText(QString::fromStdString(desc3));
     ui->own3->setText("Owner: "+QString::fromStdString(owner3));
 
+    //setting images for museum 3
+    three.getMuseumItems();
+    vector<Item> items3 = three.getItemList();
+    int iSize3 = items3.size();
 
+    if(iSize3>0)
+    {
+        Item i = items3.at(0);
+        QPixmap q = i.getImage();
+        int w = ui->image1_12->width();
+        int h = ui->image1_12->height();
+        ui->image1_12->setPixmap(q.scaled(w,h,Qt::KeepAspectRatio));
+    }
+    if(iSize3>1)
+    {
+        Item i = items3.at(1);
+        QPixmap q = i.getImage();
+        int w = ui->image2_12->width();
+        int h = ui->image2_12->height();
+        ui->image2_12->setPixmap(q.scaled(w,h,Qt::KeepAspectRatio));
+    }
+    if(iSize3>2)
+    {
+        Item i = items3.at(2);
+        QPixmap q = i.getImage();
+        int w = ui->image3_12->width();
+        int h = ui->image3_12->height();
+        ui->image3_12->setPixmap(q.scaled(w,h,Qt::KeepAspectRatio));
+    }
 
 
 

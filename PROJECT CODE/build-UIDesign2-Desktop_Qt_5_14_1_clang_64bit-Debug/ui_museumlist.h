@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
+#include <QtWidgets/QFrame>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
@@ -34,27 +35,35 @@ public:
     QLabel *logoMM;
     QWidget *layoutWidget_2;
     QGridLayout *gridLayout_4;
-    QLabel *mName1_4;
+    QLabel *description3_4;
+    QLabel *description2_4;
+    QLabel *image1_12;
+    QFrame *line_3;
+    QFrame *line;
+    QLabel *image3_12;
+    QLabel *mName3_4;
     QLabel *description1_4;
+    QFrame *line_2;
+    QFrame *line_5;
+    QLabel *image1_11;
     QLabel *image1_10;
+    QPushButton *visit3_4;
+    QLabel *image2_11;
+    QLabel *image2_12;
     QLabel *image2_10;
+    QLabel *own1;
+    QLabel *image3_11;
     QLabel *image3_10;
     QLabel *mName2_4;
-    QLabel *description2_4;
-    QLabel *image1_11;
-    QLabel *image2_11;
-    QLabel *image3_11;
-    QLabel *mName3_4;
-    QLabel *description3_4;
-    QLabel *image1_12;
-    QLabel *image2_12;
-    QLabel *image3_12;
-    QPushButton *visit1_4;
-    QPushButton *visit2_4;
-    QPushButton *visit3_4;
-    QLabel *own1;
+    QLabel *mName1_4;
     QLabel *own2;
+    QPushButton *visit1_4;
     QLabel *own3;
+    QPushButton *visit2_4;
+    QFrame *line_4;
+    QFrame *line_6;
+    QFrame *line_7;
+    QFrame *line_8;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
 
@@ -111,29 +120,110 @@ public:
         gridLayout_4 = new QGridLayout(layoutWidget_2);
         gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
         gridLayout_4->setContentsMargins(0, 0, 0, 0);
-        mName1_4 = new QLabel(layoutWidget_2);
-        mName1_4->setObjectName(QString::fromUtf8("mName1_4"));
+        description3_4 = new QLabel(layoutWidget_2);
+        description3_4->setObjectName(QString::fromUtf8("description3_4"));
+        description3_4->setMaximumSize(QSize(188, 96));
+
+        gridLayout_4->addWidget(description3_4, 8, 0, 1, 1);
+
+        description2_4 = new QLabel(layoutWidget_2);
+        description2_4->setObjectName(QString::fromUtf8("description2_4"));
+        description2_4->setMaximumSize(QSize(188, 96));
+
+        gridLayout_4->addWidget(description2_4, 4, 0, 1, 1);
+
+        image1_12 = new QLabel(layoutWidget_2);
+        image1_12->setObjectName(QString::fromUtf8("image1_12"));
+
+        gridLayout_4->addWidget(image1_12, 8, 1, 1, 1);
+
+        line_3 = new QFrame(layoutWidget_2);
+        line_3->setObjectName(QString::fromUtf8("line_3"));
+        line_3->setFrameShape(QFrame::HLine);
+        line_3->setFrameShadow(QFrame::Sunken);
+
+        gridLayout_4->addWidget(line_3, 2, 2, 1, 1);
+
+        line = new QFrame(layoutWidget_2);
+        line->setObjectName(QString::fromUtf8("line"));
+        line->setFrameShape(QFrame::HLine);
+        line->setFrameShadow(QFrame::Sunken);
+
+        gridLayout_4->addWidget(line, 2, 0, 1, 1);
+
+        image3_12 = new QLabel(layoutWidget_2);
+        image3_12->setObjectName(QString::fromUtf8("image3_12"));
+
+        gridLayout_4->addWidget(image3_12, 8, 3, 1, 1);
+
+        mName3_4 = new QLabel(layoutWidget_2);
+        mName3_4->setObjectName(QString::fromUtf8("mName3_4"));
         QFont font1;
         font1.setFamily(QString::fromUtf8("Skia"));
         font1.setPointSize(20);
-        mName1_4->setFont(font1);
+        mName3_4->setFont(font1);
 
-        gridLayout_4->addWidget(mName1_4, 0, 0, 1, 1);
+        gridLayout_4->addWidget(mName3_4, 7, 0, 1, 1);
 
         description1_4 = new QLabel(layoutWidget_2);
         description1_4->setObjectName(QString::fromUtf8("description1_4"));
+        description1_4->setMaximumSize(QSize(188, 96));
 
         gridLayout_4->addWidget(description1_4, 1, 0, 1, 1);
+
+        line_2 = new QFrame(layoutWidget_2);
+        line_2->setObjectName(QString::fromUtf8("line_2"));
+        line_2->setFrameShape(QFrame::HLine);
+        line_2->setFrameShadow(QFrame::Sunken);
+
+        gridLayout_4->addWidget(line_2, 5, 0, 1, 1);
+
+        line_5 = new QFrame(layoutWidget_2);
+        line_5->setObjectName(QString::fromUtf8("line_5"));
+        line_5->setFrameShape(QFrame::HLine);
+        line_5->setFrameShadow(QFrame::Sunken);
+
+        gridLayout_4->addWidget(line_5, 2, 3, 1, 1);
+
+        image1_11 = new QLabel(layoutWidget_2);
+        image1_11->setObjectName(QString::fromUtf8("image1_11"));
+
+        gridLayout_4->addWidget(image1_11, 4, 1, 1, 1);
 
         image1_10 = new QLabel(layoutWidget_2);
         image1_10->setObjectName(QString::fromUtf8("image1_10"));
 
         gridLayout_4->addWidget(image1_10, 1, 1, 1, 1);
 
+        visit3_4 = new QPushButton(layoutWidget_2);
+        visit3_4->setObjectName(QString::fromUtf8("visit3_4"));
+
+        gridLayout_4->addWidget(visit3_4, 7, 1, 1, 1);
+
+        image2_11 = new QLabel(layoutWidget_2);
+        image2_11->setObjectName(QString::fromUtf8("image2_11"));
+
+        gridLayout_4->addWidget(image2_11, 4, 2, 1, 1);
+
+        image2_12 = new QLabel(layoutWidget_2);
+        image2_12->setObjectName(QString::fromUtf8("image2_12"));
+
+        gridLayout_4->addWidget(image2_12, 8, 2, 1, 1);
+
         image2_10 = new QLabel(layoutWidget_2);
         image2_10->setObjectName(QString::fromUtf8("image2_10"));
 
         gridLayout_4->addWidget(image2_10, 1, 2, 1, 1);
+
+        own1 = new QLabel(layoutWidget_2);
+        own1->setObjectName(QString::fromUtf8("own1"));
+
+        gridLayout_4->addWidget(own1, 0, 2, 1, 1);
+
+        image3_11 = new QLabel(layoutWidget_2);
+        image3_11->setObjectName(QString::fromUtf8("image3_11"));
+
+        gridLayout_4->addWidget(image3_11, 4, 3, 1, 1);
 
         image3_10 = new QLabel(layoutWidget_2);
         image3_10->setObjectName(QString::fromUtf8("image3_10"));
@@ -144,83 +234,61 @@ public:
         mName2_4->setObjectName(QString::fromUtf8("mName2_4"));
         mName2_4->setFont(font1);
 
-        gridLayout_4->addWidget(mName2_4, 2, 0, 1, 1);
+        gridLayout_4->addWidget(mName2_4, 3, 0, 1, 1);
 
-        description2_4 = new QLabel(layoutWidget_2);
-        description2_4->setObjectName(QString::fromUtf8("description2_4"));
+        mName1_4 = new QLabel(layoutWidget_2);
+        mName1_4->setObjectName(QString::fromUtf8("mName1_4"));
+        mName1_4->setFont(font1);
 
-        gridLayout_4->addWidget(description2_4, 3, 0, 1, 1);
+        gridLayout_4->addWidget(mName1_4, 0, 0, 1, 1);
 
-        image1_11 = new QLabel(layoutWidget_2);
-        image1_11->setObjectName(QString::fromUtf8("image1_11"));
+        own2 = new QLabel(layoutWidget_2);
+        own2->setObjectName(QString::fromUtf8("own2"));
 
-        gridLayout_4->addWidget(image1_11, 3, 1, 1, 1);
-
-        image2_11 = new QLabel(layoutWidget_2);
-        image2_11->setObjectName(QString::fromUtf8("image2_11"));
-
-        gridLayout_4->addWidget(image2_11, 3, 2, 1, 1);
-
-        image3_11 = new QLabel(layoutWidget_2);
-        image3_11->setObjectName(QString::fromUtf8("image3_11"));
-
-        gridLayout_4->addWidget(image3_11, 3, 3, 1, 1);
-
-        mName3_4 = new QLabel(layoutWidget_2);
-        mName3_4->setObjectName(QString::fromUtf8("mName3_4"));
-        mName3_4->setFont(font1);
-
-        gridLayout_4->addWidget(mName3_4, 4, 0, 1, 1);
-
-        description3_4 = new QLabel(layoutWidget_2);
-        description3_4->setObjectName(QString::fromUtf8("description3_4"));
-
-        gridLayout_4->addWidget(description3_4, 5, 0, 1, 1);
-
-        image1_12 = new QLabel(layoutWidget_2);
-        image1_12->setObjectName(QString::fromUtf8("image1_12"));
-
-        gridLayout_4->addWidget(image1_12, 5, 1, 1, 1);
-
-        image2_12 = new QLabel(layoutWidget_2);
-        image2_12->setObjectName(QString::fromUtf8("image2_12"));
-
-        gridLayout_4->addWidget(image2_12, 5, 2, 1, 1);
-
-        image3_12 = new QLabel(layoutWidget_2);
-        image3_12->setObjectName(QString::fromUtf8("image3_12"));
-
-        gridLayout_4->addWidget(image3_12, 5, 3, 1, 1);
+        gridLayout_4->addWidget(own2, 3, 2, 1, 1);
 
         visit1_4 = new QPushButton(layoutWidget_2);
         visit1_4->setObjectName(QString::fromUtf8("visit1_4"));
 
         gridLayout_4->addWidget(visit1_4, 0, 1, 1, 1);
 
-        visit2_4 = new QPushButton(layoutWidget_2);
-        visit2_4->setObjectName(QString::fromUtf8("visit2_4"));
-
-        gridLayout_4->addWidget(visit2_4, 2, 1, 1, 1);
-
-        visit3_4 = new QPushButton(layoutWidget_2);
-        visit3_4->setObjectName(QString::fromUtf8("visit3_4"));
-
-        gridLayout_4->addWidget(visit3_4, 4, 1, 1, 1);
-
-        own1 = new QLabel(layoutWidget_2);
-        own1->setObjectName(QString::fromUtf8("own1"));
-
-        gridLayout_4->addWidget(own1, 0, 2, 1, 1);
-
-        own2 = new QLabel(layoutWidget_2);
-        own2->setObjectName(QString::fromUtf8("own2"));
-
-        gridLayout_4->addWidget(own2, 2, 2, 1, 1);
-
         own3 = new QLabel(layoutWidget_2);
         own3->setObjectName(QString::fromUtf8("own3"));
 
-        gridLayout_4->addWidget(own3, 4, 2, 1, 1);
+        gridLayout_4->addWidget(own3, 7, 2, 1, 1);
+
+        visit2_4 = new QPushButton(layoutWidget_2);
+        visit2_4->setObjectName(QString::fromUtf8("visit2_4"));
+
+        gridLayout_4->addWidget(visit2_4, 3, 1, 1, 1);
+
+        line_4 = new QFrame(layoutWidget_2);
+        line_4->setObjectName(QString::fromUtf8("line_4"));
+        line_4->setFrameShape(QFrame::HLine);
+        line_4->setFrameShadow(QFrame::Sunken);
+
+        gridLayout_4->addWidget(line_4, 2, 1, 1, 1);
+
+        line_6 = new QFrame(layoutWidget_2);
+        line_6->setObjectName(QString::fromUtf8("line_6"));
+        line_6->setFrameShape(QFrame::HLine);
+        line_6->setFrameShadow(QFrame::Sunken);
+
+        gridLayout_4->addWidget(line_6, 5, 1, 1, 1);
+
+        line_7 = new QFrame(layoutWidget_2);
+        line_7->setObjectName(QString::fromUtf8("line_7"));
+        line_7->setFrameShape(QFrame::HLine);
+        line_7->setFrameShadow(QFrame::Sunken);
+
+        gridLayout_4->addWidget(line_7, 5, 2, 1, 1);
+
+        line_8 = new QFrame(layoutWidget_2);
+        line_8->setObjectName(QString::fromUtf8("line_8"));
+        line_8->setFrameShape(QFrame::HLine);
+        line_8->setFrameShadow(QFrame::Sunken);
+
+        gridLayout_4->addWidget(line_8, 5, 3, 1, 1);
 
         pushButton = new QPushButton(MuseumList);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
@@ -244,27 +312,27 @@ public:
         myCommentsButton->setText(QCoreApplication::translate("MuseumList", "My Comments", nullptr));
         accountButton->setText(QCoreApplication::translate("MuseumList", "Account", nullptr));
         logoMM->setText(QString());
-        mName1_4->setText(QCoreApplication::translate("MuseumList", "Museum 1", nullptr));
+        description3_4->setText(QCoreApplication::translate("MuseumList", "Description", nullptr));
+        description2_4->setText(QCoreApplication::translate("MuseumList", "Description", nullptr));
+        image1_12->setText(QCoreApplication::translate("MuseumList", "Image 1", nullptr));
+        image3_12->setText(QCoreApplication::translate("MuseumList", "Image 3", nullptr));
+        mName3_4->setText(QCoreApplication::translate("MuseumList", "Museum 3", nullptr));
         description1_4->setText(QCoreApplication::translate("MuseumList", "Description", nullptr));
+        image1_11->setText(QCoreApplication::translate("MuseumList", "Image 1", nullptr));
         image1_10->setText(QCoreApplication::translate("MuseumList", "image 1", nullptr));
+        visit3_4->setText(QCoreApplication::translate("MuseumList", "Visit Museum 3", nullptr));
+        image2_11->setText(QCoreApplication::translate("MuseumList", "Image 2", nullptr));
+        image2_12->setText(QCoreApplication::translate("MuseumList", "Image 2", nullptr));
         image2_10->setText(QCoreApplication::translate("MuseumList", "image 2", nullptr));
+        own1->setText(QCoreApplication::translate("MuseumList", "Owner: ", nullptr));
+        image3_11->setText(QCoreApplication::translate("MuseumList", "Image 3", nullptr));
         image3_10->setText(QCoreApplication::translate("MuseumList", "image 3", nullptr));
         mName2_4->setText(QCoreApplication::translate("MuseumList", "Museum 2", nullptr));
-        description2_4->setText(QCoreApplication::translate("MuseumList", "Description", nullptr));
-        image1_11->setText(QCoreApplication::translate("MuseumList", "Image 1", nullptr));
-        image2_11->setText(QCoreApplication::translate("MuseumList", "Image 2", nullptr));
-        image3_11->setText(QCoreApplication::translate("MuseumList", "Image 3", nullptr));
-        mName3_4->setText(QCoreApplication::translate("MuseumList", "Museum 3", nullptr));
-        description3_4->setText(QCoreApplication::translate("MuseumList", "Description", nullptr));
-        image1_12->setText(QCoreApplication::translate("MuseumList", "Image 1", nullptr));
-        image2_12->setText(QCoreApplication::translate("MuseumList", "Image 2", nullptr));
-        image3_12->setText(QCoreApplication::translate("MuseumList", "Image 3", nullptr));
-        visit1_4->setText(QCoreApplication::translate("MuseumList", "Visit Museum1", nullptr));
-        visit2_4->setText(QCoreApplication::translate("MuseumList", "Visit Museum 2", nullptr));
-        visit3_4->setText(QCoreApplication::translate("MuseumList", "Visit Museum 3", nullptr));
-        own1->setText(QCoreApplication::translate("MuseumList", "Owner: ", nullptr));
+        mName1_4->setText(QCoreApplication::translate("MuseumList", "Museum 1", nullptr));
         own2->setText(QCoreApplication::translate("MuseumList", "Owner: ", nullptr));
+        visit1_4->setText(QCoreApplication::translate("MuseumList", "Visit Museum1", nullptr));
         own3->setText(QCoreApplication::translate("MuseumList", "Owner: ", nullptr));
+        visit2_4->setText(QCoreApplication::translate("MuseumList", "Visit Museum 2", nullptr));
         pushButton->setText(QCoreApplication::translate("MuseumList", "Next Page", nullptr));
         pushButton_2->setText(QCoreApplication::translate("MuseumList", "Previous", nullptr));
     } // retranslateUi

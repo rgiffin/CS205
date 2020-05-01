@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
+#include <QtWidgets/QFrame>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
@@ -43,6 +44,9 @@ public:
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
     QPushButton *pushButton_4;
+    QFrame *line;
+    QFrame *line_2;
+    QFrame *line_3;
 
     void setupUi(QDialog *ItemView)
     {
@@ -93,25 +97,32 @@ public:
         muName->setFont(font);
         image = new QLabel(ItemView);
         image->setObjectName(QString::fromUtf8("image"));
-        image->setGeometry(QRect(80, 120, 311, 311));
+        image->setGeometry(QRect(80, 120, 291, 311));
         iName = new QLabel(ItemView);
         iName->setObjectName(QString::fromUtf8("iName"));
-        iName->setGeometry(QRect(80, 440, 311, 41));
+        iName->setGeometry(QRect(50, 450, 311, 41));
+        QFont font1;
+        font1.setPointSize(17);
+        iName->setFont(font1);
         iCreator = new QLabel(ItemView);
         iCreator->setObjectName(QString::fromUtf8("iCreator"));
-        iCreator->setGeometry(QRect(80, 490, 311, 41));
+        iCreator->setGeometry(QRect(50, 510, 311, 41));
+        iCreator->setFont(font1);
         description = new QLabel(ItemView);
         description->setObjectName(QString::fromUtf8("description"));
-        description->setGeometry(QRect(400, 140, 381, 181));
+        description->setGeometry(QRect(400, 140, 381, 161));
+        description->setMaximumSize(QSize(381, 161));
         label = new QLabel(ItemView);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(400, 320, 81, 20));
+        label->setGeometry(QRect(390, 330, 91, 20));
+        label->setFont(font1);
         label_2 = new QLabel(ItemView);
         label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(400, 120, 91, 16));
+        label_2->setGeometry(QRect(390, 120, 111, 16));
+        label_2->setFont(font1);
         user = new QLabel(ItemView);
         user->setObjectName(QString::fromUtf8("user"));
-        user->setGeometry(QRect(400, 350, 141, 16));
+        user->setGeometry(QRect(400, 370, 141, 16));
         comment = new QLabel(ItemView);
         comment->setObjectName(QString::fromUtf8("comment"));
         comment->setGeometry(QRect(470, 370, 331, 91));
@@ -127,6 +138,21 @@ public:
         pushButton_4 = new QPushButton(ItemView);
         pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
         pushButton_4->setGeometry(QRect(380, 550, 131, 41));
+        line = new QFrame(ItemView);
+        line->setObjectName(QString::fromUtf8("line"));
+        line->setGeometry(QRect(400, 350, 411, 20));
+        line->setFrameShape(QFrame::HLine);
+        line->setFrameShadow(QFrame::Sunken);
+        line_2 = new QFrame(ItemView);
+        line_2->setObjectName(QString::fromUtf8("line_2"));
+        line_2->setGeometry(QRect(380, 370, 20, 141));
+        line_2->setFrameShape(QFrame::VLine);
+        line_2->setFrameShadow(QFrame::Sunken);
+        line_3 = new QFrame(ItemView);
+        line_3->setObjectName(QString::fromUtf8("line_3"));
+        line_3->setGeometry(QRect(400, 510, 411, 20));
+        line_3->setFrameShape(QFrame::HLine);
+        line_3->setFrameShadow(QFrame::Sunken);
 
         retranslateUi(ItemView);
 

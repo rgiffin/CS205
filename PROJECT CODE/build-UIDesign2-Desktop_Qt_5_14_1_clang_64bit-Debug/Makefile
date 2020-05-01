@@ -891,7 +891,6 @@ moc_accountcurator.cpp: ../UIDesign2/accountcurator.h \
 		../UIDesign2/additem.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -1021,6 +1020,7 @@ moc_accountcurator.cpp: ../UIDesign2/accountcurator.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		moc_predefs.h \
 		../../../../Qt/5.14.1/clang_64/bin/moc
 	/Users/jordanyoder/Qt/5.14.1/clang_64/bin/moc $(DEFINES) --include '/Users/jordanyoder/Desktop/cs205/PROJECT CODE/build-UIDesign2-Desktop_Qt_5_14_1_clang_64bit-Debug/moc_predefs.h' -I/Users/jordanyoder/Qt/5.14.1/clang_64/mkspecs/macx-clang -I'/Users/jordanyoder/Desktop/cs205/PROJECT CODE/UIDesign2' -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtGui.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtSql.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/Users/jordanyoder/Qt/5.14.1/clang_64/lib ../UIDesign2/accountcurator.h -o moc_accountcurator.cpp
@@ -1057,7 +1057,6 @@ moc_accountedit.cpp: ../UIDesign2/accountedit.h \
 		../UIDesign2/additem.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -1187,6 +1186,7 @@ moc_accountedit.cpp: ../UIDesign2/accountedit.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		moc_predefs.h \
 		../../../../Qt/5.14.1/clang_64/bin/moc
 	/Users/jordanyoder/Qt/5.14.1/clang_64/bin/moc $(DEFINES) --include '/Users/jordanyoder/Desktop/cs205/PROJECT CODE/build-UIDesign2-Desktop_Qt_5_14_1_clang_64bit-Debug/moc_predefs.h' -I/Users/jordanyoder/Qt/5.14.1/clang_64/mkspecs/macx-clang -I'/Users/jordanyoder/Desktop/cs205/PROJECT CODE/UIDesign2' -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtGui.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtSql.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/Users/jordanyoder/Qt/5.14.1/clang_64/lib ../UIDesign2/accountedit.h -o moc_accountedit.cpp
@@ -1223,7 +1223,6 @@ moc_accountviewer.cpp: ../UIDesign2/accountviewer.h \
 		../UIDesign2/additem.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -1353,6 +1352,7 @@ moc_accountviewer.cpp: ../UIDesign2/accountviewer.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		moc_predefs.h \
 		../../../../Qt/5.14.1/clang_64/bin/moc
 	/Users/jordanyoder/Qt/5.14.1/clang_64/bin/moc $(DEFINES) --include '/Users/jordanyoder/Desktop/cs205/PROJECT CODE/build-UIDesign2-Desktop_Qt_5_14_1_clang_64bit-Debug/moc_predefs.h' -I/Users/jordanyoder/Qt/5.14.1/clang_64/mkspecs/macx-clang -I'/Users/jordanyoder/Desktop/cs205/PROJECT CODE/UIDesign2' -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtGui.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtSql.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/Users/jordanyoder/Qt/5.14.1/clang_64/lib ../UIDesign2/accountviewer.h -o moc_accountviewer.cpp
@@ -1389,7 +1389,6 @@ moc_additem.cpp: ../UIDesign2/additem.h \
 		../UIDesign2/additem.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -1519,6 +1518,7 @@ moc_additem.cpp: ../UIDesign2/additem.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		moc_predefs.h \
 		../../../../Qt/5.14.1/clang_64/bin/moc
 	/Users/jordanyoder/Qt/5.14.1/clang_64/bin/moc $(DEFINES) --include '/Users/jordanyoder/Desktop/cs205/PROJECT CODE/build-UIDesign2-Desktop_Qt_5_14_1_clang_64bit-Debug/moc_predefs.h' -I/Users/jordanyoder/Qt/5.14.1/clang_64/mkspecs/macx-clang -I'/Users/jordanyoder/Desktop/cs205/PROJECT CODE/UIDesign2' -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtGui.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtSql.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/Users/jordanyoder/Qt/5.14.1/clang_64/lib ../UIDesign2/additem.h -o moc_additem.cpp
@@ -1555,7 +1555,6 @@ moc_addmuseum.cpp: ../UIDesign2/addmuseum.h \
 		../UIDesign2/additem.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -1685,6 +1684,7 @@ moc_addmuseum.cpp: ../UIDesign2/addmuseum.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		moc_predefs.h \
 		../../../../Qt/5.14.1/clang_64/bin/moc
 	/Users/jordanyoder/Qt/5.14.1/clang_64/bin/moc $(DEFINES) --include '/Users/jordanyoder/Desktop/cs205/PROJECT CODE/build-UIDesign2-Desktop_Qt_5_14_1_clang_64bit-Debug/moc_predefs.h' -I/Users/jordanyoder/Qt/5.14.1/clang_64/mkspecs/macx-clang -I'/Users/jordanyoder/Desktop/cs205/PROJECT CODE/UIDesign2' -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtGui.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtSql.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/Users/jordanyoder/Qt/5.14.1/clang_64/lib ../UIDesign2/addmuseum.h -o moc_addmuseum.cpp
@@ -1721,7 +1721,6 @@ moc_itemsviewed.cpp: ../UIDesign2/itemsviewed.h \
 		../UIDesign2/additem.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -1851,6 +1850,7 @@ moc_itemsviewed.cpp: ../UIDesign2/itemsviewed.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		moc_predefs.h \
 		../../../../Qt/5.14.1/clang_64/bin/moc
 	/Users/jordanyoder/Qt/5.14.1/clang_64/bin/moc $(DEFINES) --include '/Users/jordanyoder/Desktop/cs205/PROJECT CODE/build-UIDesign2-Desktop_Qt_5_14_1_clang_64bit-Debug/moc_predefs.h' -I/Users/jordanyoder/Qt/5.14.1/clang_64/mkspecs/macx-clang -I'/Users/jordanyoder/Desktop/cs205/PROJECT CODE/UIDesign2' -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtGui.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtSql.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/Users/jordanyoder/Qt/5.14.1/clang_64/lib ../UIDesign2/itemsviewed.h -o moc_itemsviewed.cpp
@@ -1887,7 +1887,6 @@ moc_itemview.cpp: ../UIDesign2/itemview.h \
 		../UIDesign2/additem.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -2017,6 +2016,7 @@ moc_itemview.cpp: ../UIDesign2/itemview.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		moc_predefs.h \
 		../../../../Qt/5.14.1/clang_64/bin/moc
 	/Users/jordanyoder/Qt/5.14.1/clang_64/bin/moc $(DEFINES) --include '/Users/jordanyoder/Desktop/cs205/PROJECT CODE/build-UIDesign2-Desktop_Qt_5_14_1_clang_64bit-Debug/moc_predefs.h' -I/Users/jordanyoder/Qt/5.14.1/clang_64/mkspecs/macx-clang -I'/Users/jordanyoder/Desktop/cs205/PROJECT CODE/UIDesign2' -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtGui.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtSql.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/Users/jordanyoder/Qt/5.14.1/clang_64/lib ../UIDesign2/itemview.h -o moc_itemview.cpp
@@ -2055,7 +2055,6 @@ moc_login.cpp: ../UIDesign2/login.h \
 		../UIDesign2/mycomments.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -2184,6 +2183,7 @@ moc_login.cpp: ../UIDesign2/login.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/signup.h \
 		moc_predefs.h \
 		../../../../Qt/5.14.1/clang_64/bin/moc
@@ -2221,7 +2221,6 @@ moc_museumlist.cpp: ../UIDesign2/museumlist.h \
 		../UIDesign2/additem.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -2351,6 +2350,7 @@ moc_museumlist.cpp: ../UIDesign2/museumlist.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		moc_predefs.h \
 		../../../../Qt/5.14.1/clang_64/bin/moc
 	/Users/jordanyoder/Qt/5.14.1/clang_64/bin/moc $(DEFINES) --include '/Users/jordanyoder/Desktop/cs205/PROJECT CODE/build-UIDesign2-Desktop_Qt_5_14_1_clang_64bit-Debug/moc_predefs.h' -I/Users/jordanyoder/Qt/5.14.1/clang_64/mkspecs/macx-clang -I'/Users/jordanyoder/Desktop/cs205/PROJECT CODE/UIDesign2' -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtGui.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtSql.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/Users/jordanyoder/Qt/5.14.1/clang_64/lib ../UIDesign2/museumlist.h -o moc_museumlist.cpp
@@ -2387,7 +2387,6 @@ moc_museummain.cpp: ../UIDesign2/museummain.h \
 		../UIDesign2/additem.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -2517,6 +2516,7 @@ moc_museummain.cpp: ../UIDesign2/museummain.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		moc_predefs.h \
 		../../../../Qt/5.14.1/clang_64/bin/moc
 	/Users/jordanyoder/Qt/5.14.1/clang_64/bin/moc $(DEFINES) --include '/Users/jordanyoder/Desktop/cs205/PROJECT CODE/build-UIDesign2-Desktop_Qt_5_14_1_clang_64bit-Debug/moc_predefs.h' -I/Users/jordanyoder/Qt/5.14.1/clang_64/mkspecs/macx-clang -I'/Users/jordanyoder/Desktop/cs205/PROJECT CODE/UIDesign2' -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtGui.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtSql.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/Users/jordanyoder/Qt/5.14.1/clang_64/lib ../UIDesign2/museummain.h -o moc_museummain.cpp
@@ -2553,7 +2553,6 @@ moc_museumpage.cpp: ../UIDesign2/museumpage.h \
 		../UIDesign2/additem.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -2683,6 +2682,7 @@ moc_museumpage.cpp: ../UIDesign2/museumpage.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		moc_predefs.h \
 		../../../../Qt/5.14.1/clang_64/bin/moc
 	/Users/jordanyoder/Qt/5.14.1/clang_64/bin/moc $(DEFINES) --include '/Users/jordanyoder/Desktop/cs205/PROJECT CODE/build-UIDesign2-Desktop_Qt_5_14_1_clang_64bit-Debug/moc_predefs.h' -I/Users/jordanyoder/Qt/5.14.1/clang_64/mkspecs/macx-clang -I'/Users/jordanyoder/Desktop/cs205/PROJECT CODE/UIDesign2' -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtGui.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtSql.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/Users/jordanyoder/Qt/5.14.1/clang_64/lib ../UIDesign2/museumpage.h -o moc_museumpage.cpp
@@ -2719,7 +2719,6 @@ moc_mycomments.cpp: ../UIDesign2/mycomments.h \
 		../UIDesign2/additem.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -2849,6 +2848,7 @@ moc_mycomments.cpp: ../UIDesign2/mycomments.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		moc_predefs.h \
 		../../../../Qt/5.14.1/clang_64/bin/moc
 	/Users/jordanyoder/Qt/5.14.1/clang_64/bin/moc $(DEFINES) --include '/Users/jordanyoder/Desktop/cs205/PROJECT CODE/build-UIDesign2-Desktop_Qt_5_14_1_clang_64bit-Debug/moc_predefs.h' -I/Users/jordanyoder/Qt/5.14.1/clang_64/mkspecs/macx-clang -I'/Users/jordanyoder/Desktop/cs205/PROJECT CODE/UIDesign2' -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtGui.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtSql.framework/Headers -I/Users/jordanyoder/Qt/5.14.1/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/Users/jordanyoder/Qt/5.14.1/clang_64/lib ../UIDesign2/mycomments.h -o moc_mycomments.cpp
@@ -2978,7 +2978,6 @@ accountcurator.o: ../UIDesign2/accountcurator.cpp ../UIDesign2/accountcurator.h 
 		../UIDesign2/additem.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -3108,6 +3107,7 @@ accountcurator.o: ../UIDesign2/accountcurator.cpp ../UIDesign2/accountcurator.h 
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		ui_accountcurator.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o accountcurator.o ../UIDesign2/accountcurator.cpp
 
@@ -3142,7 +3142,6 @@ accountedit.o: ../UIDesign2/accountedit.cpp ../UIDesign2/accountedit.h \
 		../UIDesign2/additem.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -3272,6 +3271,7 @@ accountedit.o: ../UIDesign2/accountedit.cpp ../UIDesign2/accountedit.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		ui_accountedit.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QMessageBox
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o accountedit.o ../UIDesign2/accountedit.cpp
@@ -3287,7 +3287,6 @@ accountviewer.o: ../UIDesign2/accountviewer.cpp ../UIDesign2/accountviewer.h \
 		../UIDesign2/mycomments.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QtSql \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlglobal.h \
@@ -3433,6 +3432,7 @@ accountviewer.o: ../UIDesign2/accountviewer.cpp ../UIDesign2/accountviewer.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/user.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
@@ -3471,7 +3471,6 @@ additem.o: ../UIDesign2/additem.cpp ../UIDesign2/additem.h \
 		../UIDesign2/addmuseum.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -3601,6 +3600,7 @@ additem.o: ../UIDesign2/additem.cpp ../UIDesign2/additem.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		ui_additem.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QFileDialog \
 		../../../../Qt/5.14.1/clang_64/lib/QtCore.framework/Headers/QDir \
@@ -3640,7 +3640,6 @@ addmuseum.o: ../UIDesign2/addmuseum.cpp ../UIDesign2/addmuseum.h \
 		../UIDesign2/additem.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -3770,6 +3769,7 @@ addmuseum.o: ../UIDesign2/addmuseum.cpp ../UIDesign2/addmuseum.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		ui_addmuseum.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o addmuseum.o ../UIDesign2/addmuseum.cpp
 
@@ -3955,7 +3955,6 @@ itemsviewed.o: ../UIDesign2/itemsviewed.cpp ../UIDesign2/itemsviewed.h \
 		../UIDesign2/additem.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -4085,6 +4084,7 @@ itemsviewed.o: ../UIDesign2/itemsviewed.cpp ../UIDesign2/itemsviewed.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		ui_itemsviewed.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o itemsviewed.o ../UIDesign2/itemsviewed.cpp
 
@@ -4286,7 +4286,6 @@ main.o: ../UIDesign2/main.cpp ../UIDesign2/login.h \
 		../UIDesign2/mycomments.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -4415,8 +4414,11 @@ main.o: ../UIDesign2/main.cpp ../UIDesign2/login.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/signup.h \
-		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QApplication
+		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QApplication \
+		../../../../Qt/5.14.1/clang_64/lib/QtGui.framework/Headers/QGuiApplication \
+		../../../../Qt/5.14.1/clang_64/lib/QtGui.framework/Headers/qguiapplication.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../UIDesign2/main.cpp
 
 login.o: ../UIDesign2/login.cpp ../UIDesign2/login.h \
@@ -4453,7 +4455,6 @@ login.o: ../UIDesign2/login.cpp ../UIDesign2/login.h \
 		../UIDesign2/mycomments.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -4582,6 +4583,7 @@ login.o: ../UIDesign2/login.cpp ../UIDesign2/login.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/signup.h \
 		ui_login.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QMessageBox \
@@ -4769,7 +4771,6 @@ museumlist.o: ../UIDesign2/museumlist.cpp ../UIDesign2/museumlist.h \
 		../UIDesign2/additem.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -4899,6 +4900,7 @@ museumlist.o: ../UIDesign2/museumlist.cpp ../UIDesign2/museumlist.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		ui_museumlist.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o museumlist.o ../UIDesign2/museumlist.cpp
 
@@ -4933,7 +4935,6 @@ museummain.o: ../UIDesign2/museummain.cpp ../UIDesign2/museummain.h \
 		../UIDesign2/mycomments.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -5063,6 +5064,7 @@ museummain.o: ../UIDesign2/museummain.cpp ../UIDesign2/museummain.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		ui_museummain.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o museummain.o ../UIDesign2/museummain.cpp
 
@@ -5096,8 +5098,6 @@ museumpage.o: ../UIDesign2/museumpage.cpp ../UIDesign2/museumpage.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
 		../UIDesign2/additem.h \
-		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -5227,6 +5227,8 @@ museumpage.o: ../UIDesign2/museumpage.cpp ../UIDesign2/museumpage.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
+		../UIDesign2/itemview.h \
 		ui_museumpage.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o museumpage.o ../UIDesign2/museumpage.cpp
 
@@ -5261,7 +5263,6 @@ mycomments.o: ../UIDesign2/mycomments.cpp ../UIDesign2/mycomments.h \
 		../UIDesign2/additem.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -5391,6 +5392,7 @@ mycomments.o: ../UIDesign2/mycomments.cpp ../UIDesign2/mycomments.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h \
 		ui_mycomments.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mycomments.o ../UIDesign2/mycomments.cpp
 
@@ -5431,7 +5433,6 @@ signup.o: ../UIDesign2/signup.cpp ../UIDesign2/signup.h \
 		../UIDesign2/additem.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -5559,7 +5560,8 @@ signup.o: ../UIDesign2/signup.cpp ../UIDesign2/signup.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidget.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
-		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h
+		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/museum.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o signup.o ../UIDesign2/signup.cpp
 
 user.o: ../UIDesign2/user.cpp ../UIDesign2/user.h \

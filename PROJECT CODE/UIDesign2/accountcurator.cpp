@@ -167,9 +167,3 @@ void accountCurator::getAccInfo(string user)
 
 
 }
-
-void accountCurator::on_pushButton_3_clicked()
-{
-
-
-}

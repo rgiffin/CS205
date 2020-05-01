@@ -21,6 +21,11 @@ string Museum::getOwner()
 }
 
 
+vector<Item> Museum::getItemList()
+{
+    return itemList;
+}
+
 //Takes museum name and sets itemList equal to it
 void Museum::getMuseumItems()
 {

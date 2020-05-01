@@ -15,7 +15,7 @@ MuseumPage::MuseumPage(QWidget *parent) :
     ui->logoMM->setPixmap(pix.scaled(width,height,Qt::KeepAspectRatio));
 
 
-    iName1 = "Item 1";
+    iName1 = "";
     iName2 = "";
     iName3 = "";
     iName4 = "";
@@ -36,6 +36,7 @@ MuseumPage::MuseumPage(QWidget *parent) :
     ui->name_9->setText(QString::fromStdString(iName9));
 
 
+    index = 0;
 
 }
 
@@ -120,6 +121,12 @@ void MuseumPage::setMName(std::string m)
 {
     museumName = m;
     ui->muName->setText(QString::fromStdString(museumName));
+    Museum muse;
+    muse.name = museumName;
+    muse.getMuseumItems();
+    itemList = muse.getItemList();
+    index = 0;
+    display(index);
 }
 
 std::string MuseumPage::getMName()
@@ -130,18 +137,160 @@ std::string MuseumPage::getMName()
 void MuseumPage::on_next_clicked()
 {
     //get next set of images and items
+    int size = itemList.size();
+    index = index+9;
+    Museum muse;
+    muse.name = museumName;
+    muse.getMuseumItems();
+    itemList = muse.getItemList();
+    while(index>size)
+    {
+        index = index - itemList.size();
+    }
+
+    display(index);
 }
 
 void MuseumPage::on_previous_clicked()
 {
     //get previous set
+    //go to previous page
+    index = index - 9;
+    Museum muse;
+    muse.name = museumName;
+    muse.getMuseumItems();
+    itemList = muse.getItemList();
+    index = 0;
+    if(index<0)
+    {
+        index = itemList.size()+index;
+    }
+    if(index<0)
+    {
+        index = 0;
+    }
+    display(index);
+
 }
+
+void MuseumPage::display(int i)
+{
+    int size = itemList.size();
+    int width = 0;
+    int height = 0;
+
+    if(size == 0)
+    {
+        return;
+    }
+
+    if(i>=size)
+    {
+        i = 0;
+    }
+    Item one = itemList.at(i++);
+    iName1 = one.getName();
+    width = ui->image1->width();
+    height = ui->image1->height();
+    ui->image1->setPixmap(one.getImage().scaled(width,height, Qt::KeepAspectRatio));
+    ui->name_1->setText(QString::fromStdString(iName1));
+
+
+    if(i>=size)
+    {
+        i = 0;
+    }
+    Item two = itemList.at(i++);
+    iName2 = two.getName();
+    width = ui->image2->width();
+    height = ui->image2->height();
+    ui->image2->setPixmap(two.getImage().scaled(width,height, Qt::KeepAspectRatio));
+    ui->name_2->setText(QString::fromStdString(iName2));
+
+    if(i>=size)
+    {
+        i = 0;
+    }
+    Item three = itemList.at(i++);
+    iName3 = three.getName();
+    width = ui->image3->width();
+    height = ui->image3->height();
+    ui->image3->setPixmap(three.getImage().scaled(width,height, Qt::KeepAspectRatio));
+    ui->name_3->setText(QString::fromStdString(iName3));
+
+    if(i>=size)
+    {
+        i = 0;
+    }
+    Item four = itemList.at(i++);
+    iName4 = four.getName();
+    width = ui->image4->width();
+    height = ui->image4->height();
+    ui->image4->setPixmap(four.getImage().scaled(width,height, Qt::KeepAspectRatio));
+    ui->name_4->setText(QString::fromStdString(iName4));
+
+    if(i>=size)
+    {
+        i = 0;
+    }
+    Item five = itemList.at(i++);
+    iName5 = five.getName();
+    width = ui->image5->width();
+    height = ui->image5->height();
+    ui->image5->setPixmap(five.getImage().scaled(width,height, Qt::KeepAspectRatio));
+    ui->name_5->setText(QString::fromStdString(iName5));
+
+    if(i>=size)
+    {
+        i = 0;
+    }
+    Item six = itemList.at(i++);
+    iName6 = six.getName();
+    width = ui->image6->width();
+    height = ui->image6->height();
+    ui->image6->setPixmap(six.getImage().scaled(width,height, Qt::KeepAspectRatio));
+    ui->name_6->setText(QString::fromStdString(iName6));
+
+    if(i>=size)
+    {
+        i = 0;
+    }
+    Item seven = itemList.at(i++);
+    iName7 = seven.getName();
+    width = ui->image7->width();
+    height = ui->image7->height();
+    ui->image7->setPixmap(seven.getImage().scaled(width,height, Qt::KeepAspectRatio));
+    ui->name_7->setText(QString::fromStdString(iName7));
+
+    if(i>=size)
+    {
+        i = 0;
+    }
+    Item eight = itemList.at(i++);
+    iName8 = eight.getName();
+    width = ui->image8->width();
+    height = ui->image8->height();
+    ui->image8->setPixmap(eight.getImage().scaled(width,height, Qt::KeepAspectRatio));
+    ui->name_8->setText(QString::fromStdString(iName8));
+
+    if(i>=size)
+    {
+        i = 0;
+    }
+    Item nine = itemList.at(i++);
+    iName9 = nine.getName();
+    width = ui->image9->width();
+    height = ui->image9->height();
+    ui->image9->setPixmap(nine.getImage().scaled(width,height, Qt::KeepAspectRatio));
+    ui->name_9->setText(QString::fromStdString(iName9));
+
+
+}
+
 
 void MuseumPage::on_name_1_clicked()
 {
     ip = new ItemView();
-    iName1 = "newtest";
-    museumName = "dad";
     ip->setIName(iName1);
     ip->setMName(museumName);
     ip->setUName(username);
