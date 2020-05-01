@@ -89,7 +89,7 @@ public:
         logoMM->setGeometry(QRect(700, 0, 111, 71));
         muName = new QLabel(ItemView);
         muName->setObjectName(QString::fromUtf8("muName"));
-        muName->setGeometry(QRect(10, 10, 651, 61));
+        muName->setGeometry(QRect(20, 10, 651, 61));
         QFont font;
         font.setFamily(QString::fromUtf8("Avenir Next Condensed"));
         font.setPointSize(25);

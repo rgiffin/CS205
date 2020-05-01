@@ -1,6 +1,7 @@
 #include "museumpage.h"
 #include "ui_museumpage.h"
 #include <iostream>
+#include "user.h"
 
 using namespace std;
 
@@ -13,6 +14,7 @@ MuseumPage::MuseumPage(QWidget *parent) :
     int width = ui->logoMM->width();
     int height = ui->logoMM->height();
     ui->logoMM->setPixmap(pix.scaled(width,height,Qt::KeepAspectRatio));
+
 
 
     iName1 = "";
@@ -81,9 +83,12 @@ void MuseumPage::on_myCommentsButton_clicked()
 void MuseumPage::on_accountButton_clicked()
 {
     //go to account
+    User u;
+    u.setUsername(username);
+    u.getAccInfo(username);
 
     //if curator open curator account look
-    if(1>0)
+    if(u.ifCurator())
     {
         ac = new accountCurator();
         ac->setUName(username);
@@ -194,6 +199,7 @@ void MuseumPage::display(int i)
     height = ui->image1->height();
     ui->image1->setPixmap(one.getImage().scaled(width,height, Qt::KeepAspectRatio));
     ui->name_1->setText(QString::fromStdString(iName1));
+    ui->image1->setAlignment(Qt::AlignCenter);
 
 
     if(i>=size)
@@ -206,6 +212,7 @@ void MuseumPage::display(int i)
     height = ui->image2->height();
     ui->image2->setPixmap(two.getImage().scaled(width,height, Qt::KeepAspectRatio));
     ui->name_2->setText(QString::fromStdString(iName2));
+    ui->image2->setAlignment(Qt::AlignCenter);
 
     if(i>=size)
     {
@@ -217,6 +224,7 @@ void MuseumPage::display(int i)
     height = ui->image3->height();
     ui->image3->setPixmap(three.getImage().scaled(width,height, Qt::KeepAspectRatio));
     ui->name_3->setText(QString::fromStdString(iName3));
+    ui->image3->setAlignment(Qt::AlignCenter);
 
     if(i>=size)
     {
@@ -228,6 +236,7 @@ void MuseumPage::display(int i)
     height = ui->image4->height();
     ui->image4->setPixmap(four.getImage().scaled(width,height, Qt::KeepAspectRatio));
     ui->name_4->setText(QString::fromStdString(iName4));
+    ui->image4->setAlignment(Qt::AlignCenter);
 
     if(i>=size)
     {
@@ -239,6 +248,7 @@ void MuseumPage::display(int i)
     height = ui->image5->height();
     ui->image5->setPixmap(five.getImage().scaled(width,height, Qt::KeepAspectRatio));
     ui->name_5->setText(QString::fromStdString(iName5));
+    ui->image5->setAlignment(Qt::AlignCenter);
 
     if(i>=size)
     {
@@ -250,6 +260,7 @@ void MuseumPage::display(int i)
     height = ui->image6->height();
     ui->image6->setPixmap(six.getImage().scaled(width,height, Qt::KeepAspectRatio));
     ui->name_6->setText(QString::fromStdString(iName6));
+    ui->image6->setAlignment(Qt::AlignCenter);
 
     if(i>=size)
     {
@@ -261,6 +272,7 @@ void MuseumPage::display(int i)
     height = ui->image7->height();
     ui->image7->setPixmap(seven.getImage().scaled(width,height, Qt::KeepAspectRatio));
     ui->name_7->setText(QString::fromStdString(iName7));
+    ui->image7->setAlignment(Qt::AlignCenter);
 
     if(i>=size)
     {
@@ -272,6 +284,7 @@ void MuseumPage::display(int i)
     height = ui->image8->height();
     ui->image8->setPixmap(eight.getImage().scaled(width,height, Qt::KeepAspectRatio));
     ui->name_8->setText(QString::fromStdString(iName8));
+    ui->image8->setAlignment(Qt::AlignCenter);
 
     if(i>=size)
     {
@@ -283,6 +296,7 @@ void MuseumPage::display(int i)
     height = ui->image9->height();
     ui->image9->setPixmap(nine.getImage().scaled(width,height, Qt::KeepAspectRatio));
     ui->name_9->setText(QString::fromStdString(iName9));
+    ui->image9->setAlignment(Qt::AlignCenter);
 
 
 }
@@ -292,6 +306,8 @@ void MuseumPage::on_name_1_clicked()
 {
     ip = new ItemView();
     ip->setIName(iName1);
+    ip->setIndex(index);
+    ip->setItems(itemList);
     ip->setMName(museumName);
     ip->setUName(username);
     ip->show();
@@ -303,6 +319,8 @@ void MuseumPage::on_name_2_clicked()
 {
     ip = new ItemView();
     ip->setIName(iName2);
+    ip->setIndex(index+1);
+    ip->setItems(itemList);
     ip->setMName(museumName);
     ip->setUName(username);
     ip->show();
@@ -313,6 +331,8 @@ void MuseumPage::on_name_3_clicked()
 {
     ip = new ItemView();
     ip->setIName(iName3);
+    ip->setIndex(index+2);
+    ip->setItems(itemList);
     ip->setMName(museumName);
     ip->setUName(username);
     ip->show();
@@ -323,6 +343,8 @@ void MuseumPage::on_name_4_clicked()
 {
     ip = new ItemView();
     ip->setIName(iName4);
+    ip->setIndex(index+3);
+    ip->setItems(itemList);
     ip->setMName(museumName);
     ip->setUName(username);
     ip->show();
@@ -333,6 +355,8 @@ void MuseumPage::on_name_5_clicked()
 {
     ip = new ItemView();
     ip->setIName(iName5);
+    ip->setIndex(index+4);
+    ip->setItems(itemList);
     ip->setMName(museumName);
     ip->setUName(username);
     ip->show();
@@ -343,6 +367,8 @@ void MuseumPage::on_name_6_clicked()
 {
     ip = new ItemView();
     ip->setIName(iName6);
+    ip->setIndex(index+5);
+    ip->setItems(itemList);
     ip->setMName(museumName);
     ip->setUName(username);
     ip->show();
@@ -353,6 +379,8 @@ void MuseumPage::on_name_7_clicked()
 {
     ip = new ItemView();
     ip->setIName(iName7);
+    ip->setIndex(index+6);
+    ip->setItems(itemList);
     ip->setMName(museumName);
     ip->setUName(username);
     ip->show();
@@ -363,6 +391,8 @@ void MuseumPage::on_name_8_clicked()
 {
     ip = new ItemView();
     ip->setIName(iName8);
+    ip->setIndex(index+7);
+    ip->setItems(itemList);
     ip->setMName(museumName);
     ip->setUName(username);
     ip->show();
@@ -373,6 +403,8 @@ void MuseumPage::on_name_9_clicked()
 {
     ip = new ItemView();
     ip->setIName(iName9);
+    ip->setIndex(index+8);
+    ip->setItems(itemList);
     ip->setMName(museumName);
     ip->setUName(username);
     ip->show();

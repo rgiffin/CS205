@@ -15,6 +15,7 @@ Login::Login(QWidget *parent)
     int width = ui->logo->width();
     int height = ui->logo->height();
     ui->logo->setPixmap(pix.scaled(width,height,Qt::KeepAspectRatio));
+    ui->logo->setAlignment(Qt::AlignCenter);
 }
 
 Login::~Login()

@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
+#include <QtWidgets/QFrame>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
@@ -52,6 +53,10 @@ public:
     QPushButton *next;
     QPushButton *previous;
     QPushButton *pushButton;
+    QFrame *line;
+    QFrame *line_2;
+    QFrame *line_3;
+    QFrame *line_4;
 
     void setupUi(QDialog *MuseumPage)
     {
@@ -60,7 +65,7 @@ public:
         MuseumPage->resize(820, 600);
         muName = new QLabel(MuseumPage);
         muName->setObjectName(QString::fromUtf8("muName"));
-        muName->setGeometry(QRect(10, 10, 651, 61));
+        muName->setGeometry(QRect(20, 10, 651, 61));
         QFont font;
         font.setFamily(QString::fromUtf8("Avenir Next Condensed"));
         font.setPointSize(25);
@@ -190,6 +195,26 @@ public:
         pushButton = new QPushButton(MuseumPage);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         pushButton->setGeometry(QRect(360, 560, 181, 31));
+        line = new QFrame(MuseumPage);
+        line->setObjectName(QString::fromUtf8("line"));
+        line->setGeometry(QRect(10, 250, 801, 16));
+        line->setFrameShape(QFrame::HLine);
+        line->setFrameShadow(QFrame::Sunken);
+        line_2 = new QFrame(MuseumPage);
+        line_2->setObjectName(QString::fromUtf8("line_2"));
+        line_2->setGeometry(QRect(10, 400, 801, 16));
+        line_2->setFrameShape(QFrame::HLine);
+        line_2->setFrameShadow(QFrame::Sunken);
+        line_3 = new QFrame(MuseumPage);
+        line_3->setObjectName(QString::fromUtf8("line_3"));
+        line_3->setGeometry(QRect(230, 120, 20, 431));
+        line_3->setFrameShape(QFrame::VLine);
+        line_3->setFrameShadow(QFrame::Sunken);
+        line_4 = new QFrame(MuseumPage);
+        line_4->setObjectName(QString::fromUtf8("line_4"));
+        line_4->setGeometry(QRect(560, 120, 20, 431));
+        line_4->setFrameShape(QFrame::VLine);
+        line_4->setFrameShadow(QFrame::Sunken);
 
         retranslateUi(MuseumPage);
 

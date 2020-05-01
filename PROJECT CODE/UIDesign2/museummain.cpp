@@ -1,5 +1,6 @@
 #include "museummain.h"
 #include "ui_museummain.h"
+#include "user.h"
 
 MuseumMain::MuseumMain(QWidget *parent) :
     QDialog(parent),
@@ -61,9 +62,12 @@ void MuseumMain::on_myCommentsButton_clicked()
 void MuseumMain::on_accountButton_clicked()
 {
     //go to account
+    User u;
+    u.setUsername(username);
+    u.getAccInfo(username);
 
     //if curator open curator account look
-    if(1>0)
+    if(u.ifCurator())
     {
         ac = new accountCurator();
         ac->setUName(username);

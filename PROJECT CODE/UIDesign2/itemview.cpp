@@ -1,5 +1,6 @@
 #include "itemview.h"
 #include "ui_itemview.h"
+#include "user.h"
 
 ItemView::ItemView(QWidget *parent) :
     QDialog(parent),
@@ -12,7 +13,7 @@ ItemView::ItemView(QWidget *parent) :
     ui->logoMM->setPixmap(pix.scaled(width,height,Qt::KeepAspectRatio));
 
 
-
+    index = 0;
 
 
 
@@ -54,9 +55,12 @@ void ItemView::on_myCommentsButton_clicked()
 void ItemView::on_accountButton_clicked()
 {
     //go to account
+    User u;
+    u.setUsername(username);
+    u.getAccInfo(username);
 
     //if curator open curator account look
-    if(1>0)
+    if(u.ifCurator())
     {
         ac = new accountCurator();
         ac->setUName(username);
@@ -104,6 +108,7 @@ void ItemView::setMName(std::string m)
     int width = ui->image->width();
     int height = ui->image->height();
     ui->image->setPixmap(pix.scaled(width,height,Qt::KeepAspectRatio));
+    ui->image->setAlignment(Qt::AlignCenter);
 }
 
 std::string ItemView::getMName()
@@ -137,7 +142,14 @@ void ItemView::on_pushButton_4_clicked()
 
 void ItemView::on_pushButton_2_clicked()
 {
+    int size = items.size();
     //go to next item
+    if(++index>=size)
+    {
+        index = 0;
+    }
+    itName = items.at(index).getName();
+    setMName(museumName);
 
 }
 
@@ -145,6 +157,14 @@ void ItemView::on_pushButton_2_clicked()
 void ItemView::on_pushButton_3_clicked()
 {
     //go to previous item
+    int size = items.size();
+    //go to next item
+    if(--index<0)
+    {
+        index = size-1;
+    }
+    itName = items.at(index).getName();
+    setMName(museumName);
 
 }
 
@@ -204,4 +224,19 @@ Item ItemView::getItemObject(string museum, string itemName)
     cout << item1.getCollection();
 
     return item1;
+}
+
+void ItemView::setItems(vector<Item> i)
+{
+    items = i;
+    int size = items.size();
+    while(index >= size)
+    {
+        index = index%size;
+    }
+}
+
+void ItemView::setIndex(int i)
+{
+    index = i;
 }

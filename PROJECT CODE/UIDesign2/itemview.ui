@@ -76,7 +76,7 @@
   <widget class="QLabel" name="muName">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>20</x>
      <y>10</y>
      <width>651</width>
      <height>61</height>

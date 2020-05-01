@@ -1,5 +1,6 @@
 #include "mycomments.h"
 #include "ui_mycomments.h"
+#include "user.h"
 
 MyComments::MyComments(QWidget *parent) :
     QDialog(parent),
@@ -21,9 +22,12 @@ MyComments::~MyComments()
 void MyComments::on_accountButton_clicked()
 {
     //go to account
+    User u;
+    u.setUsername(username);
+    u.getAccInfo(username);
 
     //if curator open curator account look
-    if(1>0)
+    if(u.ifCurator())
     {
         ac = new accountCurator();
         ac->setUName(username);
