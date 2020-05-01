@@ -7,7 +7,7 @@ Comment::Comment()
 
 string Comment::getComment()
 {
-
+    return comment;
 }
 
 string Comment::getUser()
