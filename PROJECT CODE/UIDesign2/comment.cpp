@@ -24,3 +24,8 @@ string Comment::getApproved()
 {
     return approved;
 }
+
+string Comment::getItemOwner()
+{
+    return itemOwner;
+}
