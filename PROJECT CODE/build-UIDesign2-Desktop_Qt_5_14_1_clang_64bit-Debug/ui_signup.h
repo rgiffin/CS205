@@ -42,6 +42,7 @@ public:
     QRadioButton *Curator;
     QPushButton *pushButton;
     QLabel *RLogo;
+    QPushButton *cancel;
 
     void setupUi(QDialog *SignUp)
     {
@@ -152,6 +153,9 @@ public:
         RLogo = new QLabel(SignUp);
         RLogo->setObjectName(QString::fromUtf8("RLogo"));
         RLogo->setGeometry(QRect(460, 10, 171, 111));
+        cancel = new QPushButton(SignUp);
+        cancel->setObjectName(QString::fromUtf8("cancel"));
+        cancel->setGeometry(QRect(290, 420, 151, 31));
 #if QT_CONFIG(shortcut)
         label_2->setBuddy(Name);
         label_4->setBuddy(Email);
@@ -180,6 +184,7 @@ public:
         Curator->setText(QCoreApplication::translate("SignUp", "Curator", nullptr));
         pushButton->setText(QCoreApplication::translate("SignUp", "Sign Up", nullptr));
         RLogo->setText(QString());
+        cancel->setText(QCoreApplication::translate("SignUp", "Cancel", nullptr));
     } // retranslateUi
 
 };

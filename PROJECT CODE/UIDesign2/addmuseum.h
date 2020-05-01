@@ -4,6 +4,8 @@
 #include <QDialog>
 #include <accountcurator.h>
 
+#include "museum.h"
+
 
 class accountCurator;
 
@@ -21,6 +23,7 @@ public:
     void logInfo(string, string, string);
     void setUName(std::string u);
     std::string getUName();
+    Museum getMuseumFromName(string name);
 
 private slots:
     void on_pushButton_2_clicked();

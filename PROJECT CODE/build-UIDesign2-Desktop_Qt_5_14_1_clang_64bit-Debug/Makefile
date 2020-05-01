@@ -894,7 +894,7 @@ moc_accountcurator.cpp: ../UIDesign2/accountcurator.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -1024,8 +1024,8 @@ moc_accountcurator.cpp: ../UIDesign2/accountcurator.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/additem.h \
 		../UIDesign2/comment.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/approvecomments.h \
@@ -1062,7 +1062,7 @@ moc_accountedit.cpp: ../UIDesign2/accountedit.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -1192,8 +1192,8 @@ moc_accountedit.cpp: ../UIDesign2/accountedit.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/additem.h \
 		../UIDesign2/comment.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/approvecomments.h \
@@ -1230,7 +1230,7 @@ moc_accountviewer.cpp: ../UIDesign2/accountviewer.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -1360,8 +1360,8 @@ moc_accountviewer.cpp: ../UIDesign2/accountviewer.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/additem.h \
 		../UIDesign2/comment.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/approvecomments.h \
@@ -1398,7 +1398,7 @@ moc_additem.cpp: ../UIDesign2/additem.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -1528,8 +1528,8 @@ moc_additem.cpp: ../UIDesign2/additem.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/additem.h \
 		../UIDesign2/comment.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/approvecomments.h \
@@ -1566,7 +1566,7 @@ moc_addmuseum.cpp: ../UIDesign2/addmuseum.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -1696,8 +1696,8 @@ moc_addmuseum.cpp: ../UIDesign2/addmuseum.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/additem.h \
 		../UIDesign2/comment.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/approvecomments.h \
@@ -1735,7 +1735,7 @@ moc_approvecomments.cpp: ../UIDesign2/approvecomments.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -1865,7 +1865,7 @@ moc_approvecomments.cpp: ../UIDesign2/approvecomments.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
-		../UIDesign2/museum.h \
+		../UIDesign2/additem.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/approvecomments.h \
@@ -1902,7 +1902,7 @@ moc_itemsviewed.cpp: ../UIDesign2/itemsviewed.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -2032,8 +2032,8 @@ moc_itemsviewed.cpp: ../UIDesign2/itemsviewed.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/additem.h \
 		../UIDesign2/comment.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/approvecomments.h \
@@ -2070,7 +2070,7 @@ moc_itemview.cpp: ../UIDesign2/itemview.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -2200,8 +2200,8 @@ moc_itemview.cpp: ../UIDesign2/itemview.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/additem.h \
 		../UIDesign2/comment.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/approvecomments.h \
@@ -2237,12 +2237,7 @@ moc_login.cpp: ../UIDesign2/login.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
-		../UIDesign2/approvecomments.h \
-		../UIDesign2/comment.h \
-		../UIDesign2/museumlist.h \
-		../UIDesign2/itemsviewed.h \
-		../UIDesign2/mycomments.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -2371,7 +2366,12 @@ moc_login.cpp: ../UIDesign2/login.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
-		../UIDesign2/museum.h \
+		../UIDesign2/additem.h \
+		../UIDesign2/approvecomments.h \
+		../UIDesign2/comment.h \
+		../UIDesign2/museumlist.h \
+		../UIDesign2/itemsviewed.h \
+		../UIDesign2/mycomments.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/signup.h \
@@ -2408,7 +2408,7 @@ moc_museumlist.cpp: ../UIDesign2/museumlist.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -2538,8 +2538,8 @@ moc_museumlist.cpp: ../UIDesign2/museumlist.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/additem.h \
 		../UIDesign2/comment.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/approvecomments.h \
@@ -2576,7 +2576,7 @@ moc_museummain.cpp: ../UIDesign2/museummain.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -2706,8 +2706,8 @@ moc_museummain.cpp: ../UIDesign2/museummain.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/additem.h \
 		../UIDesign2/comment.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/approvecomments.h \
@@ -2744,7 +2744,7 @@ moc_museumpage.cpp: ../UIDesign2/museumpage.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -2874,8 +2874,8 @@ moc_museumpage.cpp: ../UIDesign2/museumpage.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/additem.h \
 		../UIDesign2/comment.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/approvecomments.h \
@@ -2912,7 +2912,7 @@ moc_mycomments.cpp: ../UIDesign2/mycomments.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -3042,8 +3042,8 @@ moc_mycomments.cpp: ../UIDesign2/mycomments.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/additem.h \
 		../UIDesign2/comment.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/approvecomments.h \
@@ -3177,7 +3177,7 @@ accountcurator.o: ../UIDesign2/accountcurator.cpp ../UIDesign2/accountcurator.h 
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -3307,8 +3307,8 @@ accountcurator.o: ../UIDesign2/accountcurator.cpp ../UIDesign2/accountcurator.h 
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/additem.h \
 		../UIDesign2/comment.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/approvecomments.h \
@@ -3343,7 +3343,7 @@ accountedit.o: ../UIDesign2/accountedit.cpp ../UIDesign2/accountedit.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -3473,8 +3473,8 @@ accountedit.o: ../UIDesign2/accountedit.cpp ../UIDesign2/accountedit.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/additem.h \
 		../UIDesign2/comment.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/approvecomments.h \
@@ -3677,6 +3677,7 @@ additem.o: ../UIDesign2/additem.cpp ../UIDesign2/additem.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -3807,7 +3808,6 @@ additem.o: ../UIDesign2/additem.cpp ../UIDesign2/additem.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
 		../UIDesign2/comment.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/approvecomments.h \
@@ -3816,7 +3816,8 @@ additem.o: ../UIDesign2/additem.cpp ../UIDesign2/additem.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtCore.framework/Headers/QDir \
 		../../../../Qt/5.14.1/clang_64/lib/QtCore.framework/Headers/qdir.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtCore.framework/Headers/QFile \
-		../../../../Qt/5.14.1/clang_64/lib/QtCore.framework/Headers/qfile.h
+		../../../../Qt/5.14.1/clang_64/lib/QtCore.framework/Headers/qfile.h \
+		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QMessageBox
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o additem.o ../UIDesign2/additem.cpp
 
 addmuseum.o: ../UIDesign2/addmuseum.cpp ../UIDesign2/addmuseum.h \
@@ -3977,12 +3978,13 @@ addmuseum.o: ../UIDesign2/addmuseum.cpp ../UIDesign2/addmuseum.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
-		../UIDesign2/comment.h \
 		../UIDesign2/museum.h \
+		../UIDesign2/comment.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/approvecomments.h \
-		ui_addmuseum.h
+		ui_addmuseum.h \
+		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QMessageBox
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o addmuseum.o ../UIDesign2/addmuseum.cpp
 
 approvecomments.o: ../UIDesign2/approvecomments.cpp ../UIDesign2/approvecomments.h \
@@ -4015,7 +4017,7 @@ approvecomments.o: ../UIDesign2/approvecomments.cpp ../UIDesign2/approvecomments
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -4145,7 +4147,7 @@ approvecomments.o: ../UIDesign2/approvecomments.cpp ../UIDesign2/approvecomments
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
-		../UIDesign2/museum.h \
+		../UIDesign2/additem.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		ui_approvecomments.h
@@ -4330,7 +4332,7 @@ itemsviewed.o: ../UIDesign2/itemsviewed.cpp ../UIDesign2/itemsviewed.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -4460,10 +4462,10 @@ itemsviewed.o: ../UIDesign2/itemsviewed.cpp ../UIDesign2/itemsviewed.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/additem.h \
 		../UIDesign2/comment.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/itemview.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/approvecomments.h \
 		ui_itemsviewed.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o itemsviewed.o ../UIDesign2/itemsviewed.cpp
@@ -4497,7 +4499,7 @@ itemview.o: ../UIDesign2/itemview.cpp ../UIDesign2/itemview.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -4627,8 +4629,8 @@ itemview.o: ../UIDesign2/itemview.cpp ../UIDesign2/itemview.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/additem.h \
 		../UIDesign2/comment.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/approvecomments.h \
 		ui_itemview.h
@@ -4662,12 +4664,7 @@ main.o: ../UIDesign2/main.cpp ../UIDesign2/login.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
-		../UIDesign2/approvecomments.h \
-		../UIDesign2/comment.h \
-		../UIDesign2/museumlist.h \
-		../UIDesign2/itemsviewed.h \
-		../UIDesign2/mycomments.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -4796,7 +4793,12 @@ main.o: ../UIDesign2/main.cpp ../UIDesign2/login.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
-		../UIDesign2/museum.h \
+		../UIDesign2/additem.h \
+		../UIDesign2/approvecomments.h \
+		../UIDesign2/comment.h \
+		../UIDesign2/museumlist.h \
+		../UIDesign2/itemsviewed.h \
+		../UIDesign2/mycomments.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/signup.h \
@@ -4833,12 +4835,7 @@ login.o: ../UIDesign2/login.cpp ../UIDesign2/login.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
-		../UIDesign2/approvecomments.h \
-		../UIDesign2/comment.h \
-		../UIDesign2/museumlist.h \
-		../UIDesign2/itemsviewed.h \
-		../UIDesign2/mycomments.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -4967,7 +4964,12 @@ login.o: ../UIDesign2/login.cpp ../UIDesign2/login.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
-		../UIDesign2/museum.h \
+		../UIDesign2/additem.h \
+		../UIDesign2/approvecomments.h \
+		../UIDesign2/comment.h \
+		../UIDesign2/museumlist.h \
+		../UIDesign2/itemsviewed.h \
+		../UIDesign2/mycomments.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/signup.h \
@@ -5154,7 +5156,7 @@ museumlist.o: ../UIDesign2/museumlist.cpp ../UIDesign2/museumlist.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -5284,8 +5286,8 @@ museumlist.o: ../UIDesign2/museumlist.cpp ../UIDesign2/museumlist.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/additem.h \
 		../UIDesign2/comment.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/approvecomments.h \
@@ -5317,12 +5319,7 @@ museummain.o: ../UIDesign2/museummain.cpp ../UIDesign2/museummain.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
-		../UIDesign2/approvecomments.h \
-		../UIDesign2/comment.h \
-		../UIDesign2/museumlist.h \
-		../UIDesign2/itemsviewed.h \
-		../UIDesign2/mycomments.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -5452,7 +5449,12 @@ museummain.o: ../UIDesign2/museummain.cpp ../UIDesign2/museummain.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
-		../UIDesign2/museum.h \
+		../UIDesign2/additem.h \
+		../UIDesign2/approvecomments.h \
+		../UIDesign2/comment.h \
+		../UIDesign2/museumlist.h \
+		../UIDesign2/itemsviewed.h \
+		../UIDesign2/mycomments.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		ui_museummain.h
@@ -5487,7 +5489,7 @@ museumpage.o: ../UIDesign2/museumpage.cpp ../UIDesign2/museumpage.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -5617,8 +5619,8 @@ museumpage.o: ../UIDesign2/museumpage.cpp ../UIDesign2/museumpage.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/additem.h \
 		../UIDesign2/comment.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/approvecomments.h \
 		ui_museumpage.h
@@ -5652,7 +5654,7 @@ mycomments.o: ../UIDesign2/mycomments.cpp ../UIDesign2/mycomments.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtSql.framework/Headers/QSqlQuery \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -5782,7 +5784,7 @@ mycomments.o: ../UIDesign2/mycomments.cpp ../UIDesign2/mycomments.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
-		../UIDesign2/museum.h \
+		../UIDesign2/additem.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/comment.h \
@@ -5824,7 +5826,7 @@ signup.o: ../UIDesign2/signup.cpp ../UIDesign2/signup.h \
 		../UIDesign2/mycomments.h \
 		../UIDesign2/accountviewer.h \
 		../UIDesign2/addmuseum.h \
-		../UIDesign2/additem.h \
+		../UIDesign2/museum.h \
 		../UIDesign2/item.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
@@ -5953,8 +5955,8 @@ signup.o: ../UIDesign2/signup.cpp ../UIDesign2/signup.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qwizard.h \
 		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+		../UIDesign2/additem.h \
 		../UIDesign2/comment.h \
-		../UIDesign2/museum.h \
 		../UIDesign2/itemview.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/approvecomments.h
