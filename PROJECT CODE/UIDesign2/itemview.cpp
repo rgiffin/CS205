@@ -256,7 +256,7 @@ void ItemView::on_addComment_clicked()
 
 }
 
-void ItemView::addComment(string comment, string user, string item, string approval)
+void ItemView::addComment(std::string comment, std::string user, std::string item, std::string approval)
 {
     QSqlDatabase db;
     //connect to database
