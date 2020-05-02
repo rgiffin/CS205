@@ -29,23 +29,11 @@ Once the project is built run the main.cpp file in the folder UIDesign2
 
 The login screen should pop up
 
-Using the Program:
+Exit the project and go to the build folder for your project
 
+Once you are able to access your build folder, you should see where the database is set up called dbv2.sqlite
+You need to delete this file and replace it with the dbv2 file found in the project folder
 
-Update April 10:
-The login is currently a work in progress with connecting to the database, but for now you can login using the username and password:: test
+once you do this you are ready to start the program again from the main.cpp file
 
-Failed password does not grant access
-
-The signup page pops up when clicked and takes in data, but the access is not connected between the database and the login
-
-Once in the program, there is a template for the museum main page which is not completed
-
-The account button works, and you are not able to display the data yet for the user, but the edit button displays the page for changing the data
-
-The home button works to take back to main, so the account pages and home pages are fully connected
-
-We are working to complete the rest of the pages and their connections, and they should be completed in the next 2 days(by Sunday, April 12th)
-
-
-Update:
+Once main.cpp is run, the program will be fully functional and you are able to operate the system.
