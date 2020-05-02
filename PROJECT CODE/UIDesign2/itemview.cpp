@@ -1,6 +1,7 @@
 #include "itemview.h"
 #include "ui_itemview.h"
 #include "user.h"
+#include "QMessageBox"
 
 ItemView::ItemView(QWidget *parent) :
     QDialog(parent),
@@ -255,6 +256,10 @@ void ItemView::on_addComment_clicked()
     std::string c = comment.toStdString();
 
     addComment(c, username, curItem.getName(), "pending");
+
+    ui->comment_2->setText("");
+
+    QMessageBox::information(this,"Message", "Comment submitted for approval", QMessageBox::Ok);
 
 }
 
