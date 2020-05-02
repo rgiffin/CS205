@@ -77,11 +77,15 @@ void AddItem::on_pushButton_clicked()
     }
     else if(i.getName() != "dne")
     {
-        QMessageBox::warning(this,"Message", "Item Name already exsists please choose anohter name for your item", QMessageBox::Ok);
+        QMessageBox::warning(this,"Message", "Item Name "+QString::fromStdString(i.getName())+" already exsists please choose another name for your item", QMessageBox::Ok);
     }
     else
     {
         logInfo(name, description, artist, username, museum, collection, file, pic);
+        ac = new accountCurator();
+        ac->setUName(username);
+        ac->show();
+        hide();
     }
 
 
@@ -94,10 +98,7 @@ void AddItem::on_pushButton_clicked()
 
 
 
-    ac = new accountCurator();
-    ac->setUName(username);
-    ac->show();
-    hide();
+
 }
 
 void AddItem::on_addImage_clicked()
