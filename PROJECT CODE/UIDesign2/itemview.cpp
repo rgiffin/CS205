@@ -297,7 +297,7 @@ void ItemView::addComment(std::string comment, std::string user, std::string ite
     s1.append("')");
     char s3[s1.size()+1];
     strcpy(s3,s1.c_str());
-
+    cout << s3 << endl;
     //Adds the item created to the table
     query.exec(s3);
 }
