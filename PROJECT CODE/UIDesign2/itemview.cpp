@@ -225,13 +225,6 @@ Item ItemView::getItemObject(string museum, string itemName)
          item1.image = outputpix;
     }
 
-    cout << item1.getName() << endl;
-    cout << item1.getDescription() << endl;
-    cout << item1.getArtist() << endl;
-    cout << item1.getOwner() << endl;
-    cout << item1.getMuseum() << endl;
-    cout << item1.getCollection();
-
     return item1;
 }
 
@@ -325,7 +318,7 @@ vector<Comment> ItemView::getItemComments(std::string itemName)
         cout << "DATABASE COULD NOT BE OPENED" << endl;
     }
 
-    string s1 = "SELECT * FROM commentTable WHERE approval = 'true' AND item = '";
+    string s1 = "SELECT * FROM commentTable WHERE approved = 'true' AND item = '";
     s1.append(itemName);
     s1.append("'");
     cout << s1 << endl;
@@ -345,6 +338,8 @@ vector<Comment> ItemView::getItemComments(std::string itemName)
 
         retVector.push_back(c);
     }
+
+    cout << retVector.size() << endl;
 
     return retVector;
 }

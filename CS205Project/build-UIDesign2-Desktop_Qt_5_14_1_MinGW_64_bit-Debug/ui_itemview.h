@@ -16,6 +16,7 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -47,6 +48,10 @@ public:
     QFrame *line;
     QFrame *line_2;
     QFrame *line_3;
+    QTextEdit *comment_2;
+    QPushButton *addComment;
+    QFrame *line_4;
+    QFrame *line_5;
 
     void setupUi(QDialog *ItemView)
     {
@@ -110,11 +115,12 @@ public:
         iCreator->setFont(font1);
         description = new QLabel(ItemView);
         description->setObjectName(QString::fromUtf8("description"));
-        description->setGeometry(QRect(400, 140, 381, 161));
+        description->setGeometry(QRect(400, 140, 381, 121));
         description->setMaximumSize(QSize(381, 161));
+        description->setWordWrap(true);
         label = new QLabel(ItemView);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(390, 330, 91, 20));
+        label->setGeometry(QRect(390, 270, 91, 20));
         label->setFont(font1);
         label_2 = new QLabel(ItemView);
         label_2->setObjectName(QString::fromUtf8("label_2"));
@@ -122,13 +128,14 @@ public:
         label_2->setFont(font1);
         user = new QLabel(ItemView);
         user->setObjectName(QString::fromUtf8("user"));
-        user->setGeometry(QRect(400, 370, 141, 16));
+        user->setGeometry(QRect(400, 310, 141, 16));
         comment = new QLabel(ItemView);
         comment->setObjectName(QString::fromUtf8("comment"));
-        comment->setGeometry(QRect(470, 370, 331, 91));
+        comment->setGeometry(QRect(440, 330, 331, 91));
+        comment->setWordWrap(true);
         pushButton = new QPushButton(ItemView);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(692, 470, 121, 32));
+        pushButton->setGeometry(QRect(670, 300, 121, 32));
         pushButton_2 = new QPushButton(ItemView);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
         pushButton_2->setGeometry(QRect(680, 550, 131, 41));
@@ -140,19 +147,35 @@ public:
         pushButton_4->setGeometry(QRect(380, 550, 131, 41));
         line = new QFrame(ItemView);
         line->setObjectName(QString::fromUtf8("line"));
-        line->setGeometry(QRect(400, 350, 411, 20));
+        line->setGeometry(QRect(400, 290, 391, 20));
         line->setFrameShape(QFrame::HLine);
         line->setFrameShadow(QFrame::Sunken);
         line_2 = new QFrame(ItemView);
         line_2->setObjectName(QString::fromUtf8("line_2"));
-        line_2->setGeometry(QRect(380, 370, 20, 141));
+        line_2->setGeometry(QRect(380, 310, 20, 221));
         line_2->setFrameShape(QFrame::VLine);
         line_2->setFrameShadow(QFrame::Sunken);
         line_3 = new QFrame(ItemView);
         line_3->setObjectName(QString::fromUtf8("line_3"));
-        line_3->setGeometry(QRect(400, 510, 411, 20));
+        line_3->setGeometry(QRect(400, 530, 391, 20));
         line_3->setFrameShape(QFrame::HLine);
         line_3->setFrameShadow(QFrame::Sunken);
+        comment_2 = new QTextEdit(ItemView);
+        comment_2->setObjectName(QString::fromUtf8("comment_2"));
+        comment_2->setGeometry(QRect(440, 440, 331, 74));
+        addComment = new QPushButton(ItemView);
+        addComment->setObjectName(QString::fromUtf8("addComment"));
+        addComment->setGeometry(QRect(670, 510, 131, 32));
+        line_4 = new QFrame(ItemView);
+        line_4->setObjectName(QString::fromUtf8("line_4"));
+        line_4->setGeometry(QRect(400, 430, 391, 16));
+        line_4->setFrameShape(QFrame::HLine);
+        line_4->setFrameShadow(QFrame::Sunken);
+        line_5 = new QFrame(ItemView);
+        line_5->setObjectName(QString::fromUtf8("line_5"));
+        line_5->setGeometry(QRect(793, 310, 20, 221));
+        line_5->setFrameShape(QFrame::VLine);
+        line_5->setFrameShadow(QFrame::Sunken);
 
         retranslateUi(ItemView);
 
@@ -164,7 +187,7 @@ public:
         ItemView->setWindowTitle(QCoreApplication::translate("ItemView", "Dialog", nullptr));
         homeButton->setText(QCoreApplication::translate("ItemView", "Home", nullptr));
         mListButton->setText(QCoreApplication::translate("ItemView", "Museum list", nullptr));
-        itemsViewedButton->setText(QCoreApplication::translate("ItemView", "Items Viewed", nullptr));
+        itemsViewedButton->setText(QCoreApplication::translate("ItemView", "Search", nullptr));
         myCommentsButton->setText(QCoreApplication::translate("ItemView", "My Comments", nullptr));
         accountButton->setText(QCoreApplication::translate("ItemView", "Account", nullptr));
         logoMM->setText(QString());
@@ -175,12 +198,13 @@ public:
         description->setText(QCoreApplication::translate("ItemView", "Description", nullptr));
         label->setText(QCoreApplication::translate("ItemView", "Comments:", nullptr));
         label_2->setText(QCoreApplication::translate("ItemView", "Description:", nullptr));
-        user->setText(QCoreApplication::translate("ItemView", "User:", nullptr));
-        comment->setText(QCoreApplication::translate("ItemView", "Comment", nullptr));
+        user->setText(QCoreApplication::translate("ItemView", "User: N/A", nullptr));
+        comment->setText(QCoreApplication::translate("ItemView", "No Comments Approved Yet", nullptr));
         pushButton->setText(QCoreApplication::translate("ItemView", "Next Comment", nullptr));
         pushButton_2->setText(QCoreApplication::translate("ItemView", "Next Item", nullptr));
         pushButton_3->setText(QCoreApplication::translate("ItemView", "Previous Item", nullptr));
         pushButton_4->setText(QCoreApplication::translate("ItemView", "Back To Museum", nullptr));
+        addComment->setText(QCoreApplication::translate("ItemView", "Add Comment", nullptr));
     } // retranslateUi
 
 };

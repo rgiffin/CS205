@@ -188,14 +188,14 @@ public:
         label_2->setText(QCoreApplication::translate("AddItem", "Item Name", nullptr));
         label_3->setText(QCoreApplication::translate("AddItem", "Item Description", nullptr));
         label_4->setText(QCoreApplication::translate("AddItem", "Item Collection", nullptr));
-        addImage->setText(QCoreApplication::translate("AddItem", "Add Image", nullptr));
+        addImage->setText(QCoreApplication::translate("AddItem", "Add Image(.png)", nullptr));
         label_6->setText(QCoreApplication::translate("AddItem", "Artist/Creator", nullptr));
         label_7->setText(QCoreApplication::translate("AddItem", "Museum to add Item", nullptr));
         pushButton->setText(QCoreApplication::translate("AddItem", "Add Item", nullptr));
         pushButton_2->setText(QCoreApplication::translate("AddItem", "Cancel", nullptr));
         homeButton->setText(QCoreApplication::translate("AddItem", "Home", nullptr));
         mListButton->setText(QCoreApplication::translate("AddItem", "Museum list", nullptr));
-        itemsViewedButton->setText(QCoreApplication::translate("AddItem", "Items Viewed", nullptr));
+        itemsViewedButton->setText(QCoreApplication::translate("AddItem", "Search", nullptr));
         myCommentsButton->setText(QCoreApplication::translate("AddItem", "My Comments", nullptr));
         accountButton->setText(QCoreApplication::translate("AddItem", "Account", nullptr));
         label->setText(QCoreApplication::translate("AddItem", "<h1>Add Item</h1>", nullptr));
