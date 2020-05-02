@@ -96,6 +96,7 @@ vector<Comment> ApproveComments::commentsToApprove(string user)
         retVector.push_back(c);
     }
 
+
     return retVector;
 }
 
