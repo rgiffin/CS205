@@ -51,6 +51,8 @@ void ApproveComments::nextComment()
     if(comments.size()>0)
     {
         curComment = comments.back();
+        ui->user->setText("User: "+QString::fromStdString(curComment.getUser()));
+        ui->comment->setText("User: " + QString::fromStdString(curComment.getComment()));
         comments.pop_back();
     }
     else
@@ -95,6 +97,7 @@ vector<Comment> ApproveComments::commentsToApprove(string user)
 
         retVector.push_back(c);
     }
+    
 
 
     return retVector;
