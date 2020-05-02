@@ -256,7 +256,7 @@ void ItemView::on_addComment_clicked()
 
 }
 
-void ItemView::addComment(string comment, string user, string item, string approval)
+void ItemView::addComment(std::string comment, std::string user, std::string item, std::string approval)
 {
     QSqlDatabase db;
     //connect to database
@@ -297,7 +297,7 @@ void ItemView::addComment(string comment, string user, string item, string appro
     s1.append("')");
     char s3[s1.size()+1];
     strcpy(s3,s1.c_str());
-
+    cout << s3 << endl;
     //Adds the item created to the table
     query.exec(s3);
 }
