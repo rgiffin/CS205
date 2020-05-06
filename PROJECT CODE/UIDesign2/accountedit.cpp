@@ -68,9 +68,24 @@ void AccountEdit::on_pushButton_clicked()
 
         cout << type.toStdString() << endl;
 
-        editAccount(username, u,p,e,n,type.toStdString());
 
-        close();
+
+        editAccount(username, u,p,e,n,type.toStdString());
+        if(type == "curator")
+        {
+            ac = new accountCurator();
+            ac->setUName(username2.toStdString());
+            ac->show();
+            hide();
+        }
+        else if(type == "viewer")
+        {
+            av = new accountViewer();
+            av->setUName(username2.toStdString());
+            av->show();
+            hide();
+        }
+
         }
 
 
@@ -87,20 +102,7 @@ void AccountEdit::on_pushButton_clicked()
 
 
 
-    if(type == "curator")
-    {
-        ac = new accountCurator();
-        ac->setUName(username2.toStdString());
-        ac->show();
-        hide();
-    }
-    else if(type == "viewer")
-    {
-        av = new accountViewer();
-        av->setUName(username2.toStdString());
-        av->show();
-        hide();
-    }
+
 
 }
 

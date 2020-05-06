@@ -4633,7 +4633,8 @@ itemview.o: ../UIDesign2/itemview.cpp ../UIDesign2/itemview.h \
 		../UIDesign2/comment.h \
 		../UIDesign2/museumpage.h \
 		../UIDesign2/approvecomments.h \
-		ui_itemview.h
+		ui_itemview.h \
+		../../../../Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers/QMessageBox
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o itemview.o ../UIDesign2/itemview.cpp
 
 main.o: ../UIDesign2/main.cpp ../UIDesign2/login.h \
