@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../PROJECT CODE/UIDesign2/museumpage.h"
+#include "../../../../../Desktop/CS205-master/PROJECT CODE/UIDesign2/museumpage.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
