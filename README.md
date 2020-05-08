@@ -37,3 +37,20 @@ You need to delete this file and replace it with the dbv2 file found in the proj
 once you do this you are ready to start the program again from the main.cpp file
 
 Once main.cpp is run, the program will be fully functional and you are able to operate the system.
+
+
+
+TO ADD TO THE SYSTEM
+
+If you'd like to edit the code view the documentation file to see what each class holds.
+
+Most of the classes are named based on the UI they represent
+
+To add a new window to the system
+1. right click on the project and choose add new
+2. choose Qt then choose Qt designer form class
+3. choose dialogue without buttons with any size(you'll need to change this later)
+4. continue through the naming and saving process
+5. once the class is created you'll need to click on the .ui form for the created class
+6. if your new window is intended to be a new page and not a popup window change the width of the window to 820 and the height to 600
+
