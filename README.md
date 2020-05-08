@@ -38,6 +38,7 @@ once you do this you are ready to start the program again from the main.cpp file
 
 Once main.cpp is run, the program will be fully functional and you are able to operate the system.
 
+View userguide.txt in order to learn how to operate the system
 
 
 TO ADD TO THE SYSTEM
